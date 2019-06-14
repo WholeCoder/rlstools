@@ -84,7 +84,7 @@ for i in range(len(file_contents)):
                     if  doesTableExist(conn,file_contents[i].split(" ")[2]):
 
                         print("removing table "+file_contents[i].split(" ")[2].strip())
-                        c.execute("DROP TABLE "+file_contents[i].split(" ")[2]+")")
+                        c.execute("DROP TABLE "+file_contents[i].split(" ")[2])
                 elif file_contents[i].split(" ")[1] == "column":
                     if doesColoumnExist(conn,file_contents[i].split(" ")[2],file_contents[i].split(" ")[3].strip()):
 

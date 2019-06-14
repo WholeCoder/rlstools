@@ -92,6 +92,7 @@ for i in range(len(file_contents)):
                         print("\tremoving column "+file_contents[i].split(" ")[3].strip())
                 i = i+1
 
+#tst
 conn.commit()
 conn.close()
  
