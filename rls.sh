@@ -1,5 +1,4 @@
 #!/bin/bash
-#test one
 
 create_directory() {
 	
