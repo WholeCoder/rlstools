@@ -1,5 +1,5 @@
 #!/bin/bash
-#test
+
 create_directory() {
 	
 	if [ ! -d "$1" ]; then
