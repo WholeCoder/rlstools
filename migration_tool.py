@@ -25,6 +25,8 @@ def deleteColumnFromTable(conn, table, column):
     print("i--------------------------inside deleteColumnFromTable function")
     if doesColoumnExist(conn,table,column): 
         cur = conn.cursor()
+        tablebakdrp = "CREATE TABLE t1_backup (primary_key INTEGER PRIMARY KEY )"
+        cur.execute(tablebakdrp)
         dropBackupTableStatement = "drop table t1_backup"
         cur.execute(dropBackupTableStatement)
 
@@ -53,7 +55,7 @@ def deleteColumnFromTable(conn, table, column):
 
 def doesTableExist(conn,table):
     checkIfTableExists = "SELECT count(name) FROM sqlite_master WHERE type='table' AND name='"+file_contents[i].split(" ")[2].strip()+"'"
-                    
+    c = conn.cursor()               
     print("check if table exists string    "+checkIfTableExists)
     c.execute(checkIfTableExists)
                     
@@ -88,10 +90,12 @@ for i in range(len(file_contents)):
                         createTableString = "CREATE TABLE "+file_contents[i].split(" ")[2]+" (primary_key INTEGER PRIMARY KEY )"
                         c.execute(createTableString)
                 elif file_contents[i].split(" ")[1] == "column":
+                    if doesTableExist(conn,file_contents[i].split(" ")[2].strip()):
                     #print("\tadding column "+file_contents[i].split(" ")[3].strip())
-                    if not doesColoumnExist(conn,file_contents[i].split(" ")[2],file_contents[i].split(" ")[3].strip()):
-                        c.execute('ALTER TABLE '+file_contents[i].split(" ")[2]+' ADD COLUMN '+file_contents[i].split(" ")[3].split(':')[0]+' TEXT')
- 
+
+                        if not doesColoumnExist(conn,file_contents[i].split(" ")[2],file_contents[i].split(" ")[3].strip()):
+                            c = conn.cursor()
+                            c.execute('ALTER TABLE '+file_contents[i].split(" ")[2]+' ADD COLUMN '+file_contents[i].split(" ")[3].split(':')[0]+' TEXT')
                 i = i+1
         
         split_line = file_contents[i].split(' ')
@@ -107,6 +111,7 @@ for i in range(len(file_contents)):
 
                         print("removing table "+file_contents[i].split(" ")[2].strip())
                         # deleteColumnFromTable(conn, file_contents[i].split(" ")[2].strip(),file_contents[i].split(" ")[3].strip()) 
+                        c = conn.cursor()
                         c.execute("DROP TABLE "+file_contents[i].split(" ")[2])
                 elif file_contents[i].split(" ")[1] == "column":
                     print(" checking to removed == "+file_contents[i].split(" ")[2]+", "+file_contents[i].split(" ")[3].strip())

@@ -1,8 +1,8 @@
 
 upgrade
 add table Person
-add column Person first_name:string
-#add column Person last_name:string
+#add column Person first_name:string
+add column Person last_name:string
 
 #downgrading
 downgrade
