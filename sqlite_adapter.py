@@ -39,13 +39,15 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             self.cur.execute(dropBackupTableStatement)
             
             columns = [i[1] for i in self.cur.execute('PRAGMA table_info('+table+')')]
-            
+            print("columns == " + ",".join(columns)) 
             selectClause = " "
             for columnInColumns in columns:
-                if columnInColumns != column:
-                    selectClause = columnInColumns + ","
+                if columnInColumns.strip() != column.strip():
+                    selectClause = selectClause + columnInColumns + ","
             selectClause = selectClause[:len(selectClause)-1]
+            print("selectClause == " + selectClause)
             selectStatement ="CREATE TABLE t1_backup AS SELECT "+selectClause+" FROM "+table  
+            print("select Statement for create backup table:  "+selectStatement)
             # print("\n\t"+selectStatement)
             self.cur.execute(selectStatement)
             # CREATE TABLE t1_backup AS SELECT a, b FROM t1;
@@ -91,7 +93,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         # print("SqliteDatabaseAdapter - Added column "+column+" to table "+ table)
 
     def removeTable(self,table):
-        self.dropTable(table)
+        self.dropTable(self,table)
         # print("DatabaseAdapter - Removing table "+ table)
 
     def dropTable(self,table):

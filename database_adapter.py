@@ -20,6 +20,7 @@ class DatabaseAdapter:
     def removeTable(self,table):
         print("DatabaseAdapter - Removing table "+ table)
 
-
+    def dropTable(self,table):
+        print("DatabaseAdapter - Dropping table "+ table)
 
 
