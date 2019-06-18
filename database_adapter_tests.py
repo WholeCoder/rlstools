@@ -17,6 +17,12 @@ class DatabaseAdapterTestCase(unittest.TestCase):
         self.dAdapter.createTable("Person")
         self.assertTrue(self.dAdapter.doesTableExist("Person"))
 
+    def test_if_can_drop_table(self):
+        self.dAdapter.createTable("Person")
+        self.assertTrue(self.dAdapter.doesTableExist("Person"))
+        self.dAdapter.dropTable("Person")
+        self.assertFalse(self.dAdapter.doesTableExist("Person"))
+
     def test_if_can_add_column_to_office_table(self):
         self.dAdapter.createTable("Office")
         self.dAdapter.addColumn("Office","zipcode")
