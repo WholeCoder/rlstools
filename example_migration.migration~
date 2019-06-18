@@ -1,11 +1,16 @@
 
 upgrade
-#add table Person
-#add column Person first_name:string
+add table Person
+add column Person first_name:string
 add column Person last_name:string
+add table Office
+add column Office zip_code:string
+add column Office address_line_one:string
+add column Office city:string
+add column Office state:string
 
 #downgrading
 downgrade
 #remove column Person last_name
-remove column Person first_name
-remove table Person
+#remove column Person first_name
+#remove table Person

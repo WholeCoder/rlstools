@@ -1,0 +1,11 @@
+class DatabaseAdapter:
+    def __init__(self):
+        print("Initializing adapter")
+
+    def doesColumnExist(table, column):
+        print("Seeing if column " + column + " exists on table " + table)
+
+
+
+adapter = DatabaseAdapter()
+
