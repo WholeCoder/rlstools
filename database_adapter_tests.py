@@ -7,10 +7,11 @@ class DatabaseAdapterTestCase(unittest.TestCase):
     def setUp(self):
         database_path = "my_test_database.db"
         try:
-            print("Trying to remove "+database_path)
+            #print("Trying to remove "+database_path)
             os.remove(database_path)
         except:
-            print("Error deleting "+database_path+" this isn't really an error.")
+            pass
+            #print("Error deleting "+database_path+" this isn't really an error.")
         self.dAdapter = SqliteDatabaseAdapter(database_path)
     
     def test_add_person_table_without_columns(self):
