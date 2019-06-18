@@ -31,6 +31,12 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     def deleteColumnFromTable(self,table, column):
         # print("i--------------------------inside deleteColumnFromTable function")
+        if self.doesTableExist(table):
+            print("1. table does exist. " + table)
+            return
+        else:
+            print("2. table does not "+table+" exists.")
+
         if self.doesColumnExist(table,column):
             self.cur = self.conn.cursor()
             tablebakdrp = "CREATE TABLE t1_backup (primary_key INTEGER PRIMARY KEY )"
@@ -59,7 +65,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             # print("\n\t"+ alterTableStatement)
             self.cur.execute(alterTableStatement) 
 	    # ALTER TABLE t1_backup RENAME TO t1;
-
+            self.conn.commit()
 	#"SELECT count(name) FROM sqlite_master WHERE type='table' AND name='"+table+"'"
 
         
@@ -88,7 +94,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     def addColumn(self,table, column):
         c = self.conn.cursor()
-        c.execute('ALTER TABLE '+table+' ADD COLUMN '+column+' TEXT')
+        c.execute('ALTER TABLE '+table+' ADD COLUMN '+column.split(":")[0]+' TEXT')
 
         # print("SqliteDatabaseAdapter - Added column "+column+" to table "+ table)
 
@@ -99,7 +105,5 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
     def dropTable(self,table):
         cur = self.conn.cursor()
         dropTableStatement = "drop table "+table
-        # print("\n\t" + dropTableStatement)
+        print("\n\t3. " + dropTableStatement)
         cur.execute(dropTableStatement)
-
-

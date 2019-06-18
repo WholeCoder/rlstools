@@ -20,19 +20,25 @@ for i in range(len(file_contents)):
                 if file_contents[i].strip().startswith("#"):
                     i = i + 1
                     continue
-                if file_contents[i].split(" ")[1] == "table":
-                    print("adding table "+file_contents[i].split(" ")[2].strip())
-    
-                    if dAdapter.doesTableExist(file_contents[i].split(" ")[2].strip()):
-                        print("Table "+file_contents[i].split(" ")[2].strip() + " already exists.")
-                    else:
-                        dAdapter.createTable( file_contents[i].split(" ")[2] )
-                elif file_contents[i].split(" ")[1] == "column":
-                    if dAdapter.doesTableExist(file_contents[i].split(" ")[2].strip()):
-                    #print("\tadding column "+file_contents[i].split(" ")[3].strip())
+                command_acting_on = file_contents[i].split(" ")[1]
 
-                        if not dAdapter.doesColumnExist(file_contents[i].split(" ")[2],file_contents[i].split(" ")[3].strip()):
-                            dAdapter.addColumn( file_contents[i].split(" ")[2], file_contents[i].split(" ")[3].split(':')[0])
+                if command_acting_on == "table":
+                    table = file_contents[i].split(" ")[2].strip()
+                    print("adding table "+table)
+    
+                    if dAdapter.doesTableExist(table):
+                        print("Table "+table + " already exists.")
+                    else:
+                        dAdapter.createTable( table  )
+                        print("Table "+table+" is being created.")
+                elif command_acting_on == "column":
+
+                    tableName = file_contents[i].split(" ")[2].strip()
+                    if dAdapter.doesTableExist(tableName):
+                    #print("\tadding column "+file_contents[i].split(" ")[3].strip())
+                        column_name = file_contents[i].split(" ")[3].strip()
+                        if not dAdapter.doesColumnExist(tableName,column_name):
+                            dAdapter.addColumn( tableName, column_name)
                 i = i+1
         
         split_line = file_contents[i].split(' ')
@@ -43,20 +49,26 @@ for i in range(len(file_contents)):
                 if file_contents[i].strip().startswith("#"):
                     i = i + 1
                     continue
-                if file_contents[i].split(" ")[1] == "table":
-                    if dAdapter.doesTableExist(file_contents[i].split(" ")[2]):
+                command = file_contents[i].split(" ")[1]
+                if command == "table":
+                    print("----------- does table Exist:  " + str(dAdapter.doesTableExist(file_contents[i].split(" ")[2].strip())))
+                    print("          value: " + file_contents[i].split(" ")[2])
+                    tableName = file_contents[i].split(" ")[2].strip()
+                    if dAdapter.doesTableExist(tableName):
 
-                        print("removing table "+file_contents[i].split(" ")[2].strip())
+                        print("removing table "+tableName)
                         # deleteColumnFromTable(conn, file_contents[i].split(" ")[2].strip(),file_contents[i].split(" ")[3].strip()) 
-                        dAdapter.dropTable( file_contents[i].split(" ")[2])
-                elif file_contents[i].split(" ")[1] == "column":
-                    print(" checking to removed == "+file_contents[i].split(" ")[2]+", "+file_contents[i].split(" ")[3].strip())
+                        dAdapter.dropTable( tableName)
+                elif command == "column":
+                    tableName = file_contents[i].split(" ")[2]
+                    column_name = file_contents[i].split(" ")[3]
+                    print(" checking to removed == "+tableName+", "+column_name)
                     #print(doesColoumnExist(file_contents[i].split(" ")[2].strip(),file_contents[i].split(" ")[3].strip()))
-                    if dAdapter.doesColumnExist(file_contents[i].split(" ")[2].strip(),file_contents[i].split(" ")[3].strip()):
+                    if dAdapter.doesTableExist(tableName.strip()) and dAdapter.doesColumnExist(tableName.strip(),column_name.strip()):
                        
-                        dAdapter.deleteColumnFromTable(file_contents[i].split(" ")[2],file_contents[i].split(" ")[3].strip())
+                        dAdapter.deleteColumnFromTable(tableName,column_name.strip())
                         
-                        print("\tremoving column "+file_contents[i].split(" ")[3].strip())
+                        print("\tremoving column "+column_name.strip())
                 i = i+1
     i = i + 1
 
