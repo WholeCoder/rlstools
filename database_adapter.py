@@ -9,7 +9,7 @@ class DatabaseAdapter:
         print("Deleting column " + column + " from table "+table)
 
     def doesTableExist(self,table):
-        print("Seeing if table "+ table +" exists."
+        print("Seeing if table "+ table +" exists.")
 
     def createTable(self,table):
         print("Creating table "+table)
@@ -22,5 +22,4 @@ class DatabaseAdapter:
 
 
 
-adapter = DatabaseAdapter()
 
