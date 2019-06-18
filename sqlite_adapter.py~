@@ -1,10 +1,16 @@
 import sqlite3
+import atexit
 from database_adapter import DatabaseAdapter
 
 class SqliteDatabaseAdapter(DatabaseAdapter):
     def __init__(self,db_filename):
         self.conn = sqlite3.connect(db_filename)
         print("Sqlite adapter - Initializing adapter")
+        atexit.register(self.cleanup)
+
+    def cleanup(self):
+        print("Running cleanup...")
+        conn.close()
 
     def doesColumnExist(self,table, column):
         print("SqliteAdapter - Seeing if column " + column + " exists on table " + table)
@@ -88,7 +94,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.dropTable(table)
         print("DatabaseAdapter - Removing table "+ table)
 
-    def dropTable(self,able):
+    def dropTable(self,table):
         cur = self.conn.cursor()
         dropTableStatement = "drop table "+table
         print("\n\t" + dropTableStatement)

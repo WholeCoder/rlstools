@@ -1,10 +1,16 @@
 import sqlite3
+import atexit
 from database_adapter import DatabaseAdapter
 
 class SqliteDatabaseAdapter(DatabaseAdapter):
     def __init__(self,db_filename):
         self.conn = sqlite3.connect(db_filename)
         print("Sqlite adapter - Initializing adapter")
+        atexit.register(self.cleanup)
+
+    def cleanup(self):
+        print("Running cleanup...")
+        self.conn.close()
 
     def doesColumnExist(self,table, column):
         print("SqliteAdapter - Seeing if column " + column + " exists on table " + table)
