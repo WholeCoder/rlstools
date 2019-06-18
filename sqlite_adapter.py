@@ -31,14 +31,14 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     def deleteColumnFromTable(self,table, column):
         print("i--------------------------inside deleteColumnFromTable function")
-        if doesColoumnExist(table,column):
+        if self.doesColumnExist(table,column):
             self.cur = self.conn.cursor()
             tablebakdrp = "CREATE TABLE t1_backup (primary_key INTEGER PRIMARY KEY )"
             self.cur.execute(tablebakdrp)
             dropBackupTableStatement = "drop table t1_backup"
             self.cur.execute(dropBackupTableStatement)
             
-            columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
+            columns = [i[1] for i in self.cur.execute('PRAGMA table_info('+table+')')]
             
             selectClause = " "
             for columnInColumns in columns:

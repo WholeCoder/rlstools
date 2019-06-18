@@ -27,6 +27,13 @@ class DatabaseAdapterTestCase(unittest.TestCase):
         self.dAdapter.createTable("Office")
         self.dAdapter.addColumn("Office","zipcode")
         self.assertTrue(self.dAdapter.doesColumnExist("Office", "zipcode"))
+    
+    def test_if_can_drop_column(self):
+        self.dAdapter.createTable("Office")
+        self.dAdapter.addColumn("Office","zipcode")
+        self.dAdapter.deleteColumnFromTable("Office","zipcode")
+        self.assertFalse(self.dAdapter.doesColumnExist("Office", "zipcode"))
+
 
 if __name__ == '__main__':
     unittest.main()
