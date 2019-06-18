@@ -79,7 +79,10 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         print("DatabaseAdapter - Creating table "+table)
 
     def addColumn(self,table, column):
-        print("DatabaseAdapter - Added column "+column+" to table "+ table)
+        c = self.conn.cursor()
+        c.execute('ALTER TABLE '+table+' ADD COLUMN '+column+' TEXT')
+
+        print("SqliteDatabaseAdapter - Added column "+column+" to table "+ table)
 
     def removeTable(self,table):
         print("DatabaseAdapter - Removing table "+ table)

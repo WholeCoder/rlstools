@@ -74,12 +74,15 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     def createTable(self,table):
         c = self.conn.cursor()
-        createTableString = "CREATE TABLE "+file_contents[i].split(" ")[2]+" (primary_key INTEGER PRIMARY KEY )"
+        createTableString = "CREATE TABLE "+table+" (primary_key INTEGER PRIMARY KEY )"
         c.execute(createTableString)
         print("DatabaseAdapter - Creating table "+table)
 
     def addColumn(self,table, column):
-        print("DatabaseAdapter - Added column "+column+" to table "+ table)
+        c = conn.cursor()
+        c.execute('ALTER TABLE '+table+' ADD COLUMN '+column+' TEXT')
+
+        print("SqliteDatabaseAdapter - Added column "+column+" to table "+ table)
 
     def removeTable(self,table):
         print("DatabaseAdapter - Removing table "+ table)
