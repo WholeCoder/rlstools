@@ -1,9 +1,12 @@
-class DatabaseAdapter:
-    def __init__(self):
-        self.conn = sqlite3.connect('my_test_db.db')
+import sqlite3
+from database_adapter import DatabaseAdapter
+
+class SqliteDatabaseAdapter(DatabaseAdapter):
+    def __init__(self,db_filename):
+        self.conn = sqlite3.connect(db_filename)
         print("Sqlite adapter - Initializing adapter")
 
-    def doesColumnExist(self,table, column):i
+    def doesColumnExist(self,table, column):
         print("SqliteAdapter - Seeing if column " + column + " exists on table " + table)
         cur = self.conn.cursor()
         columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
@@ -22,34 +25,34 @@ class DatabaseAdapter:
 
     def deleteColumnFromTable(self,table, column):
         print("i--------------------------inside deleteColumnFromTable function")
-	    if doesColoumnExist(table,column): 
-		cur = self.conn.cursor()
-		tablebakdrp = "CREATE TABLE t1_backup (primary_key INTEGER PRIMARY KEY )"
-		cur.execute(tablebakdrp)
-		dropBackupTableStatement = "drop table t1_backup"
-		cur.execute(dropBackupTableStatement)
-
-		columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
-
-		selectClause = " "
-		for columnInColumns in columns:
-		    if columnInColumns != column:
-		        selectClause = columnInColumns + ","
-		selectClause = selectClause[:len(selectClause)-1]
-		selectStatement ="CREATE TABLE t1_backup AS SELECT "+selectClause+" FROM "+table  
-		print("\n\t"+selectStatement)
-		cur.execute(selectStatement)
-		# CREATE TABLE t1_backup AS SELECT a, b FROM t1;
-		dropTableStatement = "drop table "+table
-		print("\n\t" + dropTableStatement)
-		cur.execute(dropTableStatement)
+        if doesColoumnExist(table,column):
+            self.cur = self.conn.cursor()
+            tablebakdrp = "CREATE TABLE t1_backup (primary_key INTEGER PRIMARY KEY )"
+            self.cur.execute(tablebakdrp)
+            dropBackupTableStatement = "drop table t1_backup"
+            self.cur.execute(dropBackupTableStatement)
+            
+            columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
+            
+            selectClause = " "
+            for columnInColumns in columns:
+                if columnInColumns != column:
+                    selectClause = columnInColumns + ","
+            selectClause = selectClause[:len(selectClause)-1]
+            selectStatement ="CREATE TABLE t1_backup AS SELECT "+selectClause+" FROM "+table  
+            print("\n\t"+selectStatement)
+            self.cur.execute(selectStatement)
+            # CREATE TABLE t1_backup AS SELECT a, b FROM t1;
+            dropTableStatement = "drop table "+table
+            print("\n\t" + dropTableStatement)
+            self.cur.execute(dropTableStatement)
 		# DROP TABLE t1;
-		alterTableStatement = "ALTER TABLE t1_backup RENAME TO " + table
-		print("\n\t"+ alterTableStatement)
-		cur.execute(alterTableStatement) 
-		# ALTER TABLE t1_backup RENAME TO t1;
+            alterTableStatement = "ALTER TABLE t1_backup RENAME TO " + table
+            print("\n\t"+ alterTableStatement)
+            self.cur.execute(alterTableStatement) 
+	    # ALTER TABLE t1_backup RENAME TO t1;
 
-	#"   SELECT count(name) FROM sqlite_master WHERE type='table' AND name='"+table+"'"
+	#"SELECT count(name) FROM sqlite_master WHERE type='table' AND name='"+table+"'"
 
         
 
@@ -71,7 +74,7 @@ class DatabaseAdapter:
 
     def createTable(self,table):
         c = self.conn.cursor()
-        createTableString = "CREATE TABLE "+file_contents[i].split(" ")[2]+" (primary_key INTEGER PRIMARY KEY )"
+        createTableString = "CREATE TABLE "+table+" (primary_key INTEGER PRIMARY KEY )"
         c.execute(createTableString)
         print("DatabaseAdapter - Creating table "+table)
 
