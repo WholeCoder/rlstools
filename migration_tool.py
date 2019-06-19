@@ -7,68 +7,46 @@ file_handle = open("example_migration.migration","r")
 dAdapter = SqliteDatabaseAdapter("my_db.db")
 
 file_contents = file_handle.readlines()
-for i in range(len(file_contents)):
-    if file_contents[i].strip() != '\n':
-        split_line = file_contents[i].split(' ')
-        if split_line[0].strip().startswith("#"):
-            i = i + 1
-            continue
-        if split_line[0].strip() == "upgrade":
-            print(split_line[0].strip())
-            i = i+1
-            while i in range(len(file_contents)) and file_contents[i].strip() != "" and file_contents[i] != 'downgrade':
-                if file_contents[i].strip().startswith("#"):
-                    i = i + 1
-                    continue
-                command_acting_on = file_contents[i].split(" ")[1]
+i = 0
+while i < len(file_contents):
+    current_command = file_contents[i].split(" ")[0]
+    if current_command == "add":
+        #print("add")
+        acting_on = file_contents[i].split(" ")[1]
+        if acting_on == "table":
+            table = file_contents[i].split(" ")[2]
+            #print("---------------------------"+table+"---------exists!")
+            if dAdapter.doesTableExist(table):
+                #print("      table exists here")
+                pass
+            else:
+                #print("table doesn't exist here")
+                dAdapter.createTable(table)
+            #print("\ttable")
+        elif acting_on == "column":
+            table = file_contents[i].split(" ")[2]
+            column = file_contents[i].split(" ")[3]
+            if dAdapter.doesTableExist(table):
+                if not dAdapter.doesColumnExist(table, column):
+                    dAdapter.addColumn(table,column)
+            #print("\tcolumn")
+    elif current_command == "remove":
+        #print("remove")
+        acting_on = file_contents[i].split(" ")[1]
+        if acting_on == "table":
+            table = file_contents[i].split(" ")[2].strip()
+            if dAdapter.doesTableExist(table):
+                #print("dropping table in migration tool 2: "+table)
+                dAdapter.dropTable(table)
+            #print("\ttable")
+        elif acting_on == "column":
+            table = file_contents[i].split(" ")[2].strip()
+            column = file_contents[i].split(" ")[3].strip()
+            if dAdapter.doesTableExist(table) and dAdapter.doesColumnExist(table,column):
+                #print("deleteing column "+column+" from table "+table)
+                dAdapter.deleteColumnFromTable(table,column)
+            #print("\tcolumn")
+    else:
+        pass
 
-                if command_acting_on == "table":
-                    table = file_contents[i].split(" ")[2].strip()
-                    print("adding table "+table)
-    
-                    if dAdapter.doesTableExist(table):
-                        print("Table "+table + " already exists.")
-                    else:
-                        dAdapter.createTable( table  )
-                        print("Table "+table+" is being created.")
-                elif command_acting_on == "column":
-
-                    tableName = file_contents[i].split(" ")[2].strip()
-                    if dAdapter.doesTableExist(tableName):
-                    #print("\tadding column "+file_contents[i].split(" ")[3].strip())
-                        column_name = file_contents[i].split(" ")[3].strip()
-                        if not dAdapter.doesColumnExist(tableName,column_name):
-                            dAdapter.addColumn( tableName, column_name)
-                i = i+1
-        
-        split_line = file_contents[i].split(' ')
-        if split_line[0].strip() == "downgrade":
-            print(split_line[0].strip())
-            i = i+1
-            while i in range(len(file_contents)) and file_contents[i].strip() != "" and file_contents[i] != '':
-                if file_contents[i].strip().startswith("#"):
-                    i = i + 1
-                    continue
-                command = file_contents[i].split(" ")[1]
-                if command == "table":
-                    print("----------- does table Exist:  " + str(dAdapter.doesTableExist(file_contents[i].split(" ")[2].strip())))
-                    print("          value: " + file_contents[i].split(" ")[2])
-                    tableName = file_contents[i].split(" ")[2].strip()
-                    if dAdapter.doesTableExist(tableName):
-
-                        print("removing table "+tableName)
-                        # deleteColumnFromTable(conn, file_contents[i].split(" ")[2].strip(),file_contents[i].split(" ")[3].strip()) 
-                        dAdapter.dropTable( tableName)
-                elif command == "column":
-                    tableName = file_contents[i].split(" ")[2]
-                    column_name = file_contents[i].split(" ")[3]
-                    print(" checking to removed == "+tableName+", "+column_name)
-                    #print(doesColoumnExist(file_contents[i].split(" ")[2].strip(),file_contents[i].split(" ")[3].strip()))
-                    if dAdapter.doesTableExist(tableName.strip()) and dAdapter.doesColumnExist(tableName.strip(),column_name.strip()):
-                       
-                        dAdapter.deleteColumnFromTable(tableName,column_name.strip())
-                        
-                        print("\tremoving column "+column_name.strip())
-                i = i+1
     i = i + 1
-
