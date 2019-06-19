@@ -118,6 +118,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         # print("DatabaseAdapter - Removing table "+ table)
 
     def dropTable(self,table):
+        print("dropping table "+table)
         table = table.strip()
         cur = self.conn.cursor()
         dropTableStatement = "drop table "+table

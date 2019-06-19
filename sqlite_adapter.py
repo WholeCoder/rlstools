@@ -33,17 +33,17 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
     def deleteColumnFromTable(self,table, column):
         # print("i--------------------------inside deleteColumnFromTable function")
         if not self.doesTableExist(table):
-            print("1. table does not exist. " + table)
+            #print("1. table does not exist. " + table)
             return
         else:
-            print("1. table does "+table+" exists.")
+            #print("1. table does "+table+" exists.")
             pass 
        
         if self.doesColumnExist(table,column):
             self.cur = self.conn.cursor()
             if self.doesTableExist("t1_backup"):
                 self.dropTable("t1_backup")
-                print("2.  droppng table t1_backup")
+                #print("2.  droppng table t1_backup")
             #tablebakdrp = "CREATE TABLE t1_backup (primary_key INTEGER PRIMARY KEY )"
             #self.cur.execute(tablebakdrp)
             #dropBackupTableStatement = "drop table t1_backup"
@@ -58,19 +58,19 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             selectClause = selectClause[:len(selectClause)-1]
             #print("selectClause == " + selectClause)
             selectStatement ="CREATE TABLE t1_backup AS SELECT "+selectClause+" FROM "+table  
-            print("selectStatement:  "+selectStatement)
+            #print("selectStatement:  "+selectStatement)
            ##rint("select Statement for create backup table:  "+selectStatement)
             # print("\n\t"+selectStatement)
             self.cur.execute(selectStatement)
             # CREATE TABLE t1_backup AS SELECT a, b FROM t1;
             dropTableStatement = "drop table "+table
-            print("4. dropping table "+table)
+            #print("4. dropping table "+table)
             # print("\n\t" + dropTableStatement)
             self.cur.execute(dropTableStatement)
 		# DROP TABLE t1;
             alterTableStatement = "ALTER TABLE t1_backup RENAME TO " + table
             # print("\n\t"+ alterTableStatement)
-            print("renaming t1_backup to "+table)
+            #print("renaming t1_backup to "+table)
             self.cur.execute(alterTableStatement) 
 	    # ALTER TABLE t1_backup RENAME TO t1;
             self.conn.commit()
@@ -99,10 +99,10 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
     def createTable(self,table):
         c = self.conn.cursor()
         table = table.strip()
-        print("self.doesTableExist("+table+") == "+str(self.doesTableExist(table)))
+        #print("self.doesTableExist("+table+") == "+str(self.doesTableExist(table)))
         if self.doesTableExist(table):
             return
-        print("--creating table")
+        #print("--creating table")
         createTableString = "CREATE TABLE "+table+" (primary_key INTEGER PRIMARY KEY )"
         c.execute(createTableString)
         # print("DatabaseAdapter - Creating table "+table)
@@ -118,7 +118,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         # print("DatabaseAdapter - Removing table "+ table)
 
     def dropTable(self,table):
-        print("dropping table "+table)
+        #print("dropping table "+table)
         table = table.strip()
         cur = self.conn.cursor()
         dropTableStatement = "drop table "+table
