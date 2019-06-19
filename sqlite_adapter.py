@@ -17,14 +17,15 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         cur = self.conn.cursor()
         columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
         column = column.split(":")[0].strip()
-    
+        #print("-----------------------column without :::: == "+column)
         # print("doesColumnExist(conn,"+table+","+column+")")
         if column in columns: 
-            # print("\tColumn "+column+" in table " + table + " does not exist")
+            #print("\tColumn "+column+" in table " + table + " does not exist")
             # print("column returned " + str(column not in columns))
             return True
         else:
-            # print("\tColumn " + column + " already exists on table " + table)
+            pass
+            #print("\tColumn " + column + " already exists on table " + table)
             # print("column returned " + str(column not in columns))
             return False
    
@@ -33,27 +34,30 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         # print("i--------------------------inside deleteColumnFromTable function")
         if self.doesTableExist(table):
             print("1. table does exist. " + table)
-            return
+            pass
         else:
-            print("2. table does not "+table+" exists.")
-
+            print("1. table does not "+table+" exists.")
+            return 
+       
         if self.doesColumnExist(table,column):
             self.cur = self.conn.cursor()
+            if self.doesTableExist("t1_backup"):
+                self.dropTable("t1_backup")
             tablebakdrp = "CREATE TABLE t1_backup (primary_key INTEGER PRIMARY KEY )"
             self.cur.execute(tablebakdrp)
             dropBackupTableStatement = "drop table t1_backup"
             self.cur.execute(dropBackupTableStatement)
             
             columns = [i[1] for i in self.cur.execute('PRAGMA table_info('+table+')')]
-            print("columns == " + ",".join(columns)) 
+            #print("columns == " + ",".join(columns)) 
             selectClause = " "
             for columnInColumns in columns:
                 if columnInColumns.strip() != column.strip():
                     selectClause = selectClause + columnInColumns + ","
             selectClause = selectClause[:len(selectClause)-1]
-            print("selectClause == " + selectClause)
+            #print("selectClause == " + selectClause)
             selectStatement ="CREATE TABLE t1_backup AS SELECT "+selectClause+" FROM "+table  
-            print("select Statement for create backup table:  "+selectStatement)
+           ##rint("select Statement for create backup table:  "+selectStatement)
             # print("\n\t"+selectStatement)
             self.cur.execute(selectStatement)
             # CREATE TABLE t1_backup AS SELECT a, b FROM t1;
@@ -80,14 +84,21 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         #if the count is 1, then table exists
         if c.fetchone()[0]==1: 
             # print('Table alreaday exists!')
+            #print("table exists in adapter.")
             return True
         else:
+            #print("Table doesen't exist in adapter")
             return False                 
 
 
 
     def createTable(self,table):
         c = self.conn.cursor()
+        table = table.strip()
+        print("self.doesTableExist("+table+") == "+str(self.doesTableExist(table)))
+        if self.doesTableExist(table):
+            return
+        print("--creating table")
         createTableString = "CREATE TABLE "+table+" (primary_key INTEGER PRIMARY KEY )"
         c.execute(createTableString)
         # print("DatabaseAdapter - Creating table "+table)
@@ -103,7 +114,8 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         # print("DatabaseAdapter - Removing table "+ table)
 
     def dropTable(self,table):
+        table = table.strip()
         cur = self.conn.cursor()
         dropTableStatement = "drop table "+table
-        print("\n\t3. " + dropTableStatement)
+        #print("\n\t3. " + dropTableStatement)
         cur.execute(dropTableStatement)

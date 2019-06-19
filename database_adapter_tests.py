@@ -14,6 +14,14 @@ class DatabaseAdapterTestCase(unittest.TestCase):
             #print("Error deleting "+database_path+" this isn't really an error.")
         self.dAdapter = SqliteDatabaseAdapter(database_path)
     
+    def test_if_delete_column_brings_back_a_deleted_column(self):
+        self.dAdapter.createTable("Person")
+        self.dAdapter.addColumn("Person","zipcode")
+        self.assertTrue(self.dAdapter.doesTableExist("Person"))
+        self.dAdapter.dropTable("Person")
+        self.dAdapter.deleteColumnFromTable("Person","zipcode")
+        self.assertFalse(self.dAdapter.doesTableExist("Person"))
+
     def test_add_person_table_without_columns(self):
         self.dAdapter.createTable("Person")
         self.assertTrue(self.dAdapter.doesTableExist("Person"))
