@@ -16,5 +16,5 @@ downgrade
 remove column Person first_name
 #remove table Person
 #remove table Office
-remove column Office zip_code
-remove table Office
+#remove column Office zip_code
+#remove table Office

@@ -34,8 +34,9 @@ while i < len(file_contents):
         print("remove")
         acting_on = file_contents[i].split(" ")[1]
         if acting_on == "table":
-            table = file_contents[i].split(" ")[2]
+            table = file_contents[i].split(" ")[2].strip()
             if dAdapter.doesTableExist(table):
+                print("dropping table in migration tool 2: "+table)
                 dAdapter.dropTable(table)
             print("\ttable")
         elif acting_on == "column":

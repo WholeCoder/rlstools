@@ -34,14 +34,16 @@ while i < len(file_contents):
         print("remove")
         acting_on = file_contents[i].split(" ")[1]
         if acting_on == "table":
-            table = file_contents[i].split(" ")[2]
+            table = file_contents[i].split(" ")[2].strip()
             if dAdapter.doesTableExist(table):
+                print("dropping table in migration tool 2: "+table)
                 dAdapter.dropTable(table)
             print("\ttable")
         elif acting_on == "column":
-            table = file_contents[i].split(" ")[2]
-            column = file_contents[i].split(" ")[3]
+            table = file_contents[i].split(" ")[2].strip()
+            column = file_contents[i].split(" ")[3].strip()
             if dAdapter.doesTableExist(table) and dAdapter.doesColumnExist(table,column):
+                print("deleteing column "+column+" from table "+table)
                 dAdapter.deleteColumnFromTable(table,column)
             print("\tcolumn")
     else:
