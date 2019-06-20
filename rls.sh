@@ -20,7 +20,7 @@ then
 	echo Usage:
 	echo 	./rls.sh new new-app-name
 	echo		OR
-	echo	./rls.sh scaffold new-app-name/ attribute:datatype  attribute2:datatype
+	echo	./rls.sh scaffold new-app-name/ EntityName attribute:datatype  attribute2:datatype
 	exit 1
 fi
 

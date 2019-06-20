@@ -1,4 +1,4 @@
-class myscaffold2Controller:
+class PersionController:
 	def index(self):
 		pass
 	def post(self):

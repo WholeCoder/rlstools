@@ -10,7 +10,9 @@ create_directory() {
 	fi
 }
 
-
+delete_directory_contents_safely() {
+	[[ -d "$1" ]] && cd "$1" && rm *
+}
 
 if [ $# -lt 2 ]
 then
