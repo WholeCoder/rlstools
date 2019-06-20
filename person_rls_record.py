@@ -19,7 +19,7 @@ class Person:
         
         insertString = ""
         valueString = ""
-        for col in columns:
+        for col in insertDictionary.keys():
             if col != "primary_key":
                 insertString += col+","
                 valueString += "'"+insertDictionary[col]+"',"

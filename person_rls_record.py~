@@ -27,7 +27,7 @@ class Person:
         insertString = insertString[:-1]
         valueString = valueString[:-1]
 
-        finalString = "INSERT INTO "+typename(self)+ "("+insertString+") VALUES ("+valueString+")"
+        finalString = "INSERT INTO "+self.typename(self)+ "("+insertString+") VALUES ("+valueString+")"
         print("finalString == "+finalString)
         cur.execute(finalString) 
         self.conn.commit() 

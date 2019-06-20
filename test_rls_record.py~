@@ -19,8 +19,8 @@ class RlsRecordTestCase(unittest.TestCase):
         self.dAdapter.addColumn("Person","first_name")
         self.dAdapter.addColumn("Person","last_name")
 
-        insertDictionary = {"first_name":"Ruben","last_name":"Pierich"}
-        Person.create(insertDictionary)
+        insertDictionary = {"first_name":"Ruben"}
+        Person().create(insertDictionary)
 
 if __name__ == '__main__':
     unittest.main()
