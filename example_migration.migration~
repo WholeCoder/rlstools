@@ -13,9 +13,9 @@ add column Office state:string
 downgrade
 #
 #remove table Person
-remove column Person last_name
+#remove column Person last_name
 #remove column Person first_name
 #remove table Person
 #remove table Office
-remove column Office address_line_one
+#remove column Office address_line_one
 #remove table Office

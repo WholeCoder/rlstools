@@ -17,5 +17,5 @@ downgrade
 #remove column Person first_name
 #remove table Person
 #remove table Office
-remove column Office address_line_one
-#remove table Office
+#remove column Office address_line_one
+remove table Office
