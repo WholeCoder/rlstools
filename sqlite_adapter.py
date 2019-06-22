@@ -124,3 +124,58 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         dropTableStatement = "drop table "+table
         #print("\n\t3. " + dropTableStatement)
         cur.execute(dropTableStatement)
+
+    def createNewRecord(self,table,insertDictionary):
+        cur = self.conn.cursor()
+        columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
+        
+        insertString = ""
+        valueString = ""
+        for col in insertDictionary.keys():
+            if col != "primary_key":
+                insertString += col+","
+                valueString += "'"+insertDictionary[col]+"',"
+        
+        insertString = insertString[:-1]
+        valueString = valueString[:-1]
+
+        finalString = "INSERT INTO "+table+ "("+insertString+") VALUES ("+valueString+")"
+        print("finalString == "+finalString)
+        cur.execute(finalString) 
+        self.conn.commit()     
+        
+    def findAllRecords(self,table):
+        columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
+        
+        colString = ""
+        for col in columns:
+            colString += col+","
+
+        colString = colString[:-1]
+        selectStatement = "SELECT " + colString + " FROM "+table
+        
+        curr = self.conn.curr()
+        curr.execute(selectStatement)
+        
+        for row in CursorByName(curr):
+            print(row)
+        
+        return CursorByNAme(curr)
+
+
+class CursorByName():
+    def __init__(self, cursor):
+        self._cursor = cursor
+    
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        row = self._cursor.__next__()
+
+        return { description[0]: row[col] for col, description in enumerate(self._cursor.description) }
+    
+#for row in CursorByName(cur):
+#    print(row)
+
+
