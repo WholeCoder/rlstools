@@ -10,5 +10,14 @@ class BaseRlsRecord:
     def get_type_name_of_subclass(self):
         return self.typename(self)
 
-    def create(self,table,insertDictionary):
+    def create(self,insertDictionary):
+        table = self.get_type_name_of_subclass()
         self.dAdapter.createNewRecord(table,insertDictionary)
+
+    def findAll(self):
+        row = self.dAdapter.findAllRecords(get_type_name_of_subclass())
+        
+#        for row in CursoerByName(cur):
+#            print(row)
+
+        return rows 
