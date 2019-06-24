@@ -145,6 +145,8 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.conn.commit()     
         
     def findAllRecords(self,table):
+        cur = self.conn.cursor()
+
         columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
         
         colString = ""
@@ -154,7 +156,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         colString = colString[:-1]
         selectStatement = "SELECT " + colString + " FROM "+table
         
-        curr = self.conn.curr()
+        curr = self.conn.cursor()
         curr.execute(selectStatement)
         
         for row in CursorByName(curr):

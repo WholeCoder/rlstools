@@ -15,7 +15,7 @@ class BaseRlsRecord:
         self.dAdapter.createNewRecord(table,insertDictionary)
 
     def findAll(self):
-        row = self.dAdapter.findAllRecords(get_type_name_of_subclass())
+        rows = self.dAdapter.findAllRecords(self.get_type_name_of_subclass())
         
 #        for row in CursoerByName(cur):
 #            print(row)

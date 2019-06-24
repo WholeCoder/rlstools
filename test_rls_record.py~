@@ -24,7 +24,7 @@ class RlsRecordTestCase(unittest.TestCase):
 
         rows = Person(self.dAdapter).findAll()
         for row in row:
-            print row
+            print (row)
 
 if __name__ == '__main__':
     unittest.main()

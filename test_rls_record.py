@@ -23,7 +23,7 @@ class RlsRecordTestCase(unittest.TestCase):
         Person(self.dAdapter).create(insertDictionary)
 
         rows = Person(self.dAdapter).findAll()
-        for row in row:
+        for row in rows:
             print (row)
 
 if __name__ == '__main__':
