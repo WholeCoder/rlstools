@@ -22,9 +22,14 @@ class RlsRecordTestCase(unittest.TestCase):
         insertDictionary = {"first_name":"Ruben","last_name":"Pierich"}
         Person(self.dAdapter).create(insertDictionary)
 
+        insertDictionary = {"first_name":"Shannon","last_name":"Underkoffler"}
+        Person(self.dAdapter).create(insertDictionary)
+
         rows = Person(self.dAdapter).findAll()
-        for row in rows:
-            print (row)
+        #print("row 1 == " + str(rows[0]))
+
+        self.assertTrue(rows[0]['first_name'] == 'Ruben')
+        self.assertTrue(rows[0]['last_name'] == 'Pierich')
 
 if __name__ == '__main__':
     unittest.main()

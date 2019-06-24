@@ -159,10 +159,10 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         curr = self.conn.cursor()
         curr.execute(selectStatement)
         
-        for row in CursorByName(curr):
-            print(row)
+       #for row in CursorByName(curr):
+       #    print("row1 == "+str(row))
         
-        return CursorByNAme(curr)
+        return CursorByName(curr)
 
 
 class CursorByName():

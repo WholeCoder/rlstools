@@ -1,4 +1,5 @@
 from database_adapter import DatabaseAdapter
+from sqlite_adapter import CursorByName
 
 class BaseRlsRecord:
     def __init__(self,dAdapter):
@@ -16,8 +17,8 @@ class BaseRlsRecord:
 
     def findAll(self):
         rows = self.dAdapter.findAllRecords(self.get_type_name_of_subclass())
-        
-#        for row in CursoerByName(cur):
-#            print(row)
+       
+        #for row in rows:
+        #    print("rows2 == "+str(row))
 
         return rows 
