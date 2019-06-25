@@ -1,9 +1,10 @@
 from database_adapter import DatabaseAdapter
 from sqlite_adapter import CursorByName
+from sqlite_adapter import SqliteDatabaseAdapter
 
 class BaseRlsRecord:
-    def __init__(self,dAdapter):
-        self.dAdapter = dAdapter
+    def __init__(self):
+        self.dAdapter = SqliteDatabaseAdapter.getInstance()
 
     def typename(self,x):
         return type(x).__name__

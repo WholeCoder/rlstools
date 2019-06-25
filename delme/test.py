@@ -18,9 +18,9 @@ class Singleton:
 
 # A little testing
 
-s = Singleton() # Ok
+#s = Singleton() # Ok
 #Singleton() # will raise exception
-print (s)
+#print (s)
 
 s = Singleton.getInstance()
 print (s)

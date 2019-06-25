@@ -3,7 +3,28 @@ import atexit
 from database_adapter import DatabaseAdapter
 
 class SqliteDatabaseAdapter(DatabaseAdapter):
+
+    __instance = None
+
+    @staticmethod
+    def getInstance():
+        if SqliteDatabaseAdapter.__instance == None:
+            SqliteDatabaseAdapter("my_db.db")
+        return SqliteDatabaseAdapter.__instance
+
+    @staticmethod
+    def getTestInstance():
+        #print("SqliteDataseAdapter.__instance == " + str(SqliteDatabaseAdapter.__instance))
+        if SqliteDatabaseAdapter.__instance == None:
+            SqliteDatabaseAdapter("my_test_database.db")
+        return SqliteDatabaseAdapter.__instance
+
     def __init__(self,db_filename):
+        if SqliteDatabaseAdapter.__instance != None:
+            raise Exception("This class is a singleton!")
+        else:
+            SqliteDatabaseAdapter.__instance = self
+
         self.conn = sqlite3.connect(db_filename)
         # print("Sqlite adapter - Initializing adapter")
         atexit.register(self.cleanup)
@@ -181,5 +202,4 @@ class CursorByName():
     
 #for row in CursorByName(cur):
 #    print(row)
-
 

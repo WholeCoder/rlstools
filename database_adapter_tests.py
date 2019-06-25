@@ -12,7 +12,7 @@ class DatabaseAdapterTestCase(unittest.TestCase):
         except:
             pass
             #print("Error deleting "+database_path+" this isn't really an error.")
-        self.dAdapter = SqliteDatabaseAdapter(database_path)
+        self.dAdapter = SqliteDatabaseAdapter.getTestInstance()
     
     def test_if_delete_column_brings_back_a_deleted_column(self):
         self.dAdapter.createTable("Person")

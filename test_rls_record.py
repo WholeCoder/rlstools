@@ -12,7 +12,7 @@ class RlsRecordTestCase(unittest.TestCase):
         except:
             pass
             #print("Error deleting "+database_path+" this isn't really an error.")
-        self.dAdapter = SqliteDatabaseAdapter(database_path)
+        self.dAdapter = SqliteDatabaseAdapter.getTestInstance()
     
     def test_insert_data_into_rls_record_object(self):
         self.dAdapter.createTable("Person")

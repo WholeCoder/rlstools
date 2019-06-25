@@ -26,7 +26,7 @@ class RlsRecordTestCase(unittest.TestCase):
         Person(self.dAdapter).create(insertDictionary)
 
         rows = Person(self.dAdapter).findAll()
-        print("row 1 == " + str(rows[0]))
+        #print("row 1 == " + str(rows[0]))
 
         self.assertTrue(rows[0]['first_name'] == 'Ruben')
         self.assertTrue(rows[0]['last_name'] == 'Pierich')

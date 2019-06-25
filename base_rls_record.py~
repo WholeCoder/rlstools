@@ -1,9 +1,10 @@
 from database_adapter import DatabaseAdapter
 from sqlite_adapter import CursorByName
+from sqlite_dapter import SqliteDatabaseAdapter
 
 class BaseRlsRecord:
-    def __init__(self,dAdapter):
-        self.dAdapter = dAdapter
+    def __init__(self):
+        self.dAdapter = SqliteDatabaseAdapter.getInstance()
 
     def typename(self,x):
         return type(x).__name__
@@ -18,7 +19,7 @@ class BaseRlsRecord:
     def findAll(self):
         rows = self.dAdapter.findAllRecords(self.get_type_name_of_subclass())
        
-        for row in rows:
-            print("rows2 == "+str(row))
+        #for row in rows:
+        #    print("rows2 == "+str(row))
 
         return rows 
