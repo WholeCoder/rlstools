@@ -203,3 +203,4 @@ class CursorByName():
 #for row in CursorByName(cur):
 #    print(row)
 
+SqliteDatabaseAdapter.getInstance()
