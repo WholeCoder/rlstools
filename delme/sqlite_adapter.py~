@@ -24,10 +24,10 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             raise Exception("This class is a singleton!")
         else:
             SqliteDatabaseAdapter.__instance = self
-        print("------------> attaching connection")
+
         self.conn = sqlite3.connect(db_filename)
         # print("Sqlite adapter - Initializing adapter")
-        #atexit.register(self.cleanup)
+        atexit.register(self.cleanup)
 
     def cleanup(self):
         # print("Running cleanup...")
@@ -40,7 +40,6 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         column = column.split(":")[0].strip()
         #print("-----------------------column without :::: == "+column)
         # print("doesColumnExist(conn,"+table+","+column+")")
-        self.conn.commit()
         if column in columns: 
             #print("\tColumn "+column+" in table " + table + " does not exist")
             # print("column returned " + str(column not in columns))
@@ -108,10 +107,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         c.execute(checkIfTableExists)
                     
         #if the count is 1, then table exists
-        foundOne = (c.fetchone()[0]==1)
-        self.conn.commit()
-
-        if foundOne: 
+        if c.fetchone()[0]==1: 
             # print('Table alreaday exists!')
             #print("table exists in adapter.")
             return True
@@ -131,18 +127,12 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         createTableString = "CREATE TABLE "+table+" (primary_key INTEGER PRIMARY KEY )"
         self.c.execute(createTableString)
         # print("DatabaseAdapter - Creating table "+table)
-        self.conn.commit()
-
 
     def addColumn(self,table, column):
-        self.c = self.conn.cursor()
-        dbQuery = 'ALTER TABLE '+table+' ADD COLUMN '+column.split(":")[0]+' TEXT'
-        print("dbQuery == " + dbQuery)
-        self.c.execute(dbQuery)
+        c = self.conn.cursor()
+        c.execute('ALTER TABLE '+table+' ADD COLUMN '+column.split(":")[0]+' TEXT')
 
         # print("SqliteDatabaseAdapter - Added column "+column+" to table "+ table)
-        self.conn.commit()
-        self.conn.close()
 
     def removeTable(self,table):
         self.dropTable(self,table)
@@ -155,7 +145,6 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         dropTableStatement = "drop table "+table
         #print("\n\t3. " + dropTableStatement)
         cur.execute(dropTableStatement)
-        self.conn.commit()
 
     def createNewRecord(self,table,insertDictionary):
         cur = self.conn.cursor()
@@ -195,8 +184,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         for row in CursorByName(curr):
            #print("row1 == "+str(row))
            data.append(row)
-        self.conn.commit()
- 
+        
         return data #CursorByName(curr)
 
 

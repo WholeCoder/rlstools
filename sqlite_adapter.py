@@ -9,14 +9,15 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
     @staticmethod
     def getInstance():
         if SqliteDatabaseAdapter.__instance == None:
-            SqliteDatabaseAdapter("my_db.db")
+            SqliteDatabaseAdapter("./my_db.db")
         return SqliteDatabaseAdapter.__instance
 
     @staticmethod
     def getTestInstance():
-        #print("SqliteDataseAdapter.__instance == " + str(SqliteDatabaseAdapter.__instance))
+        print("SqliteDataseAdapter.__instance == " + str(SqliteDatabaseAdapter.__instance))
+        db_filename = "./my_test_database.db"
         if SqliteDatabaseAdapter.__instance == None:
-            SqliteDatabaseAdapter("my_test_database.db")
+            SqliteDatabaseAdapter(db_filename)
         return SqliteDatabaseAdapter.__instance
 
     def __init__(self,db_filename):
@@ -24,22 +25,24 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             raise Exception("This class is a singleton!")
         else:
             SqliteDatabaseAdapter.__instance = self
-
+        print("------------> attaching connection")
         self.conn = sqlite3.connect(db_filename)
         # print("Sqlite adapter - Initializing adapter")
-        atexit.register(self.cleanup)
+        # atexit.register(self.cleanup)
 
-    def cleanup(self):
-        # print("Running cleanup...")
-        self.conn.close()
+    # def cleanup(self):
+    #     # print("Running cleanup...")
+    #     self.conn.close()
 
     def doesColumnExist(self,table, column):
         # print("SqliteAdapter - Seeing if column " + column + " exists on table " + table)
+        self.conn = sqlite3.connect("./my_test_database.db")
         cur = self.conn.cursor()
         columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
         column = column.split(":")[0].strip()
         #print("-----------------------column without :::: == "+column)
         # print("doesColumnExist(conn,"+table+","+column+")")
+        self.conn.commit()
         if column in columns: 
             #print("\tColumn "+column+" in table " + table + " does not exist")
             # print("column returned " + str(column not in columns))
@@ -102,12 +105,16 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
     def doesTableExist(self,table):
         # print("SqliteAdapter - Seeing if table "+ table +" exists.")
         checkIfTableExists = "SELECT count(name) FROM sqlite_master WHERE type='table' AND name='"+table+"'"
-        c = self.conn.cursor()               
+        self.conn = sqlite3.connect("./my_test_database.db")
+        c = self.conn.cursor()
         # print("check if table exists string    "+checkIfTableExists)
         c.execute(checkIfTableExists)
                     
         #if the count is 1, then table exists
-        if c.fetchone()[0]==1: 
+        foundOne = (c.fetchone()[0]==1)
+        self.conn.commit()
+
+        if foundOne: 
             # print('Table alreaday exists!')
             #print("table exists in adapter.")
             return True
@@ -118,35 +125,50 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
 
     def createTable(self,table):
-        c = self.conn.cursor()
+        self.conn = SqliteDatabaseAdapter.getInstance().conn = sqlite3.connect("./my_test_database.db")
+        self.c = SqliteDatabaseAdapter.getInstance().conn.cursor()
         table = table.strip()
         #print("self.doesTableExist("+table+") == "+str(self.doesTableExist(table)))
         if self.doesTableExist(table):
             return
         #print("--creating table")
         createTableString = "CREATE TABLE "+table+" (primary_key INTEGER PRIMARY KEY )"
-        c.execute(createTableString)
+        self.c.execute(createTableString)
         # print("DatabaseAdapter - Creating table "+table)
+        self.conn.commit()
+
 
     def addColumn(self,table, column):
-        c = self.conn.cursor()
-        c.execute('ALTER TABLE '+table+' ADD COLUMN '+column.split(":")[0]+' TEXT')
+        self.conn = sqlite3.connect("./my_test_database.db")
+        self.c = self.conn.cursor()
+        dbQuery = 'ALTER TABLE '+table+' ADD COLUMN '+column.split(":")[0]+' TEXT'
+        print("dbQuery == " + dbQuery)
+        self.c.execute(dbQuery)
 
-        # print("SqliteDatabaseAdapter - Added column "+column+" to table "+ table)
+        print("SqliteDatabaseAdapter - Added column "+column+" to table "+ table)
+        self.conn.commit()
+        self.conn.close()
 
     def removeTable(self,table):
+        self.conn = sqlite3.connect("./my_test_database.db")
         self.dropTable(self,table)
+        self.conn.commit()
+        self.conn.close()
         # print("DatabaseAdapter - Removing table "+ table)
 
     def dropTable(self,table):
+        self.conn = sqlite3.connect("./my_test_database.db")
         #print("dropping table "+table)
         table = table.strip()
         cur = self.conn.cursor()
         dropTableStatement = "drop table "+table
         #print("\n\t3. " + dropTableStatement)
         cur.execute(dropTableStatement)
+        self.conn.commit()
+        self.conn.close()
 
     def createNewRecord(self,table,insertDictionary):
+        self.conn = sqlite3.connect("./my_test_database.db")
         cur = self.conn.cursor()
         columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
         
@@ -163,9 +185,11 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         finalString = "INSERT INTO "+table+ "("+insertString+") VALUES ("+valueString+")"
         print("finalString == "+finalString)
         cur.execute(finalString) 
-        self.conn.commit()     
+        self.conn.commit()
+        self.conn.close()
         
     def findAllRecords(self,table):
+        self.conn = sqlite3.connect("./my_test_database.db")
         cur = self.conn.cursor()
 
         columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
@@ -184,7 +208,8 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         for row in CursorByName(curr):
            #print("row1 == "+str(row))
            data.append(row)
-        
+        self.conn.commit()
+        self.conn.close()
         return data #CursorByName(curr)
 
 
@@ -203,3 +228,5 @@ class CursorByName():
 #for row in CursorByName(cur):
 #    print(row)
 
+print(SqliteDatabaseAdapter.getTestInstance())
+SqliteDatabaseAdapter.getTestInstance().createTable("Person")

@@ -15,7 +15,8 @@ class Singleton:
             raise Exception("This class is a singleton!")
         else:
             Singleton.__instance = self
-
+    def print(self,str="Hello World"):
+        print(str)
 # A little testing
 
 #s = Singleton() # Ok
@@ -27,3 +28,5 @@ print (s)
 
 s = Singleton.getInstance()
 print (s) # will print the same instance as before
+
+s.print()
