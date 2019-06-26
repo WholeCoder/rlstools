@@ -1,6 +1,6 @@
 from database_adapter import DatabaseAdapter
 from sqlite_adapter import CursorByName
-from sqlite_dapter import SqliteDatabaseAdapter
+from sqlite_adapter import SqliteDatabaseAdapter
 
 class BaseRlsRecord:
     def __init__(self):

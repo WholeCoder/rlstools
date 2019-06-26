@@ -21,12 +21,12 @@ class RlsRecordTestCase(unittest.TestCase):
         self.dAdapter.addColumn("Person","last_name")
 
         insertDictionary = {"first_name":"Ruben","last_name":"Pierich"}
-        Person(self.dAdapter).create(insertDictionary)
+        Person().create(insertDictionary)
 
         insertDictionary = {"first_name":"Shannon","last_name":"Underkoffler"}
-        Person(self.dAdapter).create(insertDictionary)
+        Person().create(insertDictionary)
 
-        rows = Person(self.dAdapter).findAll()
+        rows = Person().findAll()
         #print("row 1 == " + str(rows[0]))
 
         self.assertTrue(rows[0]['first_name'] == 'Ruben')

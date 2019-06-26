@@ -1,12 +1,10 @@
 from base_rls_record import BaseRlsRecord
 import atexit
-import sqlite3
 
 
 class Person(BaseRlsRecord):
-    def __init__(self,dAdapter):
+    def __init__():
+        super().__init__()
 
-    def cleanup(self):
-        self.conn.close()
-
+    
 
