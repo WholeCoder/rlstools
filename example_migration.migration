@@ -4,7 +4,7 @@ add table Person
 add column Person first_name:string
 add column Person last_name:string
 add table Office
-#add column Office zip_code:string
+add column Office zip_code:string
 add column Office address_line_one:string
 add column Office city:string
 add column Office state:string
@@ -18,4 +18,4 @@ downgrade
 #remove table Person
 #remove table Office
 #remove column Office address_line_one
-remove table Office
+#remove table Office

@@ -4,7 +4,7 @@ from sqlite_adapter import SqliteDatabaseAdapter
 
 file_handle = open("example_migration.migration","r")
 
-dAdapter = SqliteDatabaseAdapter("my_db.db")
+dAdapter = SqliteDatabaseAdapter.getInstance()
 
 file_contents = file_handle.readlines()
 i = 0
