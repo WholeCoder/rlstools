@@ -15,7 +15,19 @@ class myHandler(BaseHTTPRequestHandler):
         self.end_headers()
 	# Send the html message
         rows = Person().findAll()
-        rString = "rows == "+str(rows)
+        rString = "<html><head><title>Ruben's People</title></head><body><table>"
+        rString += "<tr>"
+        for key in rows[0].keys():
+            rString += "<th>" + key + "</th>"
+        rString += "</tr>"
+
+        for row in rows:
+            rString += "<tr>"
+            for key in rows[0].keys():
+                rString += "<td>" + str(row[key]) + "</td>"
+            rString += "</tr>"
+        rString += "</table></body></html>"
+    
         self.wfile.write(rString.encode())
         return
 
