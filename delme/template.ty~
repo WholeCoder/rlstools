@@ -10,7 +10,7 @@
 					<th>first_name</th>
 					<th>last_name</th>
 				</tr>
-				<% for row in rows %>
+				<% for row in rows: %>
 				<tr>
 					<td><%= row['primary_key'] %></td>
 					<td><%= row['first_name'] %></td>
