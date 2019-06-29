@@ -19,7 +19,7 @@ headString += '				</tr>'
 for row in rows:
     headString += '<tr>'
     for key in rows[0].keys():
-        headString += "<td>" + row[key] + "</td>"
+        headString += "<td>" + str(row[key]) + "</td>"
     headString += '</tr>'
 headString += '''
                         </tbody>
