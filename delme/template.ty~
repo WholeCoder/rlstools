@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Ruben's People</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr>
+					<th>primary_key</th>
+					<th>first_name</th>
+					<th>last_name</th>
+				</tr>
+				<% for row in rows %>
+				<tr>
+					<td><%= row['primary_key'] %></td>
+					<td><%= row['first_name'] %></td>
+					<td><%= row['last_name'] %></td>
+				</tr>
+				<% end_for %>
+			</tbody>
+		</table>
+	</body>
+</html>
