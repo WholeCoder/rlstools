@@ -1,7 +1,8 @@
 #!/usr/bin/python
 from http.server import BaseHTTPRequestHandler,HTTPServer
 from person_rls_record import Person
-from master_template import headString
+#from master_template import headString
+import importlib
 
 PORT_NUMBER = 8080
 
@@ -16,7 +17,9 @@ class myHandler(BaseHTTPRequestHandler):
         self.end_headers()
 	# Send the html message
         #self.wfile.write("test".encode())  
-        self.wfile.write(headString.encode())
+        mdle = importlib.import_module('out')
+        #outString = eval("out.py")
+        self.wfile.write(mdle.outString.encode())
         return
 
 try:
