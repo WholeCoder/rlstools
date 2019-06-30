@@ -7,7 +7,7 @@ class Template:
     def generateTemplate(self):
         rows = Person().findAll()
 
-        file_handle = open("index.html","w")
+        file_handle = open("index.py","w")
 
         headString='''
 <html>
