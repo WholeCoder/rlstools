@@ -1,6 +1,6 @@
 import re
 
-file_handle = open("template.ty","r")
+file_handle = open("index.py","r")
 
 file_contents = file_handle.read()
 
@@ -17,24 +17,28 @@ for res in results:
     if res.startswith('='):
         command_with_text = res[1:].strip().split("%>")
         command = command_with_text[0]
-        print(" print("+command+')')
-        print(' print("'+"".join(command_with_text[1].split())+'"')
+        print("     print("+command+')')
+        print('     print("'+"".join(command_with_text[1].split())+'"')
         if debug:
             print("4")
     elif res.startswith(' for'):
         print(res.split("%>")[0].strip())
-        print(' print("'+"".join(res.split("%>")[1].split())+'")')
+        print('     print("'+"".join(res.split("%>")[1].split())+'")')
         if debug:
             print("3")
     else:
         if res.startswith("<html>"):
             if debug:
                 print("2")
-            print('print("'+"".join(res.split())+'")')
+            print('     print("'+"".join(res.split())+'")')
         else:
             if debug:
                 print("1")
             re2 = res.split("%>")
+            #print(re2)
             #print(re2[0])
-            print('print("'+"".join(re2[1].split())+'")')
-    print("\n\n")
+            if len(re2) == 2:
+                print('print("'+"".join(re2[1].split())+'")')
+            else:
+                print('print("'+"".join(re2[0].split())+'"')
+print("\n\n")

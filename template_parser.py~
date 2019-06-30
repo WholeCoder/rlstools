@@ -1,12 +1,12 @@
 import re
 
-file_handle = open("template.ty","r")
+file_handle = open("index.py","r")
 
 file_contents = file_handle.read()
 
 currString = ""
 
-debug = False
+debug = True
 
 table = "Person"
 print("rows = "+table+"().findAll()")
@@ -35,6 +35,10 @@ for res in results:
             if debug:
                 print("1")
             re2 = res.split("%>")
+            #print(re2)
             #print(re2[0])
-            print('print("'+"".join(re2[1].split())+'")')
-    print("\n\n")
+            if len(re2) == 2:
+                print('print("'+"".join(re2[1].split())+'")')
+            else:
+                print('print("'+"".join(re2[0].split())+'"')
+print("\n\n")
