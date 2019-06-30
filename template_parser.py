@@ -18,7 +18,7 @@ for res in results:
         command_with_text = res[1:].strip().split("%>")
         command = command_with_text[0]
         print("     print("+command+')')
-        print('     print("'+"".join(command_with_text[1].split())+'"')
+        print('     print("'+"".join(command_with_text[1].split())+'")')
         if debug:
             print("4")
     elif res.startswith(' for'):
