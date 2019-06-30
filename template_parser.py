@@ -40,5 +40,5 @@ for res in results:
             if len(re2) == 2:
                 print('print("'+"".join(re2[1].split())+'")')
             else:
-                print('print("'+"".join(re2[0].split())+'"')
+                print('print("'+"".join(re2[0].split())+'")')
 print("\n\n")
