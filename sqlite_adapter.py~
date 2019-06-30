@@ -8,7 +8,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     @staticmethod
     def getInstance():
-        db_filename="./my_db.db"
+        db2_filename="./my_db.db"
         if SqliteDatabaseAdapter.__instance == None:
             SqliteDatabaseAdapter(db_filename)
         return SqliteDatabaseAdapter.__instance
@@ -144,7 +144,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.conn = sqlite3.connect(self.db_filename)
         self.c = self.conn.cursor()
 
-        if doesColumnExist(table, column):
+        if self.doesColumnExist(table, column):
             return
         dbQuery = 'ALTER TABLE '+table+' ADD COLUMN '+column.split(":")[0]+' TEXT'
         print("dbQuery == " + dbQuery)
@@ -233,5 +233,4 @@ class CursorByName():
 #for row in CursorByName(cur):
 #    print(row)
 
-print(SqliteDatabaseAdapter.getTestInstance())
-SqliteDatabaseAdapter.getTestInstance().createTable("Person")
+

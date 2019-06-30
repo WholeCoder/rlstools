@@ -233,5 +233,4 @@ class CursorByName():
 #for row in CursorByName(cur):
 #    print(row)
 
-print(SqliteDatabaseAdapter.getTestInstance())
-SqliteDatabaseAdapter.getTestInstance().createTable("Person")
+

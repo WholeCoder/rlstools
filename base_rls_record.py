@@ -5,6 +5,7 @@ from sqlite_adapter import SqliteDatabaseAdapter
 class BaseRlsRecord:
     def __init__(self):
         self.dAdapter = SqliteDatabaseAdapter.getInstance()
+        print("getting instance in base rls record."+SqliteDatabaseAdapter.getInstance().db_filename)
 
     def typename(self,x):
         return type(x).__name__
