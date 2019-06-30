@@ -67,7 +67,7 @@ elif [ $1 == 'new' ]; then
 		cd $2
 		touch config.yml
 	else
-		echo "App direcotry already exists"
+		echo "App directory already exists"
 	fi
 fi
 
