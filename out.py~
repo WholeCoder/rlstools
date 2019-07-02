@@ -1,7 +1,11 @@
 from person_rls_record import Person
 rows = Person().findAll()
 outString = ""
+<<<<<<< HEAD
 outString +=("<html><head><title>People</title></head><body><table><tbody><tr><th>primary_key</th><th>first_name</th><th>last_name</th></tr>")
+=======
+outString +=("<html><head><title>People Test2</title></head><body><table><tbody><tr><th>primary_key</th><th>first_name</th><th>last_name</th></tr>")
+>>>>>>> 35168a2998b594a93e97ab80a1f0875d23192dce
 for row in rows:
      outString +=("<tr><td>")
      outString +=(str(row['primary_key']) )
