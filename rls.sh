@@ -50,15 +50,21 @@ elif [ $1 = 'scaffold' ]; then
 	create_directory "views"
 	cd views
 	wDirectory=$PWD
-	"../../write_view_template.py" "$wDirectory" "$scaffoldName" "a:b"
-	cat "$wDirectory/$scaffoldName.html"
+	"../../write_view_template.py" "$wDirectory" "$scaffoldName" "$@"
+	cat "$wDirectory/$scaffoldName.htpy"
 	cd ..
 	create_directory "models"
 	cd models
 	wDirectory=$PWD
-	"../../write_model_template.py" "$wDirectory" "$scaffoldName" "$@"
+	"../../write_model_template.py" "$wDirectory" "$scaffoldName"
 	cat "$wDirectory/$scaffoldName.py"
 	#append to the migration script
+	cd ..
+	create_direcotry "migrations"
+	cd migrations
+	wDirectory=$PWD
+	"../../generate_migrations.py" "$wDirectory" "$scaffoldName" "$@"
+	cd ../..
 
 elif [ $1 == 'new' ]; then
 	if [ ! -d $2 ]; then
