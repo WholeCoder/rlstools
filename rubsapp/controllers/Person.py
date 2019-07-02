@@ -1,4 +1,4 @@
-class PersionController:
+class PersonController:
 	def index(self):
 		pass
 	def post(self):
