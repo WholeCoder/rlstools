@@ -47,10 +47,16 @@ elif [ $1 = 'scaffold' ]; then
 	"../../write_controller_template.py" "$wDirectory" "$scaffoldName"
 	cat "$wDirectory/$scaffoldName.py"
 	cd ..
+	create_direcotry "migrations"
+	cd migrations
+	wDirectory=$PWD
+	"../../generate_migrations.py" "$wDirectory" "$scaffoldName" "$@"
+	"../../migration_tool.py"
+	cd ..
 	create_directory "views"
 	cd views
 	wDirectory=$PWD
-	"../../write_view_template.py" "$wDirectory" "$scaffoldName" "$@"
+	"../../master_template.py" "$wDirectory" "$scaffoldName" # generate the view template
 	cat "$wDirectory/$scaffoldName.htpy"
 	cd ..
 	create_directory "models"
@@ -59,11 +65,6 @@ elif [ $1 = 'scaffold' ]; then
 	"../../write_model_template.py" "$wDirectory" "$scaffoldName"
 	cat "$wDirectory/$scaffoldName.py"
 	#append to the migration script
-	cd ..
-	create_direcotry "migrations"
-	cd migrations
-	wDirectory=$PWD
-	"../../generate_migrations.py" "$wDirectory" "$scaffoldName" "$@"
 	cd ../..
 
 elif [ $1 == 'new' ]; then
