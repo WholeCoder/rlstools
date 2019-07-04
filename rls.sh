@@ -51,9 +51,9 @@ elif [ $1 = 'scaffold' ]; then
 	cd models
 	wDirectory=$PWD
 	"../../write_model_template.py" "$wDirectory" "$scaffoldName"
-	cat "$wDirectory/$scaffoldName.py"
+	cat "$wDirectory/$scaffoldName.migration"
 	cd ..
-	create_direcotry "migrations"
+	create_directory "migrations"
 	cd migrations
 	wDirectory=$PWD
 	"../../generate_migrations.py" "$wDirectory" "$scaffoldName" "$@"
