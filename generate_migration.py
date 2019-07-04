@@ -8,15 +8,9 @@ print("Command == "+sys.argv[0])
 print("app directory name = " + sys.argv[1])
 print("scaffold name = " + sys.argv[2])
 
-next_available_database_verion = dSdapter.getNewDatabaseVersionNumber()
-if next_avaiable_database_version < 10:
-    nn = "00"+str(next_avaiable_database_version)
-elif next_avaiable_database_version < 100
-    nn = "0"+str(next_avaiable_database_version)
-else
-    nn = str(next_avaiable_database_version)
-
-new_view = open(sys.argv[1]+"/"+nn+"_migration",'w')
+next_available_database_verion = dSdapter.getNextDatabaseVersionNumber()
+ 
+new_view = open(sys.argv[1]+"/"+next_available_database_version + "_migration",'w')
 new_view.write("upgrade\n")
 new_view.write("add table "+sys.argv[2]+"\n"
 

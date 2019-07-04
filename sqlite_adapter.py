@@ -55,6 +55,27 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             # print("column returned " + str(column not in columns))
             return False
 
+    def getNextDatabaseVersionNumber(self):
+        if self.doesTableExist("db_versions"):
+            self.createTable("db_versions")
+            self.addColumn("db_sersions","version")
+            self.createNewRecord("db_versions",{"version":"000"})
+            return "000"
+        else:
+            rows = self.findAllRecords("db_versions")
+            list_values = [ v for v in rows.values() ]
+            list_values.sort(reverse = True)
+            max = int(list.values(0))
+            new_max = max + 1
+            if new_max < 10:
+                nn = "00" + str(new_max)
+            elif new_max < 100:
+                nn = "00" + str(new_max)
+            else:
+                nn = str(new_max)
+                self.createNewRecord("db_versions",{"version":nn})
+            return nn
+
 
     def deleteColumnFromTable(self,table, column):
         # print("i--------------------------inside deleteColumnFromTable function")
