@@ -13,7 +13,16 @@ class DatabaseAdapterTestCase(unittest.TestCase):
             pass
             #print("Error deleting "+database_path+" this isn't really an error.")
         self.dAdapter = SqliteDatabaseAdapter.getTestInstance()
+        if self.dAdapter.doesTableExist("db_versions"):
+            self.dAdapter.dropTable("db_versions")
+
         print("sqllitedatabaseadapter ->>>>>>>>>>>>>>>>>>"+str(SqliteDatabaseAdapter.getTestInstance()))
+    def test_if_get_next_version_of_database(self):
+        nn = self.dAdapter.getNextDatabaseVersionNumber()
+        self.assertTrue(nn == "000")
+        nn = self.dAdapter.getNextDatabaseVersionNumber()
+        self.assertTrue(nn == "001")
+        print(nn+" == " + "001")
 
     def test_if_delete_column_brings_back_a_deleted_column(self):
         self.dAdapter.createTable("Person")

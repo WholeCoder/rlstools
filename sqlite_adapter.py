@@ -56,16 +56,20 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             return False
 
     def getNextDatabaseVersionNumber(self):
-        if self.doesTableExist("db_versions"):
+        if not self.doesTableExist("db_versions"):
             self.createTable("db_versions")
-            self.addColumn("db_sersions","version")
+            self.addColumn("db_versions","version")
             self.createNewRecord("db_versions",{"version":"000"})
+            print("executing 000")
             return "000"
         else:
             rows = self.findAllRecords("db_versions")
-            list_values = [ v for v in rows.values() ]
-            list_values.sort(reverse = True)
-            max = int(list.values(0))
+            print("rows == "+str(rows))
+            lst = []
+            for r in rows:
+                lst.append(r['version'])
+            lst.sort(reverse = True)
+            max = int(lst[0])
             new_max = max + 1
             if new_max < 10:
                 nn = "00" + str(new_max)
