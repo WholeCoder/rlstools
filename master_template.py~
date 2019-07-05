@@ -1,4 +1,5 @@
 from person_rls_record import Person
+from database_adapter import DatabaseAdapter
 import sys # sys.argv[]
 
 class Template:
@@ -6,9 +7,10 @@ class Template:
         pass
 
     def generateTemplate(self):
-
-        file_handle = open("index.py","w")
-
+        
+        migration_number = DatabaseAdapter.getInstance().getNextDatabaseVersionNumber()
+        file_handle = open(sys.argv[1]+"/"+migration_number+"__"+sys.argv[2]+".migration",'w')
+        DatabaseAdapter.getInstance().createNewRecord("db_versions",{"version":migration_number})
         headString='''
 <html>
 	<head>

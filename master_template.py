@@ -7,7 +7,12 @@ class Template:
         pass
 
     def generateTemplate(self):
-        
+       
+        count = 3
+        while count < len(sys.argv):
+            sys.argv[count] = sys.argv[count].split(":")[0]
+            count += 1
+
         migration_number = DatabaseAdapter.getInstance().getNextDatabaseVersionNumber()
         file_handle = open(sys.argv[1]+"/"+migration_number+"__"+sys.argv[2]+".migration",'w')
         DatabaseAdapter.getInstance().createNewRecord("db_versions",{"version":migration_number})
