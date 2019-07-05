@@ -1,3 +1,11 @@
+# Do not and I repeat do not add any print statements to this code!  It wil mess
+# up the print_out_next_databae_version_number.py since this script relies
+# on output from this sqlite adapter script.
+
+# I will definitely need to fix this so we can debug our database adapter
+# classes.
+
+
 import sqlite3
 import atexit
 from database_adapter import DatabaseAdapter
