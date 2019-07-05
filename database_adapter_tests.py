@@ -22,7 +22,11 @@ class DatabaseAdapterTestCase(unittest.TestCase):
         self.assertTrue(nn == "000")
         nn = self.dAdapter.getNextDatabaseVersionNumber()
         self.assertTrue(nn == "001")
-        print(nn+" == " + "001")
+        nn2 = self.dAdapter.getMostRecentDatabaseVersionNumber()
+        print("nn2 == " + nn2)
+        self.assertTrue(nn2 == "001")
+        nn2 = self.dAdapter.getMostRecentDatabaseVersionNumber()
+        self.assertTrue(nn2 == "001")
 
     def test_if_delete_column_brings_back_a_deleted_column(self):
         self.dAdapter.createTable("Person")

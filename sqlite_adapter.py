@@ -75,9 +75,8 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
                 nn = "00" + str(new_max)
             elif new_max < 100:
                 nn = "00" + str(new_max)
-            else:
-                nn = str(new_max)
-                self.createNewRecord("db_versions",{"version":nn})
+            self.createNewRecord("db_versions",{"version":nn})
+            
             return nn
 
 
@@ -217,6 +216,23 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         cur.execute(finalString)
         self.conn.commit()
         self.conn.close()
+
+    def getMostRecentDatabaseVersionNumber(self):
+        self.conn = sqlite3.connect(self.db_filename)
+        selectStatement = "SELECT version FROM db_versions"
+
+        curr = self.conn.cursor()
+        curr.execute(selectStatement)
+
+        data = []
+        for row in CursorByName(curr):
+           #print("row1 == "+str(row))
+           data.append(row["version"])
+        self.conn.commit()
+        self.conn.close()
+        data.sort(reverse=True)
+        print("data = "+str(data))
+        return data[0] #CursorByName(curr)
 
     def findAllRecords(self,table):
         self.conn = sqlite3.connect(self.db_filename)
