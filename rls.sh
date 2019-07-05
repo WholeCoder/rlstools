@@ -57,7 +57,8 @@ elif [ $1 = 'scaffold' ]; then
 	cd migrations
 	wDirectory=$PWD
 	"../../generate_migrations.py" "$wDirectory" "$scaffoldName" "$@"
-	"../../migration_tool.py" "upgrade" "$wDirectory" "$scaffoldName"
+	new_version_for_next_migration=`python3 print_out_next_database_version_number.py`
+	"../../migration_tool.py" "upgrade" "$wDirectory" "$scaffoldName" "$new_version_for_next_migration"
 	cd ..
 	create_directory "views"
 	cd views

@@ -26,7 +26,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             raise Exception("This class is a singleton!")
         else:
             SqliteDatabaseAdapter.__instance = self
-        print("------------> attaching connection")
+        #print("------------> attaching connection")
         self.conn = sqlite3.connect(db_filename)
         self.db_filename = db_filename
         # print("Sqlite adapter - Initializing adapter")
@@ -56,15 +56,17 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             return False
 
     def getNextDatabaseVersionNumber(self):
+ 
         if not self.doesTableExist("db_versions"):
             self.createTable("db_versions")
             self.addColumn("db_versions","version")
             self.createNewRecord("db_versions",{"version":"000"})
-            print("executing 000")
+            return "000"
+        elif len(self.findAllRecords("db_versions")) == 0:
+            self.createNewRecord("db_versions",{"version":"000"})
             return "000"
         else:
             rows = self.findAllRecords("db_versions")
-            print("rows == "+str(rows))
             lst = []
             for r in rows:
                 lst.append(r['version'])
@@ -171,10 +173,10 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         if self.doesColumnExist(table, column):
             return
         dbQuery = 'ALTER TABLE '+table+' ADD COLUMN '+column.split(":")[0]+' TEXT'
-        print("dbQuery == " + dbQuery)
+        #print("dbQuery == " + dbQuery)
         self.c.execute(dbQuery)
 
-        print("SqliteDatabaseAdapter - Added column "+column+" to table "+ table)
+        #print("SqliteDatabaseAdapter - Added column "+column+" to table "+ table)
         self.conn.commit()
         self.conn.close()
 
@@ -212,7 +214,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         valueString = valueString[:-1]
 
         finalString = "INSERT INTO "+table+ "("+insertString+") VALUES ("+valueString+")"
-        print("finalString == "+finalString)
+        #print("finalString == "+finalString)
         cur.execute(finalString)
         self.conn.commit()
         self.conn.close()
@@ -231,7 +233,6 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.conn.commit()
         self.conn.close()
         data.sort(reverse=True)
-        print("data = "+str(data))
         return data[0] #CursorByName(curr)
 
     def findAllRecords(self,table):
