@@ -225,22 +225,6 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.conn.commit()
         self.conn.close()
 
-    def getMostRecentDatabaseVersionNumber(self):
-        self.conn = sqlite3.connect(self.db_filename)
-        selectStatement = "SELECT version FROM db_versions"
-
-        curr = self.conn.cursor()
-        curr.execute(selectStatement)
-
-        data = []
-        for row in CursorByName(curr):
-           #print("row1 == "+str(row))
-           data.append(row["version"])
-        self.conn.commit()
-        self.conn.close()
-        data.sort(reverse=True)
-        return data[0] #CursorByName(curr)
-
     def findAllRecords(self,table):
         self.conn = sqlite3.connect(self.db_filename)
         cur = self.conn.cursor()

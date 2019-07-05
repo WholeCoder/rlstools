@@ -63,7 +63,7 @@ elif [ $1 = 'scaffold' ]; then
 	create_directory "views"
 	cd views
 	wDirectory=$PWD
-	"../../master_template.py" "$wDirectory" "$scaffoldName" # generate the view template
+	"../../master_template.py" "$wDirectory" "$scaffoldName" "$@"# generate the view template
 	cat "$wDirectory/$scaffoldName.htpy"
 	#append to the migration script
 	cd ../..

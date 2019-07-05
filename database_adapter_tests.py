@@ -25,15 +25,6 @@ class DatabaseAdapterTestCase(unittest.TestCase):
         nn = self.dAdapter.getNextDatabaseVersionNumber()
         self.assertTrue(nn == "001")
         
-    def test_if_columns_returned(self):
-        self.dAdapter.createTable("Office")
-        self.dAdapter.addColumn("Office","zipcode")
-        self.dAdapter.addColumn("Office","city")
-        columns = self.dAdapter.getColumnsAsList("Office")
-        print("list of Office columns == "+str(columns))
-        self.assertTrue("zipcode" in columns)
-        self.assertTrue("city" in columns)
-
     def test_if_delete_column_brings_back_a_deleted_column(self):
         self.dAdapter.createTable("Person")
         self.dAdapter.addColumn("Person","zipcode")
