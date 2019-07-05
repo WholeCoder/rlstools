@@ -56,13 +56,13 @@ elif [ $1 = 'scaffold' ]; then
 	create_directory "migrations"
 	cd migrations
 	wDirectory=$PWD
-	"../../generate_migrations.py" "$wDirectory" "$scaffoldName" "$@"
-	new_version_for_next_migration=`python3 print_out_next_database_version_number.py`
-	"../../migration_tool.py" "upgrade" "$wDirectory" "$scaffoldName" "$new_version_for_next_migration"
+	"../../generate_migration.py" "$wDirectory" "$scaffoldName" "$@"
+	#new_version_for_next_migration=`python3 print_out_next_database_version_number.py`
+	#"../../migration_tool.py" "upgrade" "$wDirectory" "$scaffoldName" "$new_version_for_next_migration"
 	cd ..
 	create_directory "views"
 	cd views
-	wDirectory=$PWD
+	w:Directory=$PWD
 	"../../master_template.py" "$wDirectory" "$scaffoldName" "$@"# generate the view template
 	cat "$wDirectory/$scaffoldName.htpy"
 	#append to the migration script
