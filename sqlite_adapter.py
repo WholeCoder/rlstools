@@ -1,11 +1,3 @@
-# Do not and I repeat do not add any print statements to this code!  It wil mess
-# up the print_out_next_databae_version_number.py since this script relies
-# on output from this sqlite adapter script.
-
-# I will definitely need to fix this so we can debug our database adapter
-# classes.
-
-
 import sqlite3
 import atexit
 from database_adapter import DatabaseAdapter
@@ -74,10 +66,10 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         if not self.doesTableExist("db_versions"):
             self.createTable("db_versions")
             self.addColumn("db_versions","version")
-            self.createNewRecord("db_versions",{"version":"000"})
+            #self.createNewRecord("db_versions",{"version":"000"})
             return "000"
         elif len(self.findAllRecords("db_versions")) == 0:
-            self.createNewRecord("db_versions",{"version":"000"})
+            #self.createNewRecord("db_versions",{"version":"000"})
             return "000"
         else:
             rows = self.findAllRecords("db_versions")
@@ -91,7 +83,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
                 nn = "00" + str(new_max)
             elif new_max < 100:
                 nn = "00" + str(new_max)
-            self.createNewRecord("db_versions",{"version":nn})
+            #self.createNewRecord("db_versions",{"version":nn})
             
             return nn
 
@@ -232,22 +224,6 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         cur.execute(finalString)
         self.conn.commit()
         self.conn.close()
-
-    def getMostRecentDatabaseVersionNumber(self):
-        self.conn = sqlite3.connect(self.db_filename)
-        selectStatement = "SELECT version FROM db_versions"
-
-        curr = self.conn.cursor()
-        curr.execute(selectStatement)
-
-        data = []
-        for row in CursorByName(curr):
-           #print("row1 == "+str(row))
-           data.append(row["version"])
-        self.conn.commit()
-        self.conn.close()
-        data.sort(reverse=True)
-        return data[0] #CursorByName(curr)
 
     def findAllRecords(self,table):
         self.conn = sqlite3.connect(self.db_filename)

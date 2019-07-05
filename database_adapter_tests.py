@@ -21,15 +21,10 @@ class DatabaseAdapterTestCase(unittest.TestCase):
     def test_if_get_next_version_of_database(self):
         nn = self.dAdapter.getNextDatabaseVersionNumber()
         self.assertTrue(nn == "000")
+        self.dAdapter.createNewRecord("db_versions",{"version":"000"})
         nn = self.dAdapter.getNextDatabaseVersionNumber()
         self.assertTrue(nn == "001")
-        nn2 = self.dAdapter.getMostRecentDatabaseVersionNumber()
-        print("nn2 == " + nn2)
-        self.assertTrue(nn2 == "001")
-        nn2 = self.dAdapter.getMostRecentDatabaseVersionNumber()
-        self.assertTrue(nn2 == "001")
-
-
+        
     def test_if_columns_returned(self):
         self.dAdapter.createTable("Office")
         self.dAdapter.addColumn("Office","zipcode")
