@@ -1,11 +1,11 @@
 from person_rls_record import Person
+import sys # sys.argv[]
 
 class Template:
     def __init__(self):
         pass
 
     def generateTemplate(self):
-        rows = Person().findAll()
 
         file_handle = open("index.py","w")
 
@@ -18,14 +18,19 @@ class Template:
 		<table>
 			<tbody>
 				<tr>'''
-        for key in rows[0].keys():
-            headString += "<th>" + key + "</th>"
+
+        count = 3
+        while count < len(sys.argv)
+            headString += "<th>" + sys.argv[count] + "</th>"
+            count += 1
 
         headString += '				</tr>'
         headString += "<% for row in rows: %>"
         headString += '<tr>'
-        for key in rows[0].keys():
-            headString += "<td><%= str(row['"+key+"']) %></td>"
+        count = 3
+        while count < len(sys.argv):
+            headString += "<td><%= str(row['"+sys.argv[count]+"']) %></td>"
+            count += 1
         headString += '</tr>'
         headString += "<% end-for %>"
         headString += '''
