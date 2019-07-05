@@ -35,7 +35,13 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
     # def cleanup(self):
     #     # print("Running cleanup...")
     #     self.conn.close()
-
+    def getColumnsAsList(self,table):
+        self.conn = sqlite3.connect(self.db_filename)
+        cur = self.conn.cursor()
+        columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
+        self.conn.commit()
+        return columns
+    
     def doesColumnExist(self,table, column):
         # print("SqliteAdapter - Seeing if column " + column + " exists on table " + table)
         self.conn = sqlite3.connect(self.db_filename)

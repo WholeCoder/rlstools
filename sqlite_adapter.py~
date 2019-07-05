@@ -35,7 +35,12 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
     # def cleanup(self):
     #     # print("Running cleanup...")
     #     self.conn.close()
-
+    def getColumnsAsList(self,table):
+        cur = self.conn.cursor()
+        columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
+        self.conn.commit()
+        return columns
+    
     def doesColumnExist(self,table, column):
         # print("SqliteAdapter - Seeing if column " + column + " exists on table " + table)
         self.conn = sqlite3.connect(self.db_filename)
@@ -56,14 +61,13 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             return False
 
     def getNextDatabaseVersionNumber(self):
-        rows = self.findAllRecords("db_versions")
  
         if not self.doesTableExist("db_versions"):
             self.createTable("db_versions")
             self.addColumn("db_versions","version")
             self.createNewRecord("db_versions",{"version":"000"})
             return "000"
-        elif len(rows) == 0:
+        elif len(self.findAllRecords("db_versions")) == 0:
             self.createNewRecord("db_versions",{"version":"000"})
             return "000"
         else:

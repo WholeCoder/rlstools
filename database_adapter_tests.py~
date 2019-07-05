@@ -16,16 +16,33 @@ class DatabaseAdapterTestCase(unittest.TestCase):
         if self.dAdapter.doesTableExist("db_versions"):
             self.dAdapter.dropTable("db_versions")
 
-        print("sqllitedatabaseadapter ->>>>>>>>>>>>>>>>>>"+str(SqliteDatabaseAdapter.getTestInstance()))
+        print("sqllitedatabaseadapter ->>>>>>>>>>>>>>>>>>"+str(SqliteDatabaseAdapter.getTestInstance())
+
+    #def tst(self):
+     #   pass
+    #def test_if_columns_returned(self):
+       ##ass
+        #self.dAdapter.createTable("Office")
+        #self.dAdapter.addColumn("Office","zipcode")
+        #self.dAdapter.addColumn("Office","city")
+        #columns = self.dAdapter.getColumnsAsList("Office")
+        #print("list of Office columns == "+str(columns))
+        #self.assertTrue("zipcode" in columns)
+        #self.assertTrue("city" in columns)
+                )
     def test_if_get_next_version_of_database(self):
         nn = self.dAdapter.getNextDatabaseVersionNumber()
         self.assertTrue(nn == "000")
         nn = self.dAdapter.getNextDatabaseVersionNumber()
         self.assertTrue(nn == "001")
         nn2 = self.dAdapter.getMostRecentDatabaseVersionNumber()
+        print("nn2 == " + nn2)
         self.assertTrue(nn2 == "001")
         nn2 = self.dAdapter.getMostRecentDatabaseVersionNumber()
         self.assertTrue(nn2 == "001")
+
+    def test(self):
+        pass
 
     def test_if_delete_column_brings_back_a_deleted_column(self):
         self.dAdapter.createTable("Person")
