@@ -1,0 +1,7 @@
+*.un~
+*.swp
+*.py~
+*.pyc
+*.migration~
+*.htmil~
+__pycache__/
