@@ -16,14 +16,14 @@ new_view.write("add table "+sys.argv[2]+"\n")
 
 count = 3
 while count < len(sys.argv):
-    new_view.write("add column "+sys.argv[2]+" "+sys.argv[count]+"\n")
+    new_view.write("add column "+sys.argv[2]+" "+sys.argv[count].split(":")[0]+"\n")
     count += 1
 
-new_view.write("\n\ndowngrade")
+new_view.write("\n\ndowngrade\n")
 count = 3
 while count < len(sys.argv):
-    new_view.write("remove column "+sys.argv[2]+" "+sys.argv[count]+"\n")
+    new_view.write("remove column "+sys.argv[2]+" "+sys.argv[count].split(":")[0]+"\n")
     count += 1
 
-new_view.write("remove table "+sys.argv[2])
+new_view.write("remove table "+sys.argv[2]+"\n")
 new_view.close()
