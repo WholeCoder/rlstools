@@ -6,7 +6,7 @@
 	<body>
 		<table>
 			<tbody>
-				<tr><th>first_name</th><th>last_name</th><th>generate</th><th>the</th><th>view</th><th>template</th>				</tr><% for row in rows: %><tr><td><%= str(row['first_name']) %></td><td><%= str(row['last_name']) %></td><td><%= str(row['generate']) %></td><td><%= str(row['the']) %></td><td><%= str(row['view']) %></td><td><%= str(row['template']) %></td></tr><% end-for %>
+				<tr><th>first_name</th><th>last_name</th>				</tr><% for row in rows: %><tr><td><%= str(row['first_name']) %></td><td><%= str(row['last_name']) %></td></tr><% end-for %>
                         </tbody>
 		</table>
 	</body>

@@ -8,12 +8,13 @@ class Template:
         pass
 
     def generateTemplate(self):
-       
+
+        parameter_list = []
         count = 3
         while count < len(sys.argv):
-            sys.argv[count] = sys.argv[count].split(":")[0]
+            parameter_list.append(sys.argv[count].split(":")[0])
             count += 1
-
+        print("parameter_list == " + str(parameter_list))
         file_handle = open(sys.argv[1]+"/"+sys.argv[2]+".pyht",'w')
         headString='''
 <html>
@@ -25,17 +26,18 @@ class Template:
 			<tbody>
 				<tr>'''
 
-        count = 3
-        while count < len(sys.argv):
-            headString += "<th>" + sys.argv[count] + "</th>"
+        print("second parameter_list"+str(parameter_list))
+        count = 0
+        while count < len(parameter_list):
+            headString += "<th>" + parameter_list[count] + "</th>"
             count += 1
 
         headString += '				</tr>'
         headString += "<% for row in rows: %>"
         headString += '<tr>'
-        count = 3
-        while count < len(sys.argv):
-            headString += "<td><%= str(row['"+sys.argv[count]+"']) %></td>"
+        count = 0
+        while count < len(parameter_list):
+            headString += "<td><%= str(row['"+parameter_list[count]+"']) %></td>"
             count += 1
         headString += '</tr>'
         headString += "<% end-for %>"

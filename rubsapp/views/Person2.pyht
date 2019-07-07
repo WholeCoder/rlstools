@@ -1,0 +1,13 @@
+
+<html>
+	<head>
+		<title>Ruben's People</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr>				</tr><% for row in rows: %><tr></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</html>
