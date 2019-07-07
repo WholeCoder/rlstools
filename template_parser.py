@@ -1,6 +1,8 @@
+#!/usr/bin/python3
 import re
+import sys
 
-file_handle = open("index.py","r")
+file_handle = open(sys.argv[1],"r")
 
 file_contents = file_handle.read()
 

@@ -1,10 +1,10 @@
 upgrade
-add table Person
-add column Person first_name
-add column Person last_name
+add table Person2
+add column Person2 first_name
+add column Person2 last_name
 
 
 downgrade
-remove column Person first_name
-remove column Person last_name
-remove table Person
+remove column Person2 first_name
+remove column Person2 last_name
+remove table Person2
