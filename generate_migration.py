@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import sys
+import os
 from sqlite_adapter import SqliteDatabaseAdapter
 
 dAdapter = SqliteDatabaseAdapter.getInstance()
@@ -9,7 +10,25 @@ print("app directory name = " + sys.argv[1])
 print("scaffold name = " + sys.argv[2])
 
 next_available_database_version = dAdapter.getNextDatabaseVersionNumber()
- 
+
+num_list = []
+files = os.listdir(".")
+for f in files:
+    part = f.split("_")[0]
+    num_list.append(part)
+
+num_list.sort(reverse=True)
+max = "000"
+if len(num_list) > 0:
+    nn = int(num_list[0]) + 1
+    if nn < 10:
+        max = "00" + str(nn)
+    elif nn < 100:
+        max = "0" + str(nn)
+    else:
+        max = str(nn)
+next_available_database_version = max
+
 new_view = open(sys.argv[1]+"/"+next_available_database_version + "_migration",'w')
 new_view.write("upgrade\n")
 new_view.write("add table "+sys.argv[2]+"\n")
