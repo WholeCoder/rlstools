@@ -12,9 +12,15 @@ next_available_database_version = dAdapter.getNextDatabaseVersionNumber()
 files = os.listdir(".")
 num_list = []
 
-for f in files:
-    part = f.split("_")[0]
-    if part >= next_available_database_version:
+if shouldUpgrade:
+    for f in files:
+        part = f.split("_")[0]
+        if part >= next_available_database_version:
+            num_list.append(part)
+else:
+    # Delete all the tables if downgrading
+    for f in files:
+        part = f.split("_")[0]
         num_list.append(part)
 
 num_list.sort()

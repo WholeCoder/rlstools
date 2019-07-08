@@ -198,6 +198,14 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.conn.commit()
         self.conn.close()
 
+    def deleteRowFromTable(self,table,key,value):
+        self.conn = sqlite3.connect(self.db_filename)
+        cur = self.conn.cursor()
+        deleteStatement = "DELETE FROM " + table + " WHERE "+key+"='"+str(value)+"'"
+        cur.execute(deleteStatement)
+        self.conn.commit()
+        cur.close()
+
     def createNewRecord(self,table,insertDictionary):
         self.conn = sqlite3.connect(self.db_filename)
         cur = self.conn.cursor()
