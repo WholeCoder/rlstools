@@ -6,6 +6,10 @@ from sqlite_adapter import SqliteDatabaseAdapter
 dAdapter = SqliteDatabaseAdapter.getInstance()
 
 shouldUpgrade = sys.argv[1] == "upgrade"
+if not shouldUpgrade:
+    askUserIfTheyReallyWantToDowngrade = input("Are you sure you want to DELETE your ENTIRE DATABASE???   (y,n):  ")
+    if askUserIfTheyReallyWantToDowngrade.lower() != "y":
+        sys.exit()
 
 next_available_database_version = dAdapter.getNextDatabaseVersionNumber()
 
