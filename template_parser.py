@@ -10,7 +10,7 @@ currString = ""
 
 debug = False
 
-table = "Person"
+table = sys.argv[1].split(".")[0]
 print("rows = "+table+"().findAll()")
 
 results = re.split("<%", file_contents)
