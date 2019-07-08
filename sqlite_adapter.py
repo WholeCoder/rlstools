@@ -8,7 +8,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     @staticmethod
     def getInstance():
-        db_filename="./my_db.db"
+        db_filename="../my_db.db"
         if SqliteDatabaseAdapter.__instance == None:
             SqliteDatabaseAdapter(db_filename)
         return SqliteDatabaseAdapter.__instance
