@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import sys
 
 print("Inside of write__model_template.py. directory == "+sys.argv[0])

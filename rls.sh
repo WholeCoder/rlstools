@@ -51,7 +51,7 @@ elif [ $1 = 'scaffold' ]; then
 	cd models
 	wDirectory=$PWD
 	"../../write_model_template.py" "$wDirectory" "$scaffoldName"
-	cat "$wDirectory/$scaffoldName.migration"
+	#cat "$wDirectory/$scaffoldName.migration"
 	cd ..
 	create_directory "migrations"
 	cd migrations
@@ -62,9 +62,9 @@ elif [ $1 = 'scaffold' ]; then
 	cd ..
 	create_directory "views"
 	cd views
-	w:Directory=$PWD
+	wDirectory=$PWD
 	"../../master_template.py" "$wDirectory" "$scaffoldName" "$@"# generate the view template
-	cat "$wDirectory/$scaffoldName.htpy"
+
 	#append to the migration script
 	cd ../..
 

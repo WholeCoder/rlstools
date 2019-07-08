@@ -1,5 +1,6 @@
+#!/usr/bin/python3
 from person_rls_record import Person
-from database_adapter import DatabaseAdapter
+from sqlite_adapter import SqliteDatabaseAdapter
 import sys # sys.argv[]
 
 class Template:
@@ -13,9 +14,7 @@ class Template:
             sys.argv[count] = sys.argv[count].split(":")[0]
             count += 1
 
-        migration_number = DatabaseAdapter.getInstance().getNextDatabaseVersionNumber()
-        file_handle = open(sys.argv[1]+"/"+migration_number+"__"+sys.argv[2]+".migration",'w')
-        DatabaseAdapter.getInstance().createNewRecord("db_versions",{"version":migration_number})
+        file_handle = open(sys.argv[1]+"/"+sys.argv[2]+".pyht",'w')
         headString='''
 <html>
 	<head>
@@ -27,7 +26,7 @@ class Template:
 				<tr>'''
 
         count = 3
-        while count < len(sys.argv)
+        while count < len(sys.argv):
             headString += "<th>" + sys.argv[count] + "</th>"
             count += 1
 
