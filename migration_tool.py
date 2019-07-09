@@ -5,8 +5,8 @@ from sqlite_adapter import SqliteDatabaseAdapter
 #ctrl-a :  set-option repeat-time 0
 dAdapter = SqliteDatabaseAdapter.getInstance()
 
-shouldUpgrade = sys.argv[1] == "upgrade"
-if not shouldUpgrade:
+shoulddowngrade = sys.argv[1] == "downgrade"
+if shoulddowngrade:
     askUserIfTheyReallyWantToDowngrade = input("Are you sure you want to DELETE your ENTIRE DATABASE???   (y,n):  ")
     if askUserIfTheyReallyWantToDowngrade.lower() != "y":
         sys.exit()
@@ -16,7 +16,7 @@ next_available_database_version = dAdapter.getNextDatabaseVersionNumber()
 files = os.listdir(".")
 num_list = []
 
-if shouldUpgrade:
+if not shoulddowngrade:
     for f in files:
         part = f.split("_")[0]
         if part >= next_available_database_version:
@@ -36,7 +36,7 @@ for f in num_list:
     i = 0
     while i < len(file_contents):
         current_command = file_contents[i].split(" ")[0]
-        if current_command == "add" and shouldUpgrade:
+        if current_command == "add" and not shoulddowngrade:
             acting_on = file_contents[i].split(" ")[1]
             if acting_on == "table":
                 dAdapter.createNewRecord("db_versions",{"version":f})
@@ -51,7 +51,7 @@ for f in num_list:
                 if dAdapter.doesTableExist(table):
                     if not dAdapter.doesColumnExist(table, column):
                         dAdapter.addColumn(table,column)
-        elif current_command == "remove" and not shouldUpgrade:
+        elif current_command == "remove" and shoulddowngrade:
             acting_on = file_contents[i].split(" ")[1]
             if acting_on == "table":
                 dAdapter.deleteRowFromTable("db_versions","version",f)
