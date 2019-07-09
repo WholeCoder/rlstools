@@ -1,0 +1,13 @@
+
+<html>
+	<head>
+		<title>Ruben's People</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>last_name</th><th>first_name</th>				</tr><% for row in rows: %><tr><td><%= str(row['last_name']) %></td><td><%= str(row['first_name']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</html>

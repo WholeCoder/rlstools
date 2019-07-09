@@ -19,7 +19,9 @@ class Template:
         headString='''
 <html>
 	<head>
-		<title>Ruben's People</title>
+		<title>'''
+        headString += sys.argv[2] + " List"
+        headString+='''</title>
 	</head>
 	<body>
 		<table>

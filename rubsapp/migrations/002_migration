@@ -1,0 +1,8 @@
+upgrade
+add table Test
+add column Test first_attribute
+
+
+downgrade
+remove column Test first_attribute
+remove table Test

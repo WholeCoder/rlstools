@@ -1,0 +1,10 @@
+upgrade
+add table Office
+add column Office zip_code
+add column Office city
+
+
+downgrade
+remove column Office zip_code
+remove column Office city
+remove table Office
