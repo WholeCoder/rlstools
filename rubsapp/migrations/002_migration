@@ -1,0 +1,10 @@
+upgrade
+add table Actor
+add column Actor type
+add column Actor style
+
+
+downgrade
+remove column Actor type
+remove column Actor style
+remove table Actor

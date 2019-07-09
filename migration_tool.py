@@ -26,15 +26,11 @@ else:
     for f in files:
         part = f.split("_")[0]
         num_list.append(part)
-        print("numlist[part] == "+f)
 
 num_list.sort()
-print("num_list == "+str(num_list))
 for f in num_list:
     file_handle = open(f+"_migration","r")
     
-    print("downgrading "+f)
-
     file_contents = file_handle.readlines()
     file_handle.close()
     i = 0
@@ -56,15 +52,12 @@ for f in num_list:
                     if not dAdapter.doesColumnExist(table, column):
                         dAdapter.addColumn(table,column)
         elif current_command == "remove" and not shouldUpgrade:
-            print("removing table")
             acting_on = file_contents[i].split(" ")[1]
             if acting_on == "table":
                 dAdapter.deleteRowFromTable("db_versions","version",f)
                 table = file_contents[i].split(" ")[2].strip()
-                print("table == "+table)
                 if dAdapter.doesTableExist(table):
                     dAdapter.dropTable(table)
-                    print("dropped table == "+table)
             elif acting_on == "column":
                 table = file_contents[i].split(" ")[2].strip()
                 column = file_contents[i].split(" ")[3].strip()

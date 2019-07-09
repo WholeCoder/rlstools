@@ -1,0 +1,10 @@
+upgrade
+add table Worker
+add column Worker diswasher
+add column Worker attendant
+
+
+downgrade
+remove column Worker diswasher
+remove column Worker attendant
+remove table Worker
