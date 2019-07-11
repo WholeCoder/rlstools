@@ -1,6 +1,7 @@
 import sqlite3
 import atexit
 from database_adapter import DatabaseAdapter
+import os
 
 class SqliteDatabaseAdapter(DatabaseAdapter):
 
@@ -8,7 +9,11 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     @staticmethod
     def getInstance():
-        db_filename="../my_db.db"
+        import os 
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        print("dir_path == "+dir_path)
+
+        db_filename="/home/rpierich/Desktop/rlstools/rubsapp/my_db.db"
         if SqliteDatabaseAdapter.__instance == None:
             SqliteDatabaseAdapter(db_filename)
         return SqliteDatabaseAdapter.__instance
@@ -229,10 +234,11 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     def findAllRecords(self,table):
         self.conn = sqlite3.connect(self.db_filename)
+        print("db_flanme:  "+self.db_filename)
         cur = self.conn.cursor()
-
+        print("table == " + table)
         columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
-
+        print("cols == " + str(columns))
         colString = ""
         for col in columns:
             colString += col+","
@@ -241,6 +247,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         selectStatement = "SELECT " + colString + " FROM "+table
 
         curr = self.conn.cursor()
+        print("From syntax == "+selectStatement)
         curr.execute(selectStatement)
 
         data = []

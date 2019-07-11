@@ -14,13 +14,15 @@ delete_directory_contents_safely() {
 	[[ -d "$1" ]] && cd "$1" && rm *
 }
 
-if [ $# -lt 2 ]
+if [ $# -lt 1 ]
 then
 	echo Not enough paramegers
 	echo Usage:
 	echo 	./rls.sh new new-app-name
 	echo		OR
 	echo	./rls.sh scaffold new-app-name/ EntityName attribute:datatype  attribute2:datatype
+	echo          OR
+	echo	./rls.sh serve
 	exit 1
 fi
 

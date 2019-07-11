@@ -1,8 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 from http.server import BaseHTTPRequestHandler,HTTPServer
 from person_rls_record import Person
 #from master_template import headString
 import importlib
+from template_parser import TemplateParser
 
 PORT_NUMBER = 8080
 
@@ -16,10 +17,13 @@ class myHandler(BaseHTTPRequestHandler):
         self.send_header('Content-type','text/html')
         self.end_headers()
 	# Send the html message
-        #self.wfile.write("test".encode())  
-        mdle = importlib.import_module('out')
-        #outString = eval("out.py")
-        self.wfile.write(mdle.outString.encode())
+        #self.wfile.write("test".encode())
+        TemplateParser("./rubsapp/views/Person.pyht","Person")
+
+        mdle = importlib.import_module('template_output')
+        print("mdle == "+mdle.currString)
+        #mdle = importlib.import_module('out')#outString = eval("out.py")
+        self.wfile.write(mdle.currString.encode())
         return
 
 try:
