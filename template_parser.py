@@ -5,16 +5,18 @@ import sys
 
 class TemplateParser:
     def __init__(self,template_file,table):
-
+        print("template parser running---------------------->")
         file_handle = open(template_file,"r")
 
         file_contents = file_handle.read()
 
-        self.currString = "from rubsapp.models.Person import Person\n\n"
+        self.currString = "from rubsapp.models."+table+" import "+table+"\n\n"
+        self.currString += "print(\"Running template_Output\")\n\n"
 
         debug = False
 
         self.currString += "rows = "+table+"().findAll()\n"
+        self.currString += "print(\"rows == \"+str(rows))\n\n"
         self.currString += "currString = \"\"\n"
 
         results = re.split("<%", file_contents)

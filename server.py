@@ -4,6 +4,7 @@ from person_rls_record import Person
 #from master_template import headString
 import importlib
 from template_parser import TemplateParser
+import os
 
 PORT_NUMBER = 8080
 
@@ -15,12 +16,20 @@ class myHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
         self.send_header('Content-type','text/html')
+        self.send_header('Cache-Control', 'no-cache')
         self.end_headers()
+        
 	# Send the html message
         #self.wfile.write("test".encode())
-        TemplateParser("./rubsapp/views/Person.pyht","Person")
+        entity = self.path[1:]
+        if entity == 'favicon.ico':
+            return
+        #os.remove("template_output.py")
+        TemplateParser("./rubsapp/views/"+entity+".pyht",entity)
 
+        #importlib.invalidate_caches()
         mdle = importlib.import_module('template_output')
+        mdle = importlib.reload(mdle)
         print("mdle == "+mdle.currString)
         #mdle = importlib.import_module('out')#outString = eval("out.py")
         self.wfile.write(mdle.currString.encode())
