@@ -1,4 +1,5 @@
 *.un~
+*.sh~
 *.swp
 *.py~
 *.pyc
