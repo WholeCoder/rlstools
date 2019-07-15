@@ -1,4 +1,4 @@
-class PersonController:
+class OfficeController:
 	def index(self):
 		pass
 	def post(self):

@@ -225,7 +225,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         valueString = valueString[:-1]
 
         finalString = "INSERT INTO "+table+ "("+insertString+") VALUES ("+valueString+")"
-        #print("finalString == "+finalString)
+        print("finalString == "+finalString)
         cur.execute(finalString)
         self.conn.commit()
         self.conn.close()

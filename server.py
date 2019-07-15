@@ -74,6 +74,8 @@ class myHandler(BaseHTTPRequestHandler):
         dct = {}
         for i in form.keys():
             dct[i] = form[i].value
+            if "'" in dct[i]:
+                dct[i] = dct[i].replace("'", "''")
 
         print ("dictionary == " +str(dct))
         SqliteDatabaseAdapter.getInstance().createNewRecord(entity[1:],dct)

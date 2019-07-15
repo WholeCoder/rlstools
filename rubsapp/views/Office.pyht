@@ -1,0 +1,13 @@
+
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</html>
