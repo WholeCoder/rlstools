@@ -22,26 +22,30 @@ class myHandler(BaseHTTPRequestHandler):
 	# Send the html message
         #self.wfile.write("test".encode())
         entity = self.path[1:]
-        if entity == 'favicon.ico':
-            return
-        #os.remove("template_output.py")
-        TemplateParser("./rubsapp/views/"+entity+".pyht",entity)
+        
+        if ".get" in entity:
+            self.wfile.write("get get".encode())
+        else:
+            if entity == 'favicon.ico':
+                return
+            #os.remove("template_output.py")
+            TemplateParser("./rubsapp/views/"+entity+".pyht",entity)
 
-        #importlib.invalidate_caches()
-        mdle = importlib.import_module('template_output')
-        mdle = importlib.reload(mdle)
-        print("mdle == "+mdle.currString)
-        #mdle = importlib.import_module('out')#outString = eval("out.py")
-        self.wfile.write(mdle.currString.encode())
-        return
+            #importlib.invalidate_caches()
+            mdle = importlib.import_module('template_output')
+            mdle = importlib.reload(mdle)
+            print("mdle == "+mdle.currString)
+            #mdle = importlib.import_module('out')#outString = eval("out.py")
+            self.wfile.write(mdle.currString.encode())
+            return
 
 try:
-	#Create a web server and define the handler to manage the
-	#incoming request
+    #Create a web server and define the handler to manage the
+    #incoming request
     server = HTTPServer(('', PORT_NUMBER), myHandler)
     print ('Started httpserver on port ' , PORT_NUMBER)
 	
-	#Wait forever for incoming htto requests
+    #Wait forever for incoming htto requests
     server.serve_forever()
 
 except KeyboardInterrupt:
