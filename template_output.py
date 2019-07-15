@@ -1,17 +1,17 @@
-from rubsapp.models.Office import Office
+from rubsapp.models.Person import Person
 
 print("Running template_Output")
 
-rows = Office().findAll()
+rows = Person().findAll()
 print("rows == "+str(rows))
 
 currString = ""
-currString +="<html><head><title>Office</title></head><body><table><tbody><tr><th>zip_code</th><th>city</th></tr>"
+currString +="<html><head><title>PersonList</title></head><body><table><tbody><tr><th>first_name</th><th>last_name</th></tr>"
 for row in rows:
      currString +="<tr><td>"
-     currString +=str(row['zip_code']) 
+     currString +=str(row['first_name']) 
      currString +="</td><td>"
-     currString +=str(row['city']) 
+     currString +=str(row['last_name']) 
      currString +="</td></tr>"
 currString +="</tbody></table></body></html>"
 

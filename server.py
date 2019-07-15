@@ -24,7 +24,13 @@ class myHandler(BaseHTTPRequestHandler):
         entity = self.path[1:]
         
         if ".get" in entity:
-            self.wfile.write("get get".encode())
+            TemplateParser("./rubsapp/views/"+entity+".pyht",entity)
+            f_handle = open("template_output.py","r")
+            file_contents = f_handle.read()
+
+            #mdle = importlib.import_module('out')#outString = eval("out.py")
+            self.wfile.write(file_contents.encode())
+            return
         else:
             if entity == 'favicon.ico':
                 return
