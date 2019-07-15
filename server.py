@@ -5,6 +5,8 @@ from person_rls_record import Person
 import importlib
 from template_parser import TemplateParser
 import os
+import cgi
+from sqlite_adapter import SqliteDatabaseAdapter
 
 PORT_NUMBER = 8080
 
@@ -65,6 +67,17 @@ class myHandler(BaseHTTPRequestHandler):
         #self.wfile.write("<script type=\"text/javascript\">alert(\"works\"</script>" .encode())
         print( "incomming http: ", self.path )
 
+        form = cgi.FieldStorage(
+            fp=self.rfile,
+            headers=self.headers,
+            environ={'REQUEST_METHOD': 'POST'})
+        dct = {}
+        for i in form.keys():
+            dct[i] = form[i].value
+
+        print ("dictionary == " +str(dct))
+        SqliteDatabaseAdapter.getInstance().createNewRecord(entity[1:],dct)
+        #ent().create(dct)
 
 try:
     #Create a web server and define the handler to manage the
