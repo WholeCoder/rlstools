@@ -1,14 +1,34 @@
 
 outputString = ""
+accString = ""
 
 def saveCharacter(l):
     global outputString
+    global accString
     print("saveCharacter called = saving " + l)
-    outputString += l
+    if l == "\n":
+        accString = "print('"+accString+"')\n"
+        outputString += accString
+        accString = ""
+    else:
+        accString += l
 
 def saveCharacterAToStartState(l):
     global outputString
-    outputString += "<" + l
+    global accString
+    accString += "<" + l
+
+def saveCharacterForloopheader(l):
+    global accString
+    global outputString
+    if l == 'f':
+        accString = "print(\""+l
+    elif l == '%':
+        accString += '")\n'
+        outputString += accString
+        accString = ""
+    else:
+        accString += l
 
 def nothing(l):
     print("nothing(l) called ----------------->")
@@ -74,7 +94,7 @@ stateDict = {
       'Space':('B',
       nothing),
       'f':('E',
-      saveCharacter),
+      saveCharacterForloopheader),
       'e':('Error',
       error)
    },
@@ -122,11 +142,11 @@ stateDict = {
       '':('E',
       nothing),
       '*':('E',
-      saveCharacter),
+      saveCharacterForloopheader),
       '<':('Error',
       error),
       '%':('F',
-      nothing),
+      saveCharacterForloopheader),
       '=':('F',
       saveCharacter),
       '>':('E',
