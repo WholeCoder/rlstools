@@ -1,0 +1,15 @@
+*,<,%,=,>,Space,f,e
+StartState,StartState,A,StartState,StartState,StartState,StartState,StartState,StartState
+A,Error,Error,B,Error,Error,Error,Error,Error
+B,Error,Error,Error,C,Error,B,E,Error
+C,C,C,D,C,C,C,C,C
+D,Error,Error,Error,Error,StartState,Error,Error,Error
+E,E,Error,F,F,E,E,E,F
+F,Error,Error,Error,Error,G,Error,Error,Error
+G,G,H,G,G,G,G,G,G
+H,Error,Error,I,Error,Error,Error,Error,Error
+I,Error,Error,K,J,Error,I,Error,L
+J,J,Error,K,Error,J,J,J,J
+K,Error,Error,Error,Error,G,Error,Error,Error
+L,L,L,M,L,L,L,L,L
+M,Error,Error,Error,Error,StartState,Error,Error,Error

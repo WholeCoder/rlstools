@@ -1,0 +1,13 @@
+
+<html>
+	<head>
+		<title>Person List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>name</th>				</tr><% for row in rows: %><tr><td><%= str(row['name']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</html>

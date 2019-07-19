@@ -1,0 +1,515 @@
+Column names are , *, <, %, =, >, Space, f, e
+appending element = 
+appending element = *
+appending element = <
+appending element = %
+appending element = =
+appending element = >
+appending element = Space
+appending element = f
+appending element = e
+row[0] == StartState
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == StartState
+row[0] == StartState
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == StartState
+row[0] == StartState
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == A
+row[0] == StartState
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == StartState
+row[0] == StartState
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == StartState
+row[0] == StartState
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == StartState
+row[0] == StartState
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == StartState
+row[0] == StartState
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == StartState
+row[0] == StartState
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == StartState
+row[0] == A
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == A
+row[0] == A
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == Error
+row[0] == A
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == Error
+row[0] == A
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == B
+row[0] == A
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == Error
+row[0] == A
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == Error
+row[0] == A
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == Error
+row[0] == A
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == Error
+row[0] == A
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == Error
+row[0] == B
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == B
+row[0] == B
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == Error
+row[0] == B
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == Error
+row[0] == B
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == Error
+row[0] == B
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == C
+row[0] == B
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == Error
+row[0] == B
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == B
+row[0] == B
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == E
+row[0] == B
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == Error
+row[0] == C
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == C
+row[0] == C
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == C
+row[0] == C
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == C
+row[0] == C
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == D
+row[0] == C
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == C
+row[0] == C
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == C
+row[0] == C
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == C
+row[0] == C
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == C
+row[0] == C
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == C
+row[0] == D
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == D
+row[0] == D
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == Error
+row[0] == D
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == Error
+row[0] == D
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == Error
+row[0] == D
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == Error
+row[0] == D
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == StartState
+row[0] == D
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == Error
+row[0] == D
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == Error
+row[0] == D
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == Error
+row[0] == E
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == E
+row[0] == E
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == E
+row[0] == E
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == Error
+row[0] == E
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == F
+row[0] == E
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == F
+row[0] == E
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == E
+row[0] == E
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == E
+row[0] == E
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == E
+row[0] == E
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == F
+row[0] == F
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == F
+row[0] == F
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == Error
+row[0] == F
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == Error
+row[0] == F
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == Error
+row[0] == F
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == Error
+row[0] == F
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == G
+row[0] == F
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == Error
+row[0] == F
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == Error
+row[0] == F
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == Error
+row[0] == G
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == G
+row[0] == G
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == G
+row[0] == G
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == H
+row[0] == G
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == G
+row[0] == G
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == G
+row[0] == G
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == G
+row[0] == G
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == G
+row[0] == G
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == G
+row[0] == G
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == G
+row[0] == H
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == H
+row[0] == H
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == Error
+row[0] == H
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == Error
+row[0] == H
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == I
+row[0] == H
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == Error
+row[0] == H
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == Error
+row[0] == H
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == Error
+row[0] == H
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == Error
+row[0] == H
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == Error
+row[0] == I
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == I
+row[0] == I
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == Error
+row[0] == I
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == Error
+row[0] == I
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == K
+row[0] == I
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == J
+row[0] == I
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == Error
+row[0] == I
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == I
+row[0] == I
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == Error
+row[0] == I
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == L
+row[0] == J
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == J
+row[0] == J
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == J
+row[0] == J
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == Error
+row[0] == J
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == K
+row[0] == J
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == Error
+row[0] == J
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == J
+row[0] == J
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == J
+row[0] == J
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == J
+row[0] == J
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == J
+row[0] == K
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == K
+row[0] == K
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == Error
+row[0] == K
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == Error
+row[0] == K
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == Error
+row[0] == K
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == Error
+row[0] == K
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == G
+row[0] == K
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == Error
+row[0] == K
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == Error
+row[0] == K
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == Error
+row[0] == L
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == L
+row[0] == L
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == L
+row[0] == L
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == L
+row[0] == L
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == M
+row[0] == L
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == L
+row[0] == L
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == L
+row[0] == L
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == L
+row[0] == L
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == L
+row[0] == L
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == L
+row[0] == M
+symbole[] length == 9 i == 0
+symbols[i] == 
+nextState == M
+row[0] == M
+symbole[] length == 9 i == 1
+symbols[i] == *
+nextState == Error
+row[0] == M
+symbole[] length == 9 i == 2
+symbols[i] == <
+nextState == Error
+row[0] == M
+symbole[] length == 9 i == 3
+symbols[i] == %
+nextState == Error
+row[0] == M
+symbole[] length == 9 i == 4
+symbols[i] == =
+nextState == Error
+row[0] == M
+symbole[] length == 9 i == 5
+symbols[i] == >
+nextState == StartState
+row[0] == M
+symbole[] length == 9 i == 6
+symbols[i] == Space
+nextState == Error
+row[0] == M
+symbole[] length == 9 i == 7
+symbols[i] == f
+nextState == Error
+row[0] == M
+symbole[] length == 9 i == 8
+symbols[i] == e
+nextState == Error
+{'StartState': {'': ('StartState', None), '*': ('StartState', None), '<': ('A', None), '%': ('StartState', None), '=': ('StartState', None), '>': ('StartState', None), 'Space': ('StartState', None), 'f': ('StartState', None), 'e': ('StartState', None)}, 'A': {'': ('A', None), '*': ('Error', None), '<': ('Error', None), '%': ('B', None), '=': ('Error', None), '>': ('Error', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}, 'B': {'': ('B', None), '*': ('Error', None), '<': ('Error', None), '%': ('Error', None), '=': ('C', None), '>': ('Error', None), 'Space': ('B', None), 'f': ('E', None), 'e': ('Error', None)}, 'C': {'': ('C', None), '*': ('C', None), '<': ('C', None), '%': ('D', None), '=': ('C', None), '>': ('C', None), 'Space': ('C', None), 'f': ('C', None), 'e': ('C', None)}, 'D': {'': ('D', None), '*': ('Error', None), '<': ('Error', None), '%': ('Error', None), '=': ('Error', None), '>': ('StartState', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}, 'E': {'': ('E', None), '*': ('E', None), '<': ('Error', None), '%': ('F', None), '=': ('F', None), '>': ('E', None), 'Space': ('E', None), 'f': ('E', None), 'e': ('F', None)}, 'F': {'': ('F', None), '*': ('Error', None), '<': ('Error', None), '%': ('Error', None), '=': ('Error', None), '>': ('G', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}, 'G': {'': ('G', None), '*': ('G', None), '<': ('H', None), '%': ('G', None), '=': ('G', None), '>': ('G', None), 'Space': ('G', None), 'f': ('G', None), 'e': ('G', None)}, 'H': {'': ('H', None), '*': ('Error', None), '<': ('Error', None), '%': ('I', None), '=': ('Error', None), '>': ('Error', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}, 'I': {'': ('I', None), '*': ('Error', None), '<': ('Error', None), '%': ('K', None), '=': ('J', None), '>': ('Error', None), 'Space': ('I', None), 'f': ('Error', None), 'e': ('L', None)}, 'J': {'': ('J', None), '*': ('J', None), '<': ('Error', None), '%': ('K', None), '=': ('Error', None), '>': ('J', None), 'Space': ('J', None), 'f': ('J', None), 'e': ('J', None)}, 'K': {'': ('K', None), '*': ('Error', None), '<': ('Error', None), '%': ('Error', None), '=': ('Error', None), '>': ('G', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}, 'L': {'': ('L', None), '*': ('L', None), '<': ('L', None), '%': ('M', None), '=': ('L', None), '>': ('L', None), 'Space': ('L', None), 'f': ('L', None), 'e': ('L', None)}, 'M': {'': ('M', None), '*': ('Error', None), '<': ('Error', None), '%': ('Error', None), '=': ('Error', None), '>': ('StartState', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}}
