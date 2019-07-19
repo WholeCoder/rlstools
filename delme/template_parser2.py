@@ -6,6 +6,10 @@ def saveCharacter(l):
     print("saveCharacter called = saving " + l)
     outputString += l
 
+def saveCharacterAToStartState(l):
+    global outputString
+    outputString += "<" + l
+
 def nothing(l):
     print("nothing(l) called ----------------->")
     pass
@@ -38,7 +42,7 @@ stateDict = {
       '':('A',
       nothing),
       '*':('StartState',
-      saveCharacter),
+      saveCharacterAToStartState),
       '<':('Error',
       error),
       '%':('B',
@@ -122,7 +126,7 @@ stateDict = {
       '<':('Error',
       error),
       '%':('F',
-      saveCharacter),
+      nothing),
       '=':('F',
       saveCharacter),
       '>':('E',
@@ -178,7 +182,7 @@ stateDict = {
       '':('H',
       nothing),
       '*':('G',
-      saveCharacter),
+      saveCharacterAToStartState),
       '<':('Error',
       error),
       '%':('I',
@@ -323,5 +327,5 @@ with open('Office.pyht') as f:
             break
         print ("Read a character:", c)
 
-
+print("outputString == "+outputString)
 
