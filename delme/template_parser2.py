@@ -1,6 +1,9 @@
+global accString
+global outputString
 
 outputString = ""
 accString = ""
+
 
 def saveCharacter(l):
     global outputString
@@ -17,6 +20,17 @@ def saveCharacterAToStartState(l):
     global outputString
     global accString
     accString += "<" + l
+    print("saving to acc string----------------------- inf function accString == "+accString)
+
+def saveCharacterAToEnd(l):
+    accString += l + ">"
+
+def saveAccString(l):
+    global outputString
+    global accString
+
+    outputString += accString
+    accString = ""
 
 def saveCharacterForloopheader(l):
     global accString
@@ -29,7 +43,7 @@ def saveCharacterForloopheader(l):
         accString = ""
     else:
         accString += l
-
+    print("saveCharacterForloopheader called")
 def nothing(l):
     print("nothing(l) called ----------------->")
     pass
@@ -63,16 +77,16 @@ stateDict = {
       nothing),
       '*':('StartState',
       saveCharacterAToStartState),
-      '<':('Error',
-      error),
+      '<':('StartState',
+      saveCharacterAToStartState),
       '%':('B',
-      nothing),
+      saveAccString),
       '=':('Error',
       error),
-      '>':('Error',
-      error),
+      '>':('StartState',
+      saveCharacterAToEnd),
       'Space':('StartState',
-      error),
+      saveCharacterAToStartState),
       'f':('Error',
       error),
       'e':('Error',
@@ -336,11 +350,14 @@ with open('Office.pyht') as f:
         c = f.read(1)
         testString += c
         print("testString == "+testString)
-        print("ch == "+convert(c))
+        print("ch == "+convert(c) + "   ("+c+")")
         print("State == " + state)
         stateTuple = stateDict[state][convert(c)]
+
         print("stateTuple == " + str(stateTuple))
         stateTuple[1](c)
+        print("accString in main while== "+accString)
+
         state = stateTuple[0]
         if not c:
             print ("End of file")

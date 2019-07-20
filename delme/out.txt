@@ -1,515 +1,5186 @@
-Column names are , *, <, %, =, >, Space, f, e
-appending element = 
-appending element = *
-appending element = <
-appending element = %
-appending element = =
-appending element = >
-appending element = Space
-appending element = f
-appending element = e
-row[0] == StartState
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == StartState
-row[0] == StartState
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == StartState
-row[0] == StartState
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == A
-row[0] == StartState
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == StartState
-row[0] == StartState
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == StartState
-row[0] == StartState
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == StartState
-row[0] == StartState
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == StartState
-row[0] == StartState
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == StartState
-row[0] == StartState
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == StartState
-row[0] == A
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == A
-row[0] == A
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == Error
-row[0] == A
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == Error
-row[0] == A
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == B
-row[0] == A
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == Error
-row[0] == A
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == Error
-row[0] == A
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == Error
-row[0] == A
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == Error
-row[0] == A
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == Error
-row[0] == B
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == B
-row[0] == B
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == Error
-row[0] == B
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == Error
-row[0] == B
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == Error
-row[0] == B
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == C
-row[0] == B
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == Error
-row[0] == B
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == B
-row[0] == B
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == E
-row[0] == B
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == Error
-row[0] == C
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == C
-row[0] == C
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == C
-row[0] == C
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == C
-row[0] == C
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == D
-row[0] == C
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == C
-row[0] == C
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == C
-row[0] == C
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == C
-row[0] == C
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == C
-row[0] == C
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == C
-row[0] == D
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == D
-row[0] == D
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == Error
-row[0] == D
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == Error
-row[0] == D
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == Error
-row[0] == D
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == Error
-row[0] == D
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == StartState
-row[0] == D
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == Error
-row[0] == D
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == Error
-row[0] == D
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == Error
-row[0] == E
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == E
-row[0] == E
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == E
-row[0] == E
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == Error
-row[0] == E
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == F
-row[0] == E
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == F
-row[0] == E
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == E
-row[0] == E
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == E
-row[0] == E
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == E
-row[0] == E
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == F
-row[0] == F
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == F
-row[0] == F
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == Error
-row[0] == F
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == Error
-row[0] == F
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == Error
-row[0] == F
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == Error
-row[0] == F
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == G
-row[0] == F
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == Error
-row[0] == F
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == Error
-row[0] == F
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == Error
-row[0] == G
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == G
-row[0] == G
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == G
-row[0] == G
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == H
-row[0] == G
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == G
-row[0] == G
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == G
-row[0] == G
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == G
-row[0] == G
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == G
-row[0] == G
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == G
-row[0] == G
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == G
-row[0] == H
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == H
-row[0] == H
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == Error
-row[0] == H
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == Error
-row[0] == H
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == I
-row[0] == H
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == Error
-row[0] == H
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == Error
-row[0] == H
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == Error
-row[0] == H
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == Error
-row[0] == H
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == Error
-row[0] == I
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == I
-row[0] == I
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == Error
-row[0] == I
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == Error
-row[0] == I
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == K
-row[0] == I
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == J
-row[0] == I
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == Error
-row[0] == I
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == I
-row[0] == I
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == Error
-row[0] == I
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == L
-row[0] == J
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == J
-row[0] == J
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == J
-row[0] == J
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == Error
-row[0] == J
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == K
-row[0] == J
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == Error
-row[0] == J
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == J
-row[0] == J
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == J
-row[0] == J
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == J
-row[0] == J
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == J
-row[0] == K
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == K
-row[0] == K
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == Error
-row[0] == K
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == Error
-row[0] == K
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == Error
-row[0] == K
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == Error
-row[0] == K
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == G
-row[0] == K
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == Error
-row[0] == K
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == Error
-row[0] == K
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == Error
-row[0] == L
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == L
-row[0] == L
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == L
-row[0] == L
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == L
-row[0] == L
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == M
-row[0] == L
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == L
-row[0] == L
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == L
-row[0] == L
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == L
-row[0] == L
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == L
-row[0] == L
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == L
-row[0] == M
-symbole[] length == 9 i == 0
-symbols[i] == 
-nextState == M
-row[0] == M
-symbole[] length == 9 i == 1
-symbols[i] == *
-nextState == Error
-row[0] == M
-symbole[] length == 9 i == 2
-symbols[i] == <
-nextState == Error
-row[0] == M
-symbole[] length == 9 i == 3
-symbols[i] == %
-nextState == Error
-row[0] == M
-symbole[] length == 9 i == 4
-symbols[i] == =
-nextState == Error
-row[0] == M
-symbole[] length == 9 i == 5
-symbols[i] == >
-nextState == StartState
-row[0] == M
-symbole[] length == 9 i == 6
-symbols[i] == Space
-nextState == Error
-row[0] == M
-symbole[] length == 9 i == 7
-symbols[i] == f
-nextState == Error
-row[0] == M
-symbole[] length == 9 i == 8
-symbols[i] == e
-nextState == Error
-{'StartState': {'': ('StartState', None), '*': ('StartState', None), '<': ('A', None), '%': ('StartState', None), '=': ('StartState', None), '>': ('StartState', None), 'Space': ('StartState', None), 'f': ('StartState', None), 'e': ('StartState', None)}, 'A': {'': ('A', None), '*': ('Error', None), '<': ('Error', None), '%': ('B', None), '=': ('Error', None), '>': ('Error', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}, 'B': {'': ('B', None), '*': ('Error', None), '<': ('Error', None), '%': ('Error', None), '=': ('C', None), '>': ('Error', None), 'Space': ('B', None), 'f': ('E', None), 'e': ('Error', None)}, 'C': {'': ('C', None), '*': ('C', None), '<': ('C', None), '%': ('D', None), '=': ('C', None), '>': ('C', None), 'Space': ('C', None), 'f': ('C', None), 'e': ('C', None)}, 'D': {'': ('D', None), '*': ('Error', None), '<': ('Error', None), '%': ('Error', None), '=': ('Error', None), '>': ('StartState', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}, 'E': {'': ('E', None), '*': ('E', None), '<': ('Error', None), '%': ('F', None), '=': ('F', None), '>': ('E', None), 'Space': ('E', None), 'f': ('E', None), 'e': ('F', None)}, 'F': {'': ('F', None), '*': ('Error', None), '<': ('Error', None), '%': ('Error', None), '=': ('Error', None), '>': ('G', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}, 'G': {'': ('G', None), '*': ('G', None), '<': ('H', None), '%': ('G', None), '=': ('G', None), '>': ('G', None), 'Space': ('G', None), 'f': ('G', None), 'e': ('G', None)}, 'H': {'': ('H', None), '*': ('Error', None), '<': ('Error', None), '%': ('I', None), '=': ('Error', None), '>': ('Error', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}, 'I': {'': ('I', None), '*': ('Error', None), '<': ('Error', None), '%': ('K', None), '=': ('J', None), '>': ('Error', None), 'Space': ('I', None), 'f': ('Error', None), 'e': ('L', None)}, 'J': {'': ('J', None), '*': ('J', None), '<': ('Error', None), '%': ('K', None), '=': ('Error', None), '>': ('J', None), 'Space': ('J', None), 'f': ('J', None), 'e': ('J', None)}, 'K': {'': ('K', None), '*': ('Error', None), '<': ('Error', None), '%': ('Error', None), '=': ('Error', None), '>': ('G', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}, 'L': {'': ('L', None), '*': ('L', None), '<': ('L', None), '%': ('M', None), '=': ('L', None), '>': ('L', None), 'Space': ('L', None), 'f': ('L', None), 'e': ('L', None)}, 'M': {'': ('M', None), '*': ('Error', None), '<': ('Error', None), '%': ('Error', None), '=': ('Error', None), '>': ('StartState', None), 'Space': ('Error', None), 'f': ('Error', None), 'e': ('Error', None)}}
+Space
+testString == 
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 
+Read a character: <
+testString == 
+<h
+ch == *   (h)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == <h
+accString in main while== <h
+Read a character: h
+testString == 
+<ht
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== <ht
+Read a character: t
+testString == 
+<htm
+ch == *   (m)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving m
+accString in main while== <htm
+Read a character: m
+testString == 
+<html
+ch == *   (l)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving l
+accString in main while== <html
+Read a character: l
+testString == 
+<html>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== <html>
+Read a character: >
+testString == 
+<html>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 	
+Read a character: 	
+testString == 
+<html>
+	<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 	
+Read a character: <
+testString == 
+<html>
+	<h
+ch == *   (h)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 	<h
+accString in main while== 	<h
+Read a character: h
+testString == 
+<html>
+	<he
+ch == e   (e)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== 	<he
+Read a character: e
+testString == 
+<html>
+	<hea
+ch == *   (a)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving a
+accString in main while== 	<hea
+Read a character: a
+testString == 
+<html>
+	<head
+ch == *   (d)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== 	<head
+Read a character: d
+testString == 
+<html>
+	<head>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 	<head>
+Read a character: >
+testString == 
+<html>
+	<head>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+	
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 	
+Read a character: 	
+testString == 
+<html>
+	<head>
+		
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 		
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 		
+Read a character: <
+testString == 
+<html>
+	<head>
+		<t
+ch == *   (t)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 		<t
+accString in main while== 		<t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<ti
+ch == *   (i)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving i
+accString in main while== 		<ti
+Read a character: i
+testString == 
+<html>
+	<head>
+		<tit
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== 		<tit
+Read a character: t
+testString == 
+<html>
+	<head>
+		<titl
+ch == *   (l)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving l
+accString in main while== 		<titl
+Read a character: l
+testString == 
+<html>
+	<head>
+		<title
+ch == e   (e)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== 		<title
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 		<title>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>O
+ch == *   (O)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving O
+accString in main while== 		<title>O
+Read a character: O
+testString == 
+<html>
+	<head>
+		<title>Of
+ch == f   (f)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving f
+accString in main while== 		<title>Of
+Read a character: f
+testString == 
+<html>
+	<head>
+		<title>Off
+ch == f   (f)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving f
+accString in main while== 		<title>Off
+Read a character: f
+testString == 
+<html>
+	<head>
+		<title>Offi
+ch == *   (i)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving i
+accString in main while== 		<title>Offi
+Read a character: i
+testString == 
+<html>
+	<head>
+		<title>Offic
+ch == *   (c)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving c
+accString in main while== 		<title>Offic
+Read a character: c
+testString == 
+<html>
+	<head>
+		<title>Office
+ch == e   (e)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== 		<title>Office
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>Office 
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== 		<title>Office 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office L
+ch == *   (L)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving L
+accString in main while== 		<title>Office L
+Read a character: L
+testString == 
+<html>
+	<head>
+		<title>Office Li
+ch == *   (i)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving i
+accString in main while== 		<title>Office Li
+Read a character: i
+testString == 
+<html>
+	<head>
+		<title>Office Lis
+ch == *   (s)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving s
+accString in main while== 		<title>Office Lis
+Read a character: s
+testString == 
+<html>
+	<head>
+		<title>Office List
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== 		<title>Office List
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 		<title>Office List
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</
+ch == *   (/)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 		<title>Office List</
+accString in main while== 		<title>Office List</
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</t
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== 		<title>Office List</t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</ti
+ch == *   (i)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving i
+accString in main while== 		<title>Office List</ti
+Read a character: i
+testString == 
+<html>
+	<head>
+		<title>Office List</tit
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== 		<title>Office List</tit
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</titl
+ch == *   (l)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving l
+accString in main while== 		<title>Office List</titl
+Read a character: l
+testString == 
+<html>
+	<head>
+		<title>Office List</title
+ch == e   (e)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== 		<title>Office List</title
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 		<title>Office List</title>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 	
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 	
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</
+ch == *   (/)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 	</
+accString in main while== 	</
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</h
+ch == *   (h)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving h
+accString in main while== 	</h
+Read a character: h
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</he
+ch == e   (e)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== 	</he
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</hea
+ch == *   (a)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving a
+accString in main while== 	</hea
+Read a character: a
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head
+ch == *   (d)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== 	</head
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 	</head>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 	
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 	
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<b
+ch == *   (b)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 	<b
+accString in main while== 	<b
+Read a character: b
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<bo
+ch == *   (o)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving o
+accString in main while== 	<bo
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<bod
+ch == *   (d)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== 	<bod
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body
+ch == *   (y)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving y
+accString in main while== 	<body
+Read a character: y
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 	<body>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+	
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 	
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 		
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 		
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<t
+ch == *   (t)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 		<t
+accString in main while== 		<t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<ta
+ch == *   (a)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving a
+accString in main while== 		<ta
+Read a character: a
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<tab
+ch == *   (b)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving b
+accString in main while== 		<tab
+Read a character: b
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<tabl
+ch == *   (l)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving l
+accString in main while== 		<tabl
+Read a character: l
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table
+ch == e   (e)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== 		<table
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 		<table>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+	
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 	
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+		
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 		
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 			
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 			
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<t
+ch == *   (t)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 			<t
+accString in main while== 			<t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tb
+ch == *   (b)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving b
+accString in main while== 			<tb
+Read a character: b
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbo
+ch == *   (o)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving o
+accString in main while== 			<tbo
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbod
+ch == *   (d)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== 			<tbod
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody
+ch == *   (y)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving y
+accString in main while== 			<tbody
+Read a character: y
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 			<tbody>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+	
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 	
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+		
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 		
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+			
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 			
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 				
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<t
+ch == *   (t)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 				<t
+accString in main while== 				<t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr
+ch == *   (r)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== 				<tr
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 				<tr>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				<tr>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><t
+ch == *   (t)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 				<tr><t
+accString in main while== 				<tr><t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th
+ch == *   (h)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving h
+accString in main while== 				<tr><th
+Read a character: h
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 				<tr><th>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>z
+ch == *   (z)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving z
+accString in main while== 				<tr><th>z
+Read a character: z
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zi
+ch == *   (i)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving i
+accString in main while== 				<tr><th>zi
+Read a character: i
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip
+ch == *   (p)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving p
+accString in main while== 				<tr><th>zip
+Read a character: p
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_
+ch == *   (_)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving _
+accString in main while== 				<tr><th>zip_
+Read a character: _
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_c
+ch == *   (c)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving c
+accString in main while== 				<tr><th>zip_c
+Read a character: c
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_co
+ch == *   (o)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving o
+accString in main while== 				<tr><th>zip_co
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_cod
+ch == *   (d)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== 				<tr><th>zip_cod
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code
+ch == e   (e)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== 				<tr><th>zip_code
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				<tr><th>zip_code
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</
+ch == *   (/)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</
+accString in main while== 				<tr><th>zip_code</
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</t
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== 				<tr><th>zip_code</t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th
+ch == *   (h)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving h
+accString in main while== 				<tr><th>zip_code</th
+Read a character: h
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 				<tr><th>zip_code</th>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				<tr><th>zip_code</th>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><t
+ch == *   (t)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</th><t
+accString in main while== 				<tr><th>zip_code</th><t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th
+ch == *   (h)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving h
+accString in main while== 				<tr><th>zip_code</th><th
+Read a character: h
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 				<tr><th>zip_code</th><th>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>c
+ch == *   (c)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving c
+accString in main while== 				<tr><th>zip_code</th><th>c
+Read a character: c
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>ci
+ch == *   (i)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving i
+accString in main while== 				<tr><th>zip_code</th><th>ci
+Read a character: i
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>cit
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== 				<tr><th>zip_code</th><th>cit
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city
+ch == *   (y)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving y
+accString in main while== 				<tr><th>zip_code</th><th>city
+Read a character: y
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				<tr><th>zip_code</th><th>city
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</
+ch == *   (/)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</th><th>city</
+accString in main while== 				<tr><th>zip_code</th><th>city</
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</t
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== 				<tr><th>zip_code</th><th>city</t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th
+ch == *   (h)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving h
+accString in main while== 				<tr><th>zip_code</th><th>city</th
+Read a character: h
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 				<tr><th>zip_code</th><th>city</th>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				<tr><th>zip_code</th><th>city</th>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><t
+ch == *   (t)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</th><th>city</th><t
+accString in main while== 				<tr><th>zip_code</th><th>city</th><t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th
+ch == *   (h)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving h
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th
+Read a character: h
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>a
+ch == *   (a)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving a
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>a
+Read a character: a
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>ad
+ch == *   (d)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>ad
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>add
+ch == *   (d)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>add
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>addr
+ch == *   (r)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>addr
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>addre
+ch == e   (e)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>addre
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>addres
+ch == *   (s)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving s
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>addres
+Read a character: s
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address
+ch == *   (s)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving s
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address
+Read a character: s
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</
+ch == *   (/)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</th><th>city</th><th>address</
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</t
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th
+ch == *   (h)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving h
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th
+Read a character: h
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>	
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>	
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>		
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>		
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>			
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>			
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</
+ch == *   (/)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</th><th>city</th><th>address</th>				</
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</t
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr
+ch == *   (r)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><%
+ch == %   (%)
+State == A
+stateTuple == ('B', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr>
+Read a character: %
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% 
+ch == Space   ( )
+State == B
+stateTuple == ('B', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr>
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% f
+ch == f   (f)
+State == B
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("f
+Read a character: f
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% fo
+ch == *   (o)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("fo
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for
+ch == *   (r)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for 
+ch == Space   ( )
+State == E
+stateTuple == ('E', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== print("for 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for r
+ch == *   (r)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for r
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for ro
+ch == *   (o)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for ro
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row
+ch == *   (w)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for row
+Read a character: w
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row 
+ch == Space   ( )
+State == E
+stateTuple == ('E', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== print("for row 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row i
+ch == *   (i)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for row i
+Read a character: i
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in
+ch == *   (n)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for row in
+Read a character: n
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in 
+ch == Space   ( )
+State == E
+stateTuple == ('E', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== print("for row in 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in r
+ch == *   (r)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for row in r
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in ro
+ch == *   (o)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for row in ro
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in row
+ch == *   (w)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for row in row
+Read a character: w
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows
+ch == *   (s)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for row in rows
+Read a character: s
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows:
+ch == *   (:)
+State == E
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== print("for row in rows:
+Read a character: :
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: 
+ch == Space   ( )
+State == E
+stateTuple == ('E', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== print("for row in rows: 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %
+ch == %   (%)
+State == E
+stateTuple == ('F', <function saveCharacterForloopheader at 0x7f415964b950>)
+saveCharacterForloopheader called
+accString in main while== 
+Read a character: %
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %>
+ch == >   (>)
+State == F
+stateTuple == ('G', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><t
+ch == *   (t)
+State == H
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == <t
+accString in main while== <t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr
+ch == *   (r)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== <tr
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr>
+ch == >   (>)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== <tr>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><t
+ch == *   (t)
+State == H
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == <tr><t
+accString in main while== <tr><t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td
+ch == *   (d)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== <tr><td
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td>
+ch == >   (>)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== <tr><td>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%
+ch == %   (%)
+State == H
+stateTuple == ('I', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td>
+Read a character: %
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%=
+ch == =   (=)
+State == I
+stateTuple == ('J', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td>
+Read a character: =
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= 
+ch == Space   ( )
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== <tr><td> 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= s
+ch == *   (s)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving s
+accString in main while== <tr><td> s
+Read a character: s
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= st
+ch == *   (t)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== <tr><td> st
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str
+ch == *   (r)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== <tr><td> str
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(
+ch == *   (()
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving (
+accString in main while== <tr><td> str(
+Read a character: (
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(r
+ch == *   (r)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== <tr><td> str(r
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(ro
+ch == *   (o)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving o
+accString in main while== <tr><td> str(ro
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row
+ch == *   (w)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving w
+accString in main while== <tr><td> str(row
+Read a character: w
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row[
+ch == *   ([)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving [
+accString in main while== <tr><td> str(row[
+Read a character: [
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['
+ch == *   (')
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving '
+accString in main while== <tr><td> str(row['
+Read a character: '
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['z
+ch == *   (z)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving z
+accString in main while== <tr><td> str(row['z
+Read a character: z
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zi
+ch == *   (i)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving i
+accString in main while== <tr><td> str(row['zi
+Read a character: i
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip
+ch == *   (p)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving p
+accString in main while== <tr><td> str(row['zip
+Read a character: p
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_
+ch == *   (_)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving _
+accString in main while== <tr><td> str(row['zip_
+Read a character: _
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_c
+ch == *   (c)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving c
+accString in main while== <tr><td> str(row['zip_c
+Read a character: c
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_co
+ch == *   (o)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving o
+accString in main while== <tr><td> str(row['zip_co
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_cod
+ch == *   (d)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== <tr><td> str(row['zip_cod
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code
+ch == e   (e)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== <tr><td> str(row['zip_code
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code'
+ch == *   (')
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving '
+accString in main while== <tr><td> str(row['zip_code'
+Read a character: '
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']
+ch == *   (])
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving ]
+accString in main while== <tr><td> str(row['zip_code']
+Read a character: ]
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code'])
+ch == *   ())
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving )
+accString in main while== <tr><td> str(row['zip_code'])
+Read a character: )
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) 
+ch == Space   ( )
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== <tr><td> str(row['zip_code']) 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %
+ch == %   (%)
+State == J
+stateTuple == ('K', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) 
+Read a character: %
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %>
+ch == >   (>)
+State == K
+stateTuple == ('G', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) 
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) 
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></
+ch == *   (/)
+State == H
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == <tr><td> str(row['zip_code']) </
+accString in main while== <tr><td> str(row['zip_code']) </
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></t
+ch == *   (t)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== <tr><td> str(row['zip_code']) </t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td
+ch == *   (d)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== <tr><td> str(row['zip_code']) </td
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td>
+ch == >   (>)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== <tr><td> str(row['zip_code']) </td>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><t
+ch == *   (t)
+State == H
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == <tr><td> str(row['zip_code']) </td><t
+accString in main while== <tr><td> str(row['zip_code']) </td><t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td
+ch == *   (d)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== <tr><td> str(row['zip_code']) </td><td
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td>
+ch == >   (>)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== <tr><td> str(row['zip_code']) </td><td>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%
+ch == %   (%)
+State == H
+stateTuple == ('I', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td>
+Read a character: %
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%=
+ch == =   (=)
+State == I
+stateTuple == ('J', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td>
+Read a character: =
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= 
+ch == Space   ( )
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== <tr><td> str(row['zip_code']) </td><td> 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= s
+ch == *   (s)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving s
+accString in main while== <tr><td> str(row['zip_code']) </td><td> s
+Read a character: s
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= st
+ch == *   (t)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== <tr><td> str(row['zip_code']) </td><td> st
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str
+ch == *   (r)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(
+ch == *   (()
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving (
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(
+Read a character: (
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(r
+ch == *   (r)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(r
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(ro
+ch == *   (o)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving o
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(ro
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row
+ch == *   (w)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving w
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row
+Read a character: w
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row[
+ch == *   ([)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving [
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row[
+Read a character: [
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['
+ch == *   (')
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving '
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['
+Read a character: '
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['c
+ch == *   (c)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving c
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['c
+Read a character: c
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['ci
+ch == *   (i)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving i
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['ci
+Read a character: i
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['cit
+ch == *   (t)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['cit
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city
+ch == *   (y)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving y
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city
+Read a character: y
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city'
+ch == *   (')
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving '
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city'
+Read a character: '
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']
+ch == *   (])
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving ]
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']
+Read a character: ]
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city'])
+ch == *   ())
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving )
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city'])
+Read a character: )
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) 
+ch == Space   ( )
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %
+ch == %   (%)
+State == J
+stateTuple == ('K', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) 
+Read a character: %
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %>
+ch == >   (>)
+State == K
+stateTuple == ('G', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) 
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) 
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></
+ch == *   (/)
+State == H
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == <tr><td> str(row['zip_code']) </td><td> str(row['city']) </
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></t
+ch == *   (t)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td
+ch == *   (d)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td>
+ch == >   (>)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><t
+ch == *   (t)
+State == H
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><t
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td
+ch == *   (d)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td>
+ch == >   (>)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%
+ch == %   (%)
+State == H
+stateTuple == ('I', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td>
+Read a character: %
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%=
+ch == =   (=)
+State == I
+stateTuple == ('J', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td>
+Read a character: =
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= 
+ch == Space   ( )
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= s
+ch == *   (s)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving s
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> s
+Read a character: s
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= st
+ch == *   (t)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> st
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str
+ch == *   (r)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(
+ch == *   (()
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving (
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(
+Read a character: (
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(r
+ch == *   (r)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(r
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(ro
+ch == *   (o)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving o
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(ro
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row
+ch == *   (w)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving w
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row
+Read a character: w
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row[
+ch == *   ([)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving [
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row[
+Read a character: [
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['
+ch == *   (')
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving '
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['
+Read a character: '
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['a
+ch == *   (a)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving a
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['a
+Read a character: a
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['ad
+ch == *   (d)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['ad
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['add
+ch == *   (d)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['add
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['addr
+ch == *   (r)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['addr
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['addre
+ch == e   (e)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['addre
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['addres
+ch == *   (s)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving s
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['addres
+Read a character: s
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address
+ch == *   (s)
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving s
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address
+Read a character: s
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address'
+ch == *   (')
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving '
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address'
+Read a character: '
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']
+ch == *   (])
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving ]
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']
+Read a character: ]
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address'])
+ch == *   ())
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving )
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address'])
+Read a character: )
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) 
+ch == Space   ( )
+State == J
+stateTuple == ('J', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %
+ch == %   (%)
+State == J
+stateTuple == ('K', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) 
+Read a character: %
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %>
+ch == >   (>)
+State == K
+stateTuple == ('G', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) 
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) 
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></
+ch == *   (/)
+State == H
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></t
+ch == *   (t)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td
+ch == *   (d)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td>
+ch == >   (>)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></
+ch == *   (/)
+State == H
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></t
+ch == *   (t)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr
+ch == *   (r)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr>
+ch == >   (>)
+State == G
+stateTuple == ('G', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><
+ch == <   (<)
+State == G
+stateTuple == ('H', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr>
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><%
+ch == %   (%)
+State == H
+stateTuple == ('I', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr>
+Read a character: %
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% 
+ch == Space   ( )
+State == I
+stateTuple == ('I', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% e
+ch == e   (e)
+State == I
+stateTuple == ('L', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> e
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% en
+ch == *   (n)
+State == L
+stateTuple == ('L', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving n
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> en
+Read a character: n
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end
+ch == *   (d)
+State == L
+stateTuple == ('L', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> end
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-
+ch == *   (-)
+State == L
+stateTuple == ('L', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving -
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> end-
+Read a character: -
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-f
+ch == f   (f)
+State == L
+stateTuple == ('L', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving f
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> end-f
+Read a character: f
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-fo
+ch == *   (o)
+State == L
+stateTuple == ('L', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving o
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> end-fo
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for
+ch == *   (r)
+State == L
+stateTuple == ('L', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving r
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> end-for
+Read a character: r
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for 
+ch == Space   ( )
+State == L
+stateTuple == ('L', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> end-for 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %
+ch == %   (%)
+State == L
+stateTuple == ('M', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> end-for 
+Read a character: %
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+ch == >   (>)
+State == M
+stateTuple == ('StartState', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== <tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> end-for 
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+ 
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==  
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+  
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==   
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+   
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==    
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+    
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==     
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+     
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==      
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+      
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==       
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+       
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==        
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+        
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==         
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+         
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==          
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+          
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==           
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+           
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==            
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+            
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==             
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+             
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==              
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+              
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==               
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+               
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==                
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==                 
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                 
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==                  
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                  
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==                   
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                   
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==                    
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                    
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==                     
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                     
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==                      
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                      
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==                       
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                       
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==                        
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        
+ch == Space   ( )
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving  
+accString in main while==                         
+Read a character:  
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        <
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while==                         
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </
+ch == *   (/)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString ==                         </
+accString in main while==                         </
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </t
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while==                         </t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tb
+ch == *   (b)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving b
+accString in main while==                         </tb
+Read a character: b
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbo
+ch == *   (o)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving o
+accString in main while==                         </tbo
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbod
+ch == *   (d)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while==                         </tbod
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody
+ch == *   (y)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving y
+accString in main while==                         </tbody
+Read a character: y
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while==                         </tbody>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+	
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 	
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 		
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 		
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</
+ch == *   (/)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 		</
+accString in main while== 		</
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</t
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== 		</t
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</ta
+ch == *   (a)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving a
+accString in main while== 		</ta
+Read a character: a
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</tab
+ch == *   (b)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving b
+accString in main while== 		</tab
+Read a character: b
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</tabl
+ch == *   (l)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving l
+accString in main while== 		</tabl
+Read a character: l
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table
+ch == e   (e)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving e
+accString in main while== 		</table
+Read a character: e
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 		</table>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	
+ch == *   (	)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 	
+accString in main while== 	
+Read a character: 	
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 	
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</
+ch == *   (/)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == 	</
+accString in main while== 	</
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</b
+ch == *   (b)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving b
+accString in main while== 	</b
+Read a character: b
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</bo
+ch == *   (o)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving o
+accString in main while== 	</bo
+Read a character: o
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</bod
+ch == *   (d)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving d
+accString in main while== 	</bod
+Read a character: d
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body
+ch == *   (y)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving y
+accString in main while== 	</body
+Read a character: y
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== 	</body>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+<
+ch == <   (<)
+State == StartState
+stateTuple == ('A', <function nothing at 0x7f415964b9d8>)
+nothing(l) called ----------------->
+accString in main while== 
+Read a character: <
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</
+ch == *   (/)
+State == A
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f415964b620>)
+saving to acc string----------------------- inf function accString == </
+accString in main while== </
+Read a character: /
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</h
+ch == *   (h)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving h
+accString in main while== </h
+Read a character: h
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</ht
+ch == *   (t)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving t
+accString in main while== </ht
+Read a character: t
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</htm
+ch == *   (m)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving m
+accString in main while== </htm
+Read a character: m
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</html
+ch == *   (l)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving l
+accString in main while== </html
+Read a character: l
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</html>
+ch == >   (>)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving >
+accString in main while== </html>
+Read a character: >
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</html>
+
+ch == *   (
+)
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+
+accString in main while== 
+Read a character: 
+
+testString == 
+<html>
+	<head>
+		<title>Office List</title>
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
+                        </tbody>
+		</table>
+	</body>
+</html>
+
+ch ==    ()
+State == StartState
+stateTuple == ('StartState', <function saveCharacter at 0x7f415b435e18>)
+saveCharacter called = saving 
+accString in main while== 
+End of file
+outputString == print('')
+print('<html>')
+print('	<head>')
+print('		<title>Office List</title>')
+print('	</head>')
+print('	<body>')
+print('		<table>')
+print('			<tbody>')
+print("for row in rows: ")
+print('<tr><td> str(row['zip_code']) </td><td> str(row['city']) </td><td> str(row['address']) </td></tr> end-for ')
+print('                        </tbody>')
+print('		</table>')
+print('	</body>')
+print('</html>')
+
