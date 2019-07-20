@@ -29,7 +29,7 @@ def saveAccString(l):
     global outputString
     global accString
 
-    outputString += accString
+    outputString += "print('"+accString+"')\n"
     accString = ""
 
 def saveCharacterForloopheader(l):
