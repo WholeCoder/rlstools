@@ -36,9 +36,9 @@ def saveCharacterForloopheader(l):
     global accString
     global outputString
     if l == 'f':
-        accString = "print(\""+l
+        accString = l
     elif l == '%':
-        accString += '")\n'
+        accString += '\n'
         outputString += accString
         accString = ""
     else:
