@@ -26,7 +26,7 @@ def saveCharacterIndented(l):
     global outputString
     global accString
     #accString += l
-    outputString += "   print(\""+accString+"\")\n"
+    outputString += "   print('"+accString+"')\n"
     accString = ""
 
 def saveAccWithIndent(l):
@@ -363,7 +363,7 @@ testString = ""
 
 print(convert(" "))
 state = 'StartState'
-with open('Office.pyht') as f:
+with open('Office.get.pyht') as f:
     while True:
         c = f.read(1)
         testString += c
