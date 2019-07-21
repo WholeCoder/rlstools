@@ -363,7 +363,7 @@ testString = ""
 
 print(convert(" "))
 state = 'StartState'
-with open('Office.get.pyht') as f:
+with open('Office.pyht') as f:
     while True:
         c = f.read(1)
         testString += c

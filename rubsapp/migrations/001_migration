@@ -1,8 +1,0 @@
-upgrade
-add table Person
-add column Person name
-
-
-downgrade
-remove column Person name
-remove table Person

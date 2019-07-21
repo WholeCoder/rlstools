@@ -39,7 +39,7 @@ class Template:
         headString += '<tr>'
         count = 0
         while count < len(parameter_list):
-            headString += "<td><%= str(row['"+parameter_list[count]+"']) %></td>"
+            headString += "<td><%= str(row[\""+parameter_list[count]+"\"]) %></td>"
             count += 1
         headString += '</tr>'
         headString += "<% end-for %>"
