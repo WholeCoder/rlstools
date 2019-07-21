@@ -326,7 +326,7 @@ stateDict = {
       'Space':('L',
       saveCharacter),
       'f':('L',
-      saveCharacter),
+      nothing),
       'e':('L',
       saveCharacter)
    },

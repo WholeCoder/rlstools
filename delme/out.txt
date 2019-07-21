@@ -4,7 +4,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -14,7 +14,7 @@ testString ==
 <
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character: <
@@ -22,7 +22,7 @@ testString ==
 <h
 ch == *   (h)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == <h
 accString in main while== <h
 Read a character: h
@@ -30,7 +30,7 @@ testString ==
 <ht
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== <ht
 Read a character: t
@@ -38,7 +38,7 @@ testString ==
 <htm
 ch == *   (m)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving m
 accString in main while== <htm
 Read a character: m
@@ -46,7 +46,7 @@ testString ==
 <html
 ch == *   (l)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving l
 accString in main while== <html
 Read a character: l
@@ -54,7 +54,7 @@ testString ==
 <html>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== <html>
 Read a character: >
@@ -64,7 +64,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -75,7 +75,7 @@ testString ==
 	
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 	
 Read a character: 	
@@ -84,7 +84,7 @@ testString ==
 	<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 	
 Read a character: <
@@ -93,7 +93,7 @@ testString ==
 	<h
 ch == *   (h)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 	<h
 accString in main while== 	<h
 Read a character: h
@@ -102,7 +102,7 @@ testString ==
 	<he
 ch == e   (e)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while== 	<he
 Read a character: e
@@ -111,7 +111,7 @@ testString ==
 	<hea
 ch == *   (a)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving a
 accString in main while== 	<hea
 Read a character: a
@@ -120,7 +120,7 @@ testString ==
 	<head
 ch == *   (d)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== 	<head
 Read a character: d
@@ -129,7 +129,7 @@ testString ==
 	<head>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 	<head>
 Read a character: >
@@ -140,7 +140,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -152,7 +152,7 @@ testString ==
 	
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 	
 Read a character: 	
@@ -162,7 +162,7 @@ testString ==
 		
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 		
 Read a character: 	
@@ -172,7 +172,7 @@ testString ==
 		<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 		
 Read a character: <
@@ -182,7 +182,7 @@ testString ==
 		<t
 ch == *   (t)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 		<t
 accString in main while== 		<t
 Read a character: t
@@ -192,7 +192,7 @@ testString ==
 		<ti
 ch == *   (i)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving i
 accString in main while== 		<ti
 Read a character: i
@@ -202,7 +202,7 @@ testString ==
 		<tit
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== 		<tit
 Read a character: t
@@ -212,7 +212,7 @@ testString ==
 		<titl
 ch == *   (l)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving l
 accString in main while== 		<titl
 Read a character: l
@@ -222,7 +222,7 @@ testString ==
 		<title
 ch == e   (e)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while== 		<title
 Read a character: e
@@ -232,7 +232,7 @@ testString ==
 		<title>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 		<title>
 Read a character: >
@@ -242,7 +242,7 @@ testString ==
 		<title>O
 ch == *   (O)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving O
 accString in main while== 		<title>O
 Read a character: O
@@ -252,7 +252,7 @@ testString ==
 		<title>Of
 ch == f   (f)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving f
 accString in main while== 		<title>Of
 Read a character: f
@@ -262,7 +262,7 @@ testString ==
 		<title>Off
 ch == f   (f)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving f
 accString in main while== 		<title>Off
 Read a character: f
@@ -272,7 +272,7 @@ testString ==
 		<title>Offi
 ch == *   (i)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving i
 accString in main while== 		<title>Offi
 Read a character: i
@@ -282,7 +282,7 @@ testString ==
 		<title>Offic
 ch == *   (c)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving c
 accString in main while== 		<title>Offic
 Read a character: c
@@ -292,7 +292,7 @@ testString ==
 		<title>Office
 ch == e   (e)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while== 		<title>Office
 Read a character: e
@@ -302,7 +302,7 @@ testString ==
 		<title>Office 
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while== 		<title>Office 
 Read a character:  
@@ -312,7 +312,7 @@ testString ==
 		<title>Office L
 ch == *   (L)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving L
 accString in main while== 		<title>Office L
 Read a character: L
@@ -322,7 +322,7 @@ testString ==
 		<title>Office Li
 ch == *   (i)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving i
 accString in main while== 		<title>Office Li
 Read a character: i
@@ -332,7 +332,7 @@ testString ==
 		<title>Office Lis
 ch == *   (s)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving s
 accString in main while== 		<title>Office Lis
 Read a character: s
@@ -342,7 +342,7 @@ testString ==
 		<title>Office List
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== 		<title>Office List
 Read a character: t
@@ -352,7 +352,7 @@ testString ==
 		<title>Office List<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 		<title>Office List
 Read a character: <
@@ -362,7 +362,7 @@ testString ==
 		<title>Office List</
 ch == *   (/)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 		<title>Office List</
 accString in main while== 		<title>Office List</
 Read a character: /
@@ -372,7 +372,7 @@ testString ==
 		<title>Office List</t
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== 		<title>Office List</t
 Read a character: t
@@ -382,7 +382,7 @@ testString ==
 		<title>Office List</ti
 ch == *   (i)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving i
 accString in main while== 		<title>Office List</ti
 Read a character: i
@@ -392,7 +392,7 @@ testString ==
 		<title>Office List</tit
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== 		<title>Office List</tit
 Read a character: t
@@ -402,7 +402,7 @@ testString ==
 		<title>Office List</titl
 ch == *   (l)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving l
 accString in main while== 		<title>Office List</titl
 Read a character: l
@@ -412,7 +412,7 @@ testString ==
 		<title>Office List</title
 ch == e   (e)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while== 		<title>Office List</title
 Read a character: e
@@ -422,7 +422,7 @@ testString ==
 		<title>Office List</title>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 		<title>Office List</title>
 Read a character: >
@@ -434,7 +434,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -447,7 +447,7 @@ testString ==
 	
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 	
 Read a character: 	
@@ -458,7 +458,7 @@ testString ==
 	<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 	
 Read a character: <
@@ -469,7 +469,7 @@ testString ==
 	</
 ch == *   (/)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 	</
 accString in main while== 	</
 Read a character: /
@@ -480,7 +480,7 @@ testString ==
 	</h
 ch == *   (h)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving h
 accString in main while== 	</h
 Read a character: h
@@ -491,7 +491,7 @@ testString ==
 	</he
 ch == e   (e)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while== 	</he
 Read a character: e
@@ -502,7 +502,7 @@ testString ==
 	</hea
 ch == *   (a)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving a
 accString in main while== 	</hea
 Read a character: a
@@ -513,7 +513,7 @@ testString ==
 	</head
 ch == *   (d)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== 	</head
 Read a character: d
@@ -524,7 +524,7 @@ testString ==
 	</head>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 	</head>
 Read a character: >
@@ -537,7 +537,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -551,7 +551,7 @@ testString ==
 	
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 	
 Read a character: 	
@@ -563,7 +563,7 @@ testString ==
 	<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 	
 Read a character: <
@@ -575,7 +575,7 @@ testString ==
 	<b
 ch == *   (b)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 	<b
 accString in main while== 	<b
 Read a character: b
@@ -587,7 +587,7 @@ testString ==
 	<bo
 ch == *   (o)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving o
 accString in main while== 	<bo
 Read a character: o
@@ -599,7 +599,7 @@ testString ==
 	<bod
 ch == *   (d)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== 	<bod
 Read a character: d
@@ -611,7 +611,7 @@ testString ==
 	<body
 ch == *   (y)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving y
 accString in main while== 	<body
 Read a character: y
@@ -623,7 +623,7 @@ testString ==
 	<body>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 	<body>
 Read a character: >
@@ -637,7 +637,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -652,7 +652,7 @@ testString ==
 	
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 	
 Read a character: 	
@@ -665,7 +665,7 @@ testString ==
 		
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 		
 Read a character: 	
@@ -678,7 +678,7 @@ testString ==
 		<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 		
 Read a character: <
@@ -691,7 +691,7 @@ testString ==
 		<t
 ch == *   (t)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 		<t
 accString in main while== 		<t
 Read a character: t
@@ -704,7 +704,7 @@ testString ==
 		<ta
 ch == *   (a)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving a
 accString in main while== 		<ta
 Read a character: a
@@ -717,7 +717,7 @@ testString ==
 		<tab
 ch == *   (b)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving b
 accString in main while== 		<tab
 Read a character: b
@@ -730,7 +730,7 @@ testString ==
 		<tabl
 ch == *   (l)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving l
 accString in main while== 		<tabl
 Read a character: l
@@ -743,7 +743,7 @@ testString ==
 		<table
 ch == e   (e)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while== 		<table
 Read a character: e
@@ -756,7 +756,7 @@ testString ==
 		<table>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 		<table>
 Read a character: >
@@ -771,7 +771,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -787,7 +787,7 @@ testString ==
 	
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 	
 Read a character: 	
@@ -801,7 +801,7 @@ testString ==
 		
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 		
 Read a character: 	
@@ -815,7 +815,7 @@ testString ==
 			
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 			
 Read a character: 	
@@ -829,7 +829,7 @@ testString ==
 			<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 			
 Read a character: <
@@ -843,7 +843,7 @@ testString ==
 			<t
 ch == *   (t)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 			<t
 accString in main while== 			<t
 Read a character: t
@@ -857,7 +857,7 @@ testString ==
 			<tb
 ch == *   (b)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving b
 accString in main while== 			<tb
 Read a character: b
@@ -871,7 +871,7 @@ testString ==
 			<tbo
 ch == *   (o)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving o
 accString in main while== 			<tbo
 Read a character: o
@@ -885,7 +885,7 @@ testString ==
 			<tbod
 ch == *   (d)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== 			<tbod
 Read a character: d
@@ -899,7 +899,7 @@ testString ==
 			<tbody
 ch == *   (y)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving y
 accString in main while== 			<tbody
 Read a character: y
@@ -913,7 +913,7 @@ testString ==
 			<tbody>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 			<tbody>
 Read a character: >
@@ -929,7 +929,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -946,7 +946,7 @@ testString ==
 	
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 	
 Read a character: 	
@@ -961,7 +961,7 @@ testString ==
 		
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 		
 Read a character: 	
@@ -976,7 +976,7 @@ testString ==
 			
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 			
 Read a character: 	
@@ -991,7 +991,7 @@ testString ==
 				
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 				
 Read a character: 	
@@ -1006,7 +1006,7 @@ testString ==
 				<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 				
 Read a character: <
@@ -1021,7 +1021,7 @@ testString ==
 				<t
 ch == *   (t)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 				<t
 accString in main while== 				<t
 Read a character: t
@@ -1036,7 +1036,7 @@ testString ==
 				<tr
 ch == *   (r)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while== 				<tr
 Read a character: r
@@ -1051,7 +1051,7 @@ testString ==
 				<tr>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 				<tr>
 Read a character: >
@@ -1066,7 +1066,7 @@ testString ==
 				<tr><
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 				<tr>
 Read a character: <
@@ -1081,7 +1081,7 @@ testString ==
 				<tr><t
 ch == *   (t)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 				<tr><t
 accString in main while== 				<tr><t
 Read a character: t
@@ -1096,7 +1096,7 @@ testString ==
 				<tr><th
 ch == *   (h)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving h
 accString in main while== 				<tr><th
 Read a character: h
@@ -1111,7 +1111,7 @@ testString ==
 				<tr><th>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 				<tr><th>
 Read a character: >
@@ -1126,7 +1126,7 @@ testString ==
 				<tr><th>z
 ch == *   (z)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving z
 accString in main while== 				<tr><th>z
 Read a character: z
@@ -1141,7 +1141,7 @@ testString ==
 				<tr><th>zi
 ch == *   (i)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving i
 accString in main while== 				<tr><th>zi
 Read a character: i
@@ -1156,7 +1156,7 @@ testString ==
 				<tr><th>zip
 ch == *   (p)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving p
 accString in main while== 				<tr><th>zip
 Read a character: p
@@ -1171,7 +1171,7 @@ testString ==
 				<tr><th>zip_
 ch == *   (_)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving _
 accString in main while== 				<tr><th>zip_
 Read a character: _
@@ -1186,7 +1186,7 @@ testString ==
 				<tr><th>zip_c
 ch == *   (c)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving c
 accString in main while== 				<tr><th>zip_c
 Read a character: c
@@ -1201,7 +1201,7 @@ testString ==
 				<tr><th>zip_co
 ch == *   (o)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving o
 accString in main while== 				<tr><th>zip_co
 Read a character: o
@@ -1216,7 +1216,7 @@ testString ==
 				<tr><th>zip_cod
 ch == *   (d)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== 				<tr><th>zip_cod
 Read a character: d
@@ -1231,7 +1231,7 @@ testString ==
 				<tr><th>zip_code
 ch == e   (e)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while== 				<tr><th>zip_code
 Read a character: e
@@ -1246,7 +1246,7 @@ testString ==
 				<tr><th>zip_code<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 				<tr><th>zip_code
 Read a character: <
@@ -1261,7 +1261,7 @@ testString ==
 				<tr><th>zip_code</
 ch == *   (/)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</
 accString in main while== 				<tr><th>zip_code</
 Read a character: /
@@ -1276,7 +1276,7 @@ testString ==
 				<tr><th>zip_code</t
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== 				<tr><th>zip_code</t
 Read a character: t
@@ -1291,7 +1291,7 @@ testString ==
 				<tr><th>zip_code</th
 ch == *   (h)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving h
 accString in main while== 				<tr><th>zip_code</th
 Read a character: h
@@ -1306,7 +1306,7 @@ testString ==
 				<tr><th>zip_code</th>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 				<tr><th>zip_code</th>
 Read a character: >
@@ -1321,7 +1321,7 @@ testString ==
 				<tr><th>zip_code</th><
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 				<tr><th>zip_code</th>
 Read a character: <
@@ -1336,7 +1336,7 @@ testString ==
 				<tr><th>zip_code</th><t
 ch == *   (t)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</th><t
 accString in main while== 				<tr><th>zip_code</th><t
 Read a character: t
@@ -1351,7 +1351,7 @@ testString ==
 				<tr><th>zip_code</th><th
 ch == *   (h)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving h
 accString in main while== 				<tr><th>zip_code</th><th
 Read a character: h
@@ -1366,7 +1366,7 @@ testString ==
 				<tr><th>zip_code</th><th>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 				<tr><th>zip_code</th><th>
 Read a character: >
@@ -1381,7 +1381,7 @@ testString ==
 				<tr><th>zip_code</th><th>c
 ch == *   (c)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving c
 accString in main while== 				<tr><th>zip_code</th><th>c
 Read a character: c
@@ -1396,7 +1396,7 @@ testString ==
 				<tr><th>zip_code</th><th>ci
 ch == *   (i)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving i
 accString in main while== 				<tr><th>zip_code</th><th>ci
 Read a character: i
@@ -1411,7 +1411,7 @@ testString ==
 				<tr><th>zip_code</th><th>cit
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== 				<tr><th>zip_code</th><th>cit
 Read a character: t
@@ -1426,7 +1426,7 @@ testString ==
 				<tr><th>zip_code</th><th>city
 ch == *   (y)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving y
 accString in main while== 				<tr><th>zip_code</th><th>city
 Read a character: y
@@ -1441,7 +1441,7 @@ testString ==
 				<tr><th>zip_code</th><th>city<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 				<tr><th>zip_code</th><th>city
 Read a character: <
@@ -1456,7 +1456,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</
 ch == *   (/)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</th><th>city</
 accString in main while== 				<tr><th>zip_code</th><th>city</
 Read a character: /
@@ -1471,7 +1471,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</t
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== 				<tr><th>zip_code</th><th>city</t
 Read a character: t
@@ -1486,7 +1486,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th
 ch == *   (h)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving h
 accString in main while== 				<tr><th>zip_code</th><th>city</th
 Read a character: h
@@ -1501,7 +1501,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 				<tr><th>zip_code</th><th>city</th>
 Read a character: >
@@ -1516,7 +1516,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 				<tr><th>zip_code</th><th>city</th>
 Read a character: <
@@ -1531,7 +1531,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><t
 ch == *   (t)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</th><th>city</th><t
 accString in main while== 				<tr><th>zip_code</th><th>city</th><t
 Read a character: t
@@ -1546,7 +1546,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th
 ch == *   (h)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving h
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th
 Read a character: h
@@ -1561,7 +1561,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>
 Read a character: >
@@ -1576,7 +1576,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>a
 ch == *   (a)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving a
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>a
 Read a character: a
@@ -1591,7 +1591,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>ad
 ch == *   (d)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>ad
 Read a character: d
@@ -1606,7 +1606,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>add
 ch == *   (d)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>add
 Read a character: d
@@ -1621,7 +1621,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>addr
 ch == *   (r)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>addr
 Read a character: r
@@ -1636,7 +1636,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>addre
 ch == e   (e)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>addre
 Read a character: e
@@ -1651,7 +1651,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>addres
 ch == *   (s)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving s
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>addres
 Read a character: s
@@ -1666,7 +1666,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address
 ch == *   (s)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving s
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address
 Read a character: s
@@ -1681,7 +1681,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address
 Read a character: <
@@ -1696,7 +1696,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</
 ch == *   (/)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</th><th>city</th><th>address</
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</
 Read a character: /
@@ -1711,7 +1711,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</t
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</t
 Read a character: t
@@ -1726,7 +1726,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th
 ch == *   (h)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving h
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th
 Read a character: h
@@ -1741,7 +1741,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>
 Read a character: >
@@ -1756,7 +1756,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>	
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>	
 Read a character: 	
@@ -1771,7 +1771,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>		
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>		
 Read a character: 	
@@ -1786,7 +1786,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>			
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>			
 Read a character: 	
@@ -1801,7 +1801,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				
 Read a character: 	
@@ -1816,7 +1816,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				
 Read a character: <
@@ -1831,7 +1831,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</
 ch == *   (/)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 				<tr><th>zip_code</th><th>city</th><th>address</th>				</
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</
 Read a character: /
@@ -1846,7 +1846,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</t
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</t
 Read a character: t
@@ -1861,7 +1861,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr
 ch == *   (r)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr
 Read a character: r
@@ -1876,7 +1876,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr>
 Read a character: >
@@ -1891,7 +1891,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr>
 Read a character: <
@@ -1906,7 +1906,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><%
 ch == %   (%)
 State == A
-stateTuple == ('B', <function saveAccString at 0x7f909eb79ae8>)
+stateTuple == ('B', <function saveAccString at 0x7f5ee85cfae8>)
 accString in main while== 
 Read a character: %
 testString == 
@@ -1920,7 +1920,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% 
 ch == Space   ( )
 State == B
-stateTuple == ('B', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('B', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character:  
@@ -1935,7 +1935,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% f
 ch == f   (f)
 State == B
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== f
 Read a character: f
@@ -1950,7 +1950,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% fo
 ch == *   (o)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== fo
 Read a character: o
@@ -1965,7 +1965,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for
 ch == *   (r)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for
 Read a character: r
@@ -1980,7 +1980,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for 
 ch == Space   ( )
 State == E
-stateTuple == ('E', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('E', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while== for 
 Read a character:  
@@ -1995,7 +1995,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for r
 ch == *   (r)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for r
 Read a character: r
@@ -2010,7 +2010,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for ro
 ch == *   (o)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for ro
 Read a character: o
@@ -2025,7 +2025,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row
 ch == *   (w)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for row
 Read a character: w
@@ -2040,7 +2040,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row 
 ch == Space   ( )
 State == E
-stateTuple == ('E', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('E', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while== for row 
 Read a character:  
@@ -2055,7 +2055,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row i
 ch == *   (i)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for row i
 Read a character: i
@@ -2070,7 +2070,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in
 ch == *   (n)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for row in
 Read a character: n
@@ -2085,7 +2085,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in 
 ch == Space   ( )
 State == E
-stateTuple == ('E', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('E', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while== for row in 
 Read a character:  
@@ -2100,7 +2100,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in r
 ch == *   (r)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for row in r
 Read a character: r
@@ -2115,7 +2115,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in ro
 ch == *   (o)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for row in ro
 Read a character: o
@@ -2130,7 +2130,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in row
 ch == *   (w)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for row in row
 Read a character: w
@@ -2145,7 +2145,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows
 ch == *   (s)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for row in rows
 Read a character: s
@@ -2160,7 +2160,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows:
 ch == *   (:)
 State == E
-stateTuple == ('E', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('E', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== for row in rows:
 Read a character: :
@@ -2175,7 +2175,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: 
 ch == Space   ( )
 State == E
-stateTuple == ('E', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('E', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while== for row in rows: 
 Read a character:  
@@ -2190,7 +2190,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %
 ch == %   (%)
 State == E
-stateTuple == ('F', <function saveCharacterForloopheader at 0x7f909eb79b70>)
+stateTuple == ('F', <function saveCharacterForloopheader at 0x7f5ee85cfb70>)
 saveCharacterForloopheader called
 accString in main while== 
 Read a character: %
@@ -2205,7 +2205,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %>
 ch == >   (>)
 State == F
-stateTuple == ('G', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('G', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character: >
@@ -2220,7 +2220,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character: <
@@ -2235,7 +2235,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><t
 ch == *   (t)
 State == H
-stateTuple == ('G', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == <t
 accString in main while== <t
 Read a character: t
@@ -2250,7 +2250,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr
 ch == *   (r)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while== <tr
 Read a character: r
@@ -2265,7 +2265,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr>
 ch == >   (>)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== <tr>
 Read a character: >
@@ -2280,7 +2280,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== <tr>
 Read a character: <
@@ -2295,7 +2295,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><t
 ch == *   (t)
 State == H
-stateTuple == ('G', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == <tr><t
 accString in main while== <tr><t
 Read a character: t
@@ -2310,7 +2310,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td
 ch == *   (d)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== <tr><td
 Read a character: d
@@ -2325,7 +2325,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td>
 ch == >   (>)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== <tr><td>
 Read a character: >
@@ -2340,7 +2340,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== <tr><td>
 Read a character: <
@@ -2355,7 +2355,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%
 ch == %   (%)
 State == H
-stateTuple == ('I', <function saveCharacterIndented at 0x7f909eb798c8>)
+stateTuple == ('I', <function saveCharacterIndented at 0x7f5ee85cf8c8>)
 accString in main while== 
 Read a character: %
 testString == 
@@ -2369,7 +2369,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%=
 ch == =   (=)
 State == I
-stateTuple == ('J', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('J', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character: =
@@ -2384,7 +2384,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= 
 ch == Space   ( )
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==  
 Read a character:  
@@ -2399,7 +2399,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= s
 ch == *   (s)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving s
 accString in main while==  s
 Read a character: s
@@ -2414,7 +2414,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= st
 ch == *   (t)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while==  st
 Read a character: t
@@ -2429,7 +2429,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str
 ch == *   (r)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while==  str
 Read a character: r
@@ -2444,7 +2444,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(
 ch == *   (()
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving (
 accString in main while==  str(
 Read a character: (
@@ -2459,7 +2459,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(r
 ch == *   (r)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while==  str(r
 Read a character: r
@@ -2474,7 +2474,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(ro
 ch == *   (o)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving o
 accString in main while==  str(ro
 Read a character: o
@@ -2489,7 +2489,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row
 ch == *   (w)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving w
 accString in main while==  str(row
 Read a character: w
@@ -2504,7 +2504,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row[
 ch == *   ([)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving [
 accString in main while==  str(row[
 Read a character: [
@@ -2519,7 +2519,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['
 ch == *   (')
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving '
 accString in main while==  str(row['
 Read a character: '
@@ -2534,7 +2534,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['z
 ch == *   (z)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving z
 accString in main while==  str(row['z
 Read a character: z
@@ -2549,7 +2549,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zi
 ch == *   (i)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving i
 accString in main while==  str(row['zi
 Read a character: i
@@ -2564,7 +2564,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip
 ch == *   (p)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving p
 accString in main while==  str(row['zip
 Read a character: p
@@ -2579,7 +2579,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_
 ch == *   (_)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving _
 accString in main while==  str(row['zip_
 Read a character: _
@@ -2594,7 +2594,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_c
 ch == *   (c)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving c
 accString in main while==  str(row['zip_c
 Read a character: c
@@ -2609,7 +2609,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_co
 ch == *   (o)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving o
 accString in main while==  str(row['zip_co
 Read a character: o
@@ -2624,7 +2624,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_cod
 ch == *   (d)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while==  str(row['zip_cod
 Read a character: d
@@ -2639,7 +2639,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code
 ch == e   (e)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while==  str(row['zip_code
 Read a character: e
@@ -2654,7 +2654,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code'
 ch == *   (')
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving '
 accString in main while==  str(row['zip_code'
 Read a character: '
@@ -2669,7 +2669,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']
 ch == *   (])
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving ]
 accString in main while==  str(row['zip_code']
 Read a character: ]
@@ -2684,7 +2684,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code'])
 ch == *   ())
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving )
 accString in main while==  str(row['zip_code'])
 Read a character: )
@@ -2699,7 +2699,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) 
 ch == Space   ( )
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==  str(row['zip_code']) 
 Read a character:  
@@ -2714,7 +2714,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %
 ch == %   (%)
 State == J
-stateTuple == ('K', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('K', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while==  str(row['zip_code']) 
 Read a character: %
@@ -2729,7 +2729,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %>
 ch == >   (>)
 State == K
-stateTuple == ('G', <function saveAccWithIndent at 0x7f909eb79950>)
+stateTuple == ('G', <function saveAccWithIndent at 0x7f5ee85cf950>)
 accString in main while== 
 Read a character: >
 testString == 
@@ -2743,7 +2743,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character: <
@@ -2758,7 +2758,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></
 ch == *   (/)
 State == H
-stateTuple == ('G', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == </
 accString in main while== </
 Read a character: /
@@ -2773,7 +2773,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></t
 ch == *   (t)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== </t
 Read a character: t
@@ -2788,7 +2788,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td
 ch == *   (d)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== </td
 Read a character: d
@@ -2803,7 +2803,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td>
 ch == >   (>)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== </td>
 Read a character: >
@@ -2818,7 +2818,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== </td>
 Read a character: <
@@ -2833,7 +2833,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><t
 ch == *   (t)
 State == H
-stateTuple == ('G', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == </td><t
 accString in main while== </td><t
 Read a character: t
@@ -2848,7 +2848,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td
 ch == *   (d)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== </td><td
 Read a character: d
@@ -2863,7 +2863,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td>
 ch == >   (>)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== </td><td>
 Read a character: >
@@ -2878,7 +2878,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== </td><td>
 Read a character: <
@@ -2893,7 +2893,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%
 ch == %   (%)
 State == H
-stateTuple == ('I', <function saveCharacterIndented at 0x7f909eb798c8>)
+stateTuple == ('I', <function saveCharacterIndented at 0x7f5ee85cf8c8>)
 accString in main while== 
 Read a character: %
 testString == 
@@ -2907,7 +2907,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%=
 ch == =   (=)
 State == I
-stateTuple == ('J', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('J', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character: =
@@ -2922,7 +2922,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= 
 ch == Space   ( )
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==  
 Read a character:  
@@ -2937,7 +2937,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= s
 ch == *   (s)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving s
 accString in main while==  s
 Read a character: s
@@ -2952,7 +2952,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= st
 ch == *   (t)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while==  st
 Read a character: t
@@ -2967,7 +2967,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str
 ch == *   (r)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while==  str
 Read a character: r
@@ -2982,7 +2982,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(
 ch == *   (()
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving (
 accString in main while==  str(
 Read a character: (
@@ -2997,7 +2997,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(r
 ch == *   (r)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while==  str(r
 Read a character: r
@@ -3012,7 +3012,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(ro
 ch == *   (o)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving o
 accString in main while==  str(ro
 Read a character: o
@@ -3027,7 +3027,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row
 ch == *   (w)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving w
 accString in main while==  str(row
 Read a character: w
@@ -3042,7 +3042,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row[
 ch == *   ([)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving [
 accString in main while==  str(row[
 Read a character: [
@@ -3057,7 +3057,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['
 ch == *   (')
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving '
 accString in main while==  str(row['
 Read a character: '
@@ -3072,7 +3072,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['c
 ch == *   (c)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving c
 accString in main while==  str(row['c
 Read a character: c
@@ -3087,7 +3087,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['ci
 ch == *   (i)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving i
 accString in main while==  str(row['ci
 Read a character: i
@@ -3102,7 +3102,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['cit
 ch == *   (t)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while==  str(row['cit
 Read a character: t
@@ -3117,7 +3117,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city
 ch == *   (y)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving y
 accString in main while==  str(row['city
 Read a character: y
@@ -3132,7 +3132,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city'
 ch == *   (')
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving '
 accString in main while==  str(row['city'
 Read a character: '
@@ -3147,7 +3147,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']
 ch == *   (])
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving ]
 accString in main while==  str(row['city']
 Read a character: ]
@@ -3162,7 +3162,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city'])
 ch == *   ())
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving )
 accString in main while==  str(row['city'])
 Read a character: )
@@ -3177,7 +3177,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) 
 ch == Space   ( )
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==  str(row['city']) 
 Read a character:  
@@ -3192,7 +3192,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %
 ch == %   (%)
 State == J
-stateTuple == ('K', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('K', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while==  str(row['city']) 
 Read a character: %
@@ -3207,7 +3207,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %>
 ch == >   (>)
 State == K
-stateTuple == ('G', <function saveAccWithIndent at 0x7f909eb79950>)
+stateTuple == ('G', <function saveAccWithIndent at 0x7f5ee85cf950>)
 accString in main while== 
 Read a character: >
 testString == 
@@ -3221,7 +3221,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character: <
@@ -3236,7 +3236,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></
 ch == *   (/)
 State == H
-stateTuple == ('G', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == </
 accString in main while== </
 Read a character: /
@@ -3251,7 +3251,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></t
 ch == *   (t)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== </t
 Read a character: t
@@ -3266,7 +3266,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td
 ch == *   (d)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== </td
 Read a character: d
@@ -3281,7 +3281,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td>
 ch == >   (>)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== </td>
 Read a character: >
@@ -3296,7 +3296,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== </td>
 Read a character: <
@@ -3311,7 +3311,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><t
 ch == *   (t)
 State == H
-stateTuple == ('G', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == </td><t
 accString in main while== </td><t
 Read a character: t
@@ -3326,7 +3326,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td
 ch == *   (d)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== </td><td
 Read a character: d
@@ -3341,7 +3341,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td>
 ch == >   (>)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== </td><td>
 Read a character: >
@@ -3356,7 +3356,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== </td><td>
 Read a character: <
@@ -3371,7 +3371,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%
 ch == %   (%)
 State == H
-stateTuple == ('I', <function saveCharacterIndented at 0x7f909eb798c8>)
+stateTuple == ('I', <function saveCharacterIndented at 0x7f5ee85cf8c8>)
 accString in main while== 
 Read a character: %
 testString == 
@@ -3385,7 +3385,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%=
 ch == =   (=)
 State == I
-stateTuple == ('J', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('J', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character: =
@@ -3400,7 +3400,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= 
 ch == Space   ( )
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==  
 Read a character:  
@@ -3415,7 +3415,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= s
 ch == *   (s)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving s
 accString in main while==  s
 Read a character: s
@@ -3430,7 +3430,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= st
 ch == *   (t)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while==  st
 Read a character: t
@@ -3445,7 +3445,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str
 ch == *   (r)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while==  str
 Read a character: r
@@ -3460,7 +3460,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(
 ch == *   (()
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving (
 accString in main while==  str(
 Read a character: (
@@ -3475,7 +3475,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(r
 ch == *   (r)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while==  str(r
 Read a character: r
@@ -3490,7 +3490,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(ro
 ch == *   (o)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving o
 accString in main while==  str(ro
 Read a character: o
@@ -3505,7 +3505,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row
 ch == *   (w)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving w
 accString in main while==  str(row
 Read a character: w
@@ -3520,7 +3520,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row[
 ch == *   ([)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving [
 accString in main while==  str(row[
 Read a character: [
@@ -3535,7 +3535,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['
 ch == *   (')
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving '
 accString in main while==  str(row['
 Read a character: '
@@ -3550,7 +3550,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['a
 ch == *   (a)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving a
 accString in main while==  str(row['a
 Read a character: a
@@ -3565,7 +3565,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['ad
 ch == *   (d)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while==  str(row['ad
 Read a character: d
@@ -3580,7 +3580,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['add
 ch == *   (d)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while==  str(row['add
 Read a character: d
@@ -3595,7 +3595,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['addr
 ch == *   (r)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while==  str(row['addr
 Read a character: r
@@ -3610,7 +3610,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['addre
 ch == e   (e)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while==  str(row['addre
 Read a character: e
@@ -3625,7 +3625,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['addres
 ch == *   (s)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving s
 accString in main while==  str(row['addres
 Read a character: s
@@ -3640,7 +3640,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address
 ch == *   (s)
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving s
 accString in main while==  str(row['address
 Read a character: s
@@ -3655,7 +3655,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address'
 ch == *   (')
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving '
 accString in main while==  str(row['address'
 Read a character: '
@@ -3670,7 +3670,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']
 ch == *   (])
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving ]
 accString in main while==  str(row['address']
 Read a character: ]
@@ -3685,7 +3685,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address'])
 ch == *   ())
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving )
 accString in main while==  str(row['address'])
 Read a character: )
@@ -3700,7 +3700,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) 
 ch == Space   ( )
 State == J
-stateTuple == ('J', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('J', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==  str(row['address']) 
 Read a character:  
@@ -3715,7 +3715,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %
 ch == %   (%)
 State == J
-stateTuple == ('K', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('K', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while==  str(row['address']) 
 Read a character: %
@@ -3730,7 +3730,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %>
 ch == >   (>)
 State == K
-stateTuple == ('G', <function saveAccWithIndent at 0x7f909eb79950>)
+stateTuple == ('G', <function saveAccWithIndent at 0x7f5ee85cf950>)
 accString in main while== 
 Read a character: >
 testString == 
@@ -3744,7 +3744,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character: <
@@ -3759,7 +3759,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></
 ch == *   (/)
 State == H
-stateTuple == ('G', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == </
 accString in main while== </
 Read a character: /
@@ -3774,7 +3774,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></t
 ch == *   (t)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== </t
 Read a character: t
@@ -3789,7 +3789,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td
 ch == *   (d)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== </td
 Read a character: d
@@ -3804,7 +3804,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td>
 ch == >   (>)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== </td>
 Read a character: >
@@ -3819,7 +3819,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== </td>
 Read a character: <
@@ -3834,7 +3834,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></
 ch == *   (/)
 State == H
-stateTuple == ('G', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('G', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == </td></
 accString in main while== </td></
 Read a character: /
@@ -3849,7 +3849,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></t
 ch == *   (t)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== </td></t
 Read a character: t
@@ -3864,7 +3864,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr
 ch == *   (r)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving r
 accString in main while== </td></tr
 Read a character: r
@@ -3879,7 +3879,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr>
 ch == >   (>)
 State == G
-stateTuple == ('G', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('G', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== </td></tr>
 Read a character: >
@@ -3894,7 +3894,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><
 ch == <   (<)
 State == G
-stateTuple == ('H', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('H', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== </td></tr>
 Read a character: <
@@ -3909,7 +3909,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><%
 ch == %   (%)
 State == H
-stateTuple == ('I', <function saveCharacterIndented at 0x7f909eb798c8>)
+stateTuple == ('I', <function saveCharacterIndented at 0x7f5ee85cf8c8>)
 accString in main while== 
 Read a character: %
 testString == 
@@ -3923,7 +3923,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% 
 ch == Space   ( )
 State == I
-stateTuple == ('I', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('I', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==  
 Read a character:  
@@ -3938,7 +3938,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% e
 ch == e   (e)
 State == I
-stateTuple == ('L', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('L', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while==  
 Read a character: e
@@ -3953,7 +3953,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% en
 ch == *   (n)
 State == L
-stateTuple == ('L', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('L', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while==  
 Read a character: n
@@ -3968,7 +3968,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end
 ch == *   (d)
 State == L
-stateTuple == ('L', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('L', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while==  
 Read a character: d
@@ -3983,7 +3983,7 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-
 ch == *   (-)
 State == L
-stateTuple == ('L', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('L', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while==  
 Read a character: -
@@ -3998,9 +3998,9 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-f
 ch == f   (f)
 State == L
-stateTuple == ('L', <function saveCharacter at 0x7f90a0963e18>)
-saveCharacter called = saving f
-accString in main while==  f
+stateTuple == ('L', <function nothing at 0x7f5ee85cfbf8>)
+nothing(l) called ----------------->
+accString in main while==  
 Read a character: f
 testString == 
 <html>
@@ -4013,9 +4013,9 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-fo
 ch == *   (o)
 State == L
-stateTuple == ('L', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('L', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
-accString in main while==  f
+accString in main while==  
 Read a character: o
 testString == 
 <html>
@@ -4028,9 +4028,9 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for
 ch == *   (r)
 State == L
-stateTuple == ('L', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('L', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
-accString in main while==  f
+accString in main while==  
 Read a character: r
 testString == 
 <html>
@@ -4043,9 +4043,9 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for 
 ch == Space   ( )
 State == L
-stateTuple == ('L', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('L', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
-accString in main while==  f 
+accString in main while==   
 Read a character:  
 testString == 
 <html>
@@ -4058,9 +4058,9 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %
 ch == %   (%)
 State == L
-stateTuple == ('M', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('M', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
-accString in main while==  f 
+accString in main while==   
 Read a character: %
 testString == 
 <html>
@@ -4073,9 +4073,9 @@ testString ==
 				<tr><th>zip_code</th><th>city</th><th>address</th>				</tr><% for row in rows: %><tr><td><%= str(row['zip_code']) %></td><td><%= str(row['city']) %></td><td><%= str(row['address']) %></td></tr><% end-for %>
 ch == >   (>)
 State == M
-stateTuple == ('StartState', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('StartState', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
-accString in main while==  f 
+accString in main while==   
 Read a character: >
 testString == 
 <html>
@@ -4090,7 +4090,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -4108,7 +4108,7 @@ testString ==
  
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==  
 Read a character:  
@@ -4124,7 +4124,7 @@ testString ==
   
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==   
 Read a character:  
@@ -4140,7 +4140,7 @@ testString ==
    
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==    
 Read a character:  
@@ -4156,7 +4156,7 @@ testString ==
     
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==     
 Read a character:  
@@ -4172,7 +4172,7 @@ testString ==
      
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==      
 Read a character:  
@@ -4188,7 +4188,7 @@ testString ==
       
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==       
 Read a character:  
@@ -4204,7 +4204,7 @@ testString ==
        
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==        
 Read a character:  
@@ -4220,7 +4220,7 @@ testString ==
         
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==         
 Read a character:  
@@ -4236,7 +4236,7 @@ testString ==
          
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==          
 Read a character:  
@@ -4252,7 +4252,7 @@ testString ==
           
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==           
 Read a character:  
@@ -4268,7 +4268,7 @@ testString ==
            
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==            
 Read a character:  
@@ -4284,7 +4284,7 @@ testString ==
             
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==             
 Read a character:  
@@ -4300,7 +4300,7 @@ testString ==
              
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==              
 Read a character:  
@@ -4316,7 +4316,7 @@ testString ==
               
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==               
 Read a character:  
@@ -4332,7 +4332,7 @@ testString ==
                
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==                
 Read a character:  
@@ -4348,7 +4348,7 @@ testString ==
                 
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==                 
 Read a character:  
@@ -4364,7 +4364,7 @@ testString ==
                  
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==                  
 Read a character:  
@@ -4380,7 +4380,7 @@ testString ==
                   
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==                   
 Read a character:  
@@ -4396,7 +4396,7 @@ testString ==
                    
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==                    
 Read a character:  
@@ -4412,7 +4412,7 @@ testString ==
                     
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==                     
 Read a character:  
@@ -4428,7 +4428,7 @@ testString ==
                      
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==                      
 Read a character:  
@@ -4444,7 +4444,7 @@ testString ==
                       
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==                       
 Read a character:  
@@ -4460,7 +4460,7 @@ testString ==
                        
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==                        
 Read a character:  
@@ -4476,7 +4476,7 @@ testString ==
                         
 ch == Space   ( )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving  
 accString in main while==                         
 Read a character:  
@@ -4492,7 +4492,7 @@ testString ==
                         <
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while==                         
 Read a character: <
@@ -4508,7 +4508,7 @@ testString ==
                         </
 ch == *   (/)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString ==                         </
 accString in main while==                         </
 Read a character: /
@@ -4524,7 +4524,7 @@ testString ==
                         </t
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while==                         </t
 Read a character: t
@@ -4540,7 +4540,7 @@ testString ==
                         </tb
 ch == *   (b)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving b
 accString in main while==                         </tb
 Read a character: b
@@ -4556,7 +4556,7 @@ testString ==
                         </tbo
 ch == *   (o)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving o
 accString in main while==                         </tbo
 Read a character: o
@@ -4572,7 +4572,7 @@ testString ==
                         </tbod
 ch == *   (d)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while==                         </tbod
 Read a character: d
@@ -4588,7 +4588,7 @@ testString ==
                         </tbody
 ch == *   (y)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving y
 accString in main while==                         </tbody
 Read a character: y
@@ -4604,7 +4604,7 @@ testString ==
                         </tbody>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while==                         </tbody>
 Read a character: >
@@ -4622,7 +4622,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -4641,7 +4641,7 @@ testString ==
 	
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 	
 Read a character: 	
@@ -4658,7 +4658,7 @@ testString ==
 		
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 		
 Read a character: 	
@@ -4675,7 +4675,7 @@ testString ==
 		<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 		
 Read a character: <
@@ -4692,7 +4692,7 @@ testString ==
 		</
 ch == *   (/)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 		</
 accString in main while== 		</
 Read a character: /
@@ -4709,7 +4709,7 @@ testString ==
 		</t
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== 		</t
 Read a character: t
@@ -4726,7 +4726,7 @@ testString ==
 		</ta
 ch == *   (a)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving a
 accString in main while== 		</ta
 Read a character: a
@@ -4743,7 +4743,7 @@ testString ==
 		</tab
 ch == *   (b)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving b
 accString in main while== 		</tab
 Read a character: b
@@ -4760,7 +4760,7 @@ testString ==
 		</tabl
 ch == *   (l)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving l
 accString in main while== 		</tabl
 Read a character: l
@@ -4777,7 +4777,7 @@ testString ==
 		</table
 ch == e   (e)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving e
 accString in main while== 		</table
 Read a character: e
@@ -4794,7 +4794,7 @@ testString ==
 		</table>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 		</table>
 Read a character: >
@@ -4813,7 +4813,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -4833,7 +4833,7 @@ testString ==
 	
 ch == *   (	)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 	
 accString in main while== 	
 Read a character: 	
@@ -4851,7 +4851,7 @@ testString ==
 	<
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 	
 Read a character: <
@@ -4869,7 +4869,7 @@ testString ==
 	</
 ch == *   (/)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == 	</
 accString in main while== 	</
 Read a character: /
@@ -4887,7 +4887,7 @@ testString ==
 	</b
 ch == *   (b)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving b
 accString in main while== 	</b
 Read a character: b
@@ -4905,7 +4905,7 @@ testString ==
 	</bo
 ch == *   (o)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving o
 accString in main while== 	</bo
 Read a character: o
@@ -4923,7 +4923,7 @@ testString ==
 	</bod
 ch == *   (d)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving d
 accString in main while== 	</bod
 Read a character: d
@@ -4941,7 +4941,7 @@ testString ==
 	</body
 ch == *   (y)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving y
 accString in main while== 	</body
 Read a character: y
@@ -4959,7 +4959,7 @@ testString ==
 	</body>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== 	</body>
 Read a character: >
@@ -4979,7 +4979,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -5000,7 +5000,7 @@ testString ==
 <
 ch == <   (<)
 State == StartState
-stateTuple == ('A', <function nothing at 0x7f909eb79bf8>)
+stateTuple == ('A', <function nothing at 0x7f5ee85cfbf8>)
 nothing(l) called ----------------->
 accString in main while== 
 Read a character: <
@@ -5019,7 +5019,7 @@ testString ==
 </
 ch == *   (/)
 State == A
-stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f909eb79620>)
+stateTuple == ('StartState', <function saveCharacterAToStartState at 0x7f5ee85cf620>)
 saving to acc string----------------------- inf function accString == </
 accString in main while== </
 Read a character: /
@@ -5038,7 +5038,7 @@ testString ==
 </h
 ch == *   (h)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving h
 accString in main while== </h
 Read a character: h
@@ -5057,7 +5057,7 @@ testString ==
 </ht
 ch == *   (t)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving t
 accString in main while== </ht
 Read a character: t
@@ -5076,7 +5076,7 @@ testString ==
 </htm
 ch == *   (m)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving m
 accString in main while== </htm
 Read a character: m
@@ -5095,7 +5095,7 @@ testString ==
 </html
 ch == *   (l)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving l
 accString in main while== </html
 Read a character: l
@@ -5114,7 +5114,7 @@ testString ==
 </html>
 ch == >   (>)
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving >
 accString in main while== </html>
 Read a character: >
@@ -5135,7 +5135,7 @@ testString ==
 ch == *   (
 )
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 
 accString in main while== 
@@ -5157,7 +5157,7 @@ testString ==
 
 ch ==    ()
 State == StartState
-stateTuple == ('StartState', <function saveCharacter at 0x7f90a0963e18>)
+stateTuple == ('StartState', <function saveCharacter at 0x7f5eea3b9e18>)
 saveCharacter called = saving 
 accString in main while== 
 End of file
@@ -5178,7 +5178,7 @@ for row in rows:
    print("</td><td>")
    print( str(row['address']) )
    print("</td></tr>")
-print(' f ')
+print('  ')
 print('                        </tbody>')
 print('		</table>')
 print('	</body>')
