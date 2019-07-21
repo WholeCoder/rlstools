@@ -25,7 +25,7 @@ def saveCharacterAToStartState(l):
 def saveCharacterIndented(l):
     global outputString
     global accString
-    accString += l
+    #accString += l
     outputString += "   print(\""+accString+"\")\n"
     accString = ""
 
