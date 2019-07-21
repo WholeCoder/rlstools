@@ -25,7 +25,14 @@ def saveCharacterAToStartState(l):
 def saveCharacterIndented(l):
     global outputString
     global accString
+    accString += l
     outputString += "   print(\""+accString+"\")\n"
+    accString = ""
+
+def saveAccWithIndent(l):
+    global outputString
+    global accString
+    outputString += "   print("+accString+")\n"
     accString = ""
 
 def sendToGAndAddGreaterThanSign(l):
@@ -261,7 +268,7 @@ stateDict = {
       'f':('Error',
       error),
       'e':('L',
-      saveCharacter)
+      nothing)
    },
    'J':{
       '':('J',
@@ -295,7 +302,7 @@ stateDict = {
       '=':('Error',
       error),
       '>':('G',
-      nothing),
+      saveAccWithIndent),
       'Space':('Error',
       error),
       'f':('Error',
@@ -307,7 +314,7 @@ stateDict = {
       '':('L',
       nothing),
       '*':('L',
-      saveCharacter),
+      nothing),
       '<':('L',
       saveCharacter),
       '%':('M',
