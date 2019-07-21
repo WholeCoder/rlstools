@@ -105,10 +105,10 @@ stateDict = {
       saveCharacterAToEnd),
       'Space':('StartState',
       saveCharacterAToStartState),
-      'f':('Error',
-      error),
-      'e':('Error',
-      error)
+      'f':('StartState',
+      saveCharacterAToStartState),
+      'e':('StartState',
+      saveCharacterAToStartState)
    },
    'B':{
       '':('B',
@@ -381,6 +381,9 @@ with open('Office.pyht') as f:
             print ("End of file")
             break
         print ("Read a character:", c)
+
+
+saveAccString("doesn't matter")
 
 print("outputString == "+outputString)
 
