@@ -3,7 +3,7 @@ from http.server import BaseHTTPRequestHandler,HTTPServer
 from person_rls_record import Person
 #from master_template import headString
 import importlib
-from template_parser import TemplateParser
+from template_parser2 import TemplateParser
 import os
 import cgi
 from sqlite_adapter import SqliteDatabaseAdapter
@@ -25,27 +25,24 @@ class myHandler(BaseHTTPRequestHandler):
         #self.wfile.write("test".encode())
         entity = self.path[1:]
         
-        if ".get" in entity:
-            TemplateParser("./rubsapp/views/"+entity+".pyht",entity)
-            f_handle = open("template_output.py","r")
-            file_contents = f_handle.read()
+        outputString = '' 
+        if not ".get" in entity:
+            outputString += "from rubsapp.models."+entity+" import "+entity+"\n\n"
+            outputString += "print(\"Running template_Output\")\n\n"
 
-            #mdle = importlib.import_module('out')#outString = eval("out.py")
-            self.wfile.write(file_contents.encode())
-            return
-        else:
-            if entity == 'favicon.ico':
-                return
-            #os.remove("template_output.py")
-            TemplateParser("./rubsapp/views/"+entity+".pyht",entity)
+            outputString += "rows = "+entity+"().findAll()\n"
+            outputString += "print(\"rows == \"+str(rows))\n\n"
+        
 
-            #importlib.invalidate_caches()
-            mdle = importlib.import_module('template_output')
-            mdle = importlib.reload(mdle)
-            print("mdle == "+mdle.currString)
-            #mdle = importlib.import_module('out')#outString = eval("out.py")
-            self.wfile.write(mdle.currString.encode())
-            return
+
+        TemplateParser("./rubsapp/views/"+entity+".pyht",entity,outputString)
+        #importlib.invalidate_caches()
+        mdle = importlib.import_module('template_output')
+        mdle = importlib.reload(mdle)
+        print("mdle == "+mdle.currString)
+        #mdle = importlib.import_module('out')#outString = eval("out.py")
+        self.wfile.write(mdle.currString.encode())
+        return
 
     def send_headers(self, status, content_type, value):
         self.send_response(status)
