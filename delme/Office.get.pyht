@@ -1,8 +1,0 @@
-
-<html>
-	<head>
-		<title>Office Form</title>
-	</head>
-	<body>
-		<table>
-			<tbody><form action="/Office" method="post"><tr><td>zip_code</td><td><input type="text" name="zip_code"/></td></tr><tr><td>city</td><td><input type="text" name="city"/></td></tr><tr><td>address</td><td><input type="text" name="address"/></td></tr><tr><td colspan=2 ><button type="submit">Send your message</button></td></tr></form></tbody></table></body></html>
