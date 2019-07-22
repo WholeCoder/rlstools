@@ -3,7 +3,7 @@ from http.server import BaseHTTPRequestHandler,HTTPServer
 from person_rls_record import Person
 #from master_template import headString
 import importlib
-from template_parser2 import TemplateParser
+from template_parser import TemplateParser
 import os
 import cgi
 from sqlite_adapter import SqliteDatabaseAdapter
