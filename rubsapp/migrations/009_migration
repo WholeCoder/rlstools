@@ -1,0 +1,10 @@
+upgrade
+add table Person
+add column Person first_name
+add column Person last_name
+
+
+downgrade
+remove column Person first_name
+remove column Person last_name
+remove table Person

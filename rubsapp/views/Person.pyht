@@ -6,7 +6,7 @@
 	<body>
 		<table>
 			<tbody>
-				<tr><th>first_name</th><th>last_name</th><th>ssn</th>				</tr><% for row in rows: %><tr><td><%= str(row["first_name"]) %></td><td><%= str(row["last_name"]) %></td><td><%= str(row["ssn"]) %></td></tr><% end-for %>
+				<tr><th>first_name</th><th>last_name</th>				</tr><% for row in rows: %><tr><td><%= str(row["first_name"]) %></td><td><%= str(row["last_name"]) %></td></tr><% end-for %>
                         </tbody>
 		</table>
 	</body>

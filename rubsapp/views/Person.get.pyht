@@ -5,4 +5,4 @@
 	</head>
 	<body>
 		<table>
-			<tbody><form action="/Person" method="post"><tr><td>first_name</td><td><input type="text" name="first_name"/></td></tr><tr><td>last_name</td><td><input type="text" name="last_name"/></td></tr><tr><td>ssn</td><td><input type="text" name="ssn"/></td></tr><tr><td colspan=2 ><button type="submit">Send your message</button></td></tr></form></tbody></table></body></html>
+			<tbody><form action="/Person" method="post"><tr><td>first_name</td><td><input type="text" name="first_name"/></td></tr><tr><td>last_name</td><td><input type="text" name="last_name"/></td></tr><tr><td colspan=2 ><button type="submit">Send your message</button></td></tr></form></tbody></table></body></html>
