@@ -5,16 +5,19 @@ sys.path.append('../..')
 from rubsapp.models.Person import Person
 
 class PersonController:
-	def index(self):
-		print("Running template_Output")
+    @staticmethod
+    def index():
+        print("Running template_Output")
 
-		rows = Person().findAll()
-		print("rows == "+str(rows))
+        PersonController.rows = Person().findAll()
+        print("rows == "+str(PersonController.rows))
 
+    def post(self):
+        pass
 
-	def post(self):
-		pass
-	def put(self):
-		pass
-	def get(self):
-		pass
+    def put(self):
+        pass
+
+    def get(self):
+        pass
+

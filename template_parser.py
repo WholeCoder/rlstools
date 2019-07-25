@@ -2,7 +2,17 @@
 class TemplateParser:
     def __init__(self,template_file,table,header=''):
          
-        self.outputString = header
+        self.outputString = ""
+        
+        if not ".get" in header:
+            self.outputString += "import sys\n\n"
+            self.outputString += "sys.path.append('../..')\n\n"
+            self.outputString += "from rubsapp.controllers."+table+" import "+table+"Controller\n\n"
+            self.outputString += "from rubsapp.models."+table+" import "+table+"\n\n"
+
+            self.outputString += table+"Controller.index()\n"
+            self.outputString += "rows = "+table+"Controller.rows\n\n"
+            
         self.outputString += "currString = ''\n\n"
         self.accString = ""
 

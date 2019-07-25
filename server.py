@@ -26,16 +26,16 @@ class myHandler(BaseHTTPRequestHandler):
         entity = self.path[1:]
         
         outputString = '' 
-        if not ".get" in entity:
-            outputString += "from rubsapp.models."+entity+" import "+entity+"\n\n"
-            outputString += "print(\"Running template_Output\")\n\n"
+#        if not ".get" in entity:
+#            outputString += "from rubsapp.models."+entity+" import "+entity+"\n\n"
+#            outputString += "print(\"Running template_Output\")\n\n"
 
-            outputString += "rows = "+entity+"().findAll()\n"
-            outputString += "print(\"rows == \"+str(rows))\n\n"
+#            outputString += "rows = "+entity+"().findAll()\n"
+#            outputString += "print(\"rows == \"+str(rows))\n\n"
         
 
 
-        TemplateParser("./rubsapp/views/"+entity+".pyht",entity,outputString)
+        TemplateParser("./rubsapp/views/"+entity+".pyht",entity,entity)
         #importlib.invalidate_caches()
         mdle = importlib.import_module('template_output')
         mdle = importlib.reload(mdle)

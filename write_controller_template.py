@@ -11,29 +11,30 @@ classHeader = "import sys\n\n"
 classHeader += "sys.path.append('../..')\n\n" 
 classHeader += "from rubsapp.models."+sys.argv[2]+" import "+sys.argv[2]+"\n\n" 
 
-classHeader += "class "+sys.argv[2] + "Controller:" 
+classHeader += "class "+sys.argv[2] + "Controller:\n" 
 new_controller.write(classHeader)
 
 count = 3
 
-defHeader = "\n\tdef index(self):\n"
-defHeader += "\t\tprint(\"Running template_Output\")\n\n"
+defHeader =  "    @staticmethod\n"
+defHeader +=  "    def index():\n"
+defHeader += "        print(\"Running template_Output\")\n\n"
 
-defHeader += "\t\trows = "+sys.argv[2]+"().findAll()\n"
-defHeader += "\t\tprint(\"rows == \"+str(rows))\n\n"
+defHeader += "        PersonController.rows = "+sys.argv[2]+"().findAll()\n"
+defHeader += "        print(\"rows == \"+str("+sys.argv[2]+"Controller.rows))\n\n"
 
 new_controller.write(defHeader)
 
-defHeader = "\n\tdef post(self):"
+defHeader = "    def post(self):\n"
 new_controller.write(defHeader)
-passText = "\n\t\tpass"
+passText =  "        pass\n\n"
 new_controller.write(passText)
  
-defHeader = "\n\tdef put(self):"
+defHeader = "    def put(self):\n"
 new_controller.write(defHeader)
 new_controller.write(passText)
 
-defHeader = "\n\tdef get(self):"
+defHeader = "    def get(self):\n"
 new_controller.write(defHeader)
 new_controller.write(passText)
  
