@@ -12,8 +12,13 @@ class PersonController:
         PersonController.rows = Person().findAll()
         print("rows == "+str(PersonController.rows))
 
-    def post(self):
-        pass
+    @staticmethod
+    def get_form():
+        print("dummy value")
+
+    @staticmethod
+    def post():
+        print("dummy value")
 
     def put(self):
         pass

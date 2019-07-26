@@ -7,6 +7,7 @@ from template_parser import TemplateParser
 import os
 import cgi
 from sqlite_adapter import SqliteDatabaseAdapter
+import re
 
 PORT_NUMBER = 8080
 
@@ -24,7 +25,13 @@ class myHandler(BaseHTTPRequestHandler):
 	# Send the html message
         #self.wfile.write("test".encode())
         entity = self.path[1:]
-        
+        template_file = entity
+        if len(self.path.split("/")) == 3:
+            action = self.path.split("/")[2]
+        else:
+            action = "index"
+        entity = self.path.split("/")[1]
+
         outputString = '' 
 #        if not ".get" in entity:
 #            outputString += "from rubsapp.models."+entity+" import "+entity+"\n\n"
@@ -34,8 +41,10 @@ class myHandler(BaseHTTPRequestHandler):
 #            outputString += "print(\"rows == \"+str(rows))\n\n"
         
 
+        print("entity == "+entity)
+        print("action == "+action)
 
-        TemplateParser("./rubsapp/views/"+entity+".pyht",entity,entity)
+        TemplateParser(entity,action)
         #importlib.invalidate_caches()
         mdle = importlib.import_module('template_output')
         mdle = importlib.reload(mdle)

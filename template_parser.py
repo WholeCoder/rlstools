@@ -1,17 +1,21 @@
+from rubsapp.router import router
 
 class TemplateParser:
-    def __init__(self,template_file,table,header=''):
+    def __init__(self,table,action):
          
         self.outputString = ""
-        
-        if not ".get" in header:
-            self.outputString += "import sys\n\n"
-            self.outputString += "sys.path.append('../..')\n\n"
-            self.outputString += "from rubsapp.controllers."+table+" import "+table+"Controller\n\n"
-            self.outputString += "from rubsapp.models."+table+" import "+table+"\n\n"
 
-            self.outputString += table+"Controller.index()\n"
-            self.outputString += "rows = "+table+"Controller.rows\n\n"
+        controller_file_handle = open("./rubsapp/controllers/"+table+".py","r")
+        file_contents = controller_file_handle.readlines()
+        controller_file_handle.close()
+        
+        methodToLookFor = action
+        methodFound = False
+
+        for line in file_contents:
+            self.outputString += line
+        
+        self.outputString += table+"Controller."+action+"()\n"
             
         self.outputString += "currString = ''\n\n"
         self.accString = ""
@@ -55,6 +59,9 @@ class TemplateParser:
                 self.accString = l
             elif l == '%':
                 self.accString += '\n'
+                
+                self.accString = self.accString.replace("rows", table+"Controller.rows")
+
                 self.outputString += self.accString
                 self.accString = ""
             else:
@@ -361,7 +368,7 @@ class TemplateParser:
 
         print(convert(" "))
         state = 'StartState'
-        with open(template_file) as f:
+        with open("./rubsapp/views/"+router[table][action]) as f:
             while True:
                 c = f.read(1)
                 testString += c
