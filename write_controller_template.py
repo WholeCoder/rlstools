@@ -25,16 +25,19 @@ defHeader += "        print(\"rows == \"+str("+sys.argv[2]+"Controller.rows))\n\
 
 new_controller.write(defHeader)
 
-defHeader = "    def post(self):\n"
+defHeader = "    @staticmethod\n"
+defHeader += "    def post():\n"
 new_controller.write(defHeader)
-passText =  "        pass\n\n"
+passText =  "        print('dummy test')\n\n"
 new_controller.write(passText)
  
-defHeader = "    def put(self):\n"
+defHeader = "    @staticmethod\n"
+defHeader += "    def put():\n"
 new_controller.write(defHeader)
 new_controller.write(passText)
 
-defHeader = "    def get(self):\n"
+defHeader +="   @staticmethod"
+defHeader += "    def get():\n"
 new_controller.write(defHeader)
 new_controller.write(passText)
  

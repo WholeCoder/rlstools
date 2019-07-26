@@ -24,8 +24,11 @@ class myHandler(BaseHTTPRequestHandler):
         
 	# Send the html message
         #self.wfile.write("test".encode())
-        entity = self.path[1:]
+        print (self.path.split("/"))
+        entity = self.path.split("/")[1]
+        print("entity 2 == "+entity)
         template_file = entity
+        actiono = ""
         if len(self.path.split("/")) == 3:
             action = self.path.split("/")[2]
         else:
