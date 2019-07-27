@@ -13,18 +13,20 @@ class PersonController:
         print("rows == "+str(PersonController.rows))
 
     @staticmethod
-    def get_form():
-        print("dummy value")
+    def post():
+        print('dummy test')
 
     @staticmethod
-    def post():
-        print("dummy value")
+    def get_form():
+        print('dummy test')
 
-    def put(self):
-        pass
+    @staticmethod
+    def put():
+        print('dummy test')
 
-    def get(self):
-        pass
+    @staticmethod
+    def get():
+        print('dummy test')
 
 PersonController.index()
 currString = ''
