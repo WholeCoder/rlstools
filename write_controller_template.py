@@ -41,7 +41,7 @@ defHeader =  "    @staticmethod\n"
 defHeader +=  "    def index():\n"
 defHeader += "        print(\"Running template_Output\")\n\n"
 
-defHeader += "        PersonController.rows = "+sys.argv[2]+"().findAll()\n"
+defHeader += "        "+sys.argv[2]+"Controller.rows = "+sys.argv[2]+"().findAll()\n"
 defHeader += "        print(\"rows == \"+str("+sys.argv[2]+"Controller.rows))\n\n"
 
 new_controller.write(defHeader)
