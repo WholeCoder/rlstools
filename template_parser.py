@@ -29,6 +29,10 @@ class TemplateParser:
                 self.accString = ""
             else:
                 self.accString += l
+        def saveAccAndAppendController(l):
+            self.accString = "currString += "+self.accString+"\n"
+            self.outputString += self.accString
+            self.accString = ''
 
         def saveCharacterAToStartState(l):
             self.accString += "<" + l
@@ -143,7 +147,7 @@ class TemplateParser:
               '<':('C',
               saveCharacter),
               '%':('D',
-              nothing),
+              saveAccAndAppendController),
               '=':('C',
               nothing),
               '>':('C',

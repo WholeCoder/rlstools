@@ -11,6 +11,7 @@ class OfficeController:
 
         OfficeController.rows = Office().findAll()
         print("rows == "+str(OfficeController.rows))
+        OfficeController.dummyText = "<h1>Dummy Header</h1>"
 
     @staticmethod
     def post():

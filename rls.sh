@@ -23,7 +23,7 @@ then
 	echo	./rls.sh scaffold new-app-name/ EntityName attribute:datatype  attribute2:datatype
 	echo          OR
 	echo	./rls.sh serve
-	exit 1
+	exit 2
 fi
 
 if [ $1 = 'serve' ]; then
