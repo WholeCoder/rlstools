@@ -84,7 +84,7 @@ class Template:
             count += 1
         headString += "<tr><td colspan=2 ><button type=\"submit\">Send your message</button></td></tr>"# noqa
         headString += "</form></tbody></table></body></html>"
-        
+
         print(headString)
         file_handle.write(headString)
         file_handle.close()
