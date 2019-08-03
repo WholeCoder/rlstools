@@ -9,7 +9,7 @@ class DatabaseAdapterTestCase(unittest.TestCase):
         try:
             os.remove(database_path)
         except IOError as err:
-            print("I/O error: {0}".format(err))
+            print("This is normal.  We delete the database file if it exists but it doesn't exist according to this exception: I/O error: {0}".format(err))
         self.dAdapter = SqliteDatabaseAdapter.getTestInstance()
         if self.dAdapter.doesTableExist("db_versions"):
             self.dAdapter.dropTable("db_versions")
