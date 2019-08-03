@@ -1,34 +1,32 @@
 from rubsapp.router import router
 
+
 class TemplateParser:
-    def __init__(self,table,action):
-         
+    def __init__(self, table, action):
+
         self.outputString = ""
 
         controller_file_handle = open("./rubsapp/controllers/"+table+".py","r")
         file_contents = controller_file_handle.readlines()
         controller_file_handle.close()
-        
-        methodToLookFor = action
-        methodFound = False
 
         for line in file_contents:
             self.outputString += line
-        
+
         self.outputString += table+"Controller."+action+"()\n"
-            
+
         self.outputString += "currString = ''\n\n"
         self.accString = ""
 
-        
         def saveCharacter(l):
             print("saveCharacter called = saving " + l)
-            if l == "\n":
+            if l == "\n": # noqa
                 self.accString = "currString += '"+self.accString+"'\n"
                 self.outputString += self.accString
                 self.accString = ""
             else:
                 self.accString += l
+
         def saveAccAndAppendController(l):
             self.accString = "currString += "+self.accString+"\n"
             self.outputString += self.accString
@@ -36,10 +34,8 @@ class TemplateParser:
 
         def saveCharacterAToStartState(l):
             self.accString += "<" + l
-            print("saving to acc string----------------------- inf function self.accString == "+self.accString)
 
         def saveCharacterIndented(l):
-            #self.accString += l
             self.outputString += "   currString += '"+self.accString+"'\n"
             self.accString = ""
 
@@ -59,18 +55,19 @@ class TemplateParser:
             self.accString = ""
 
         def saveCharacterForloopheader(l):
-            if l == 'f':
+            if l == 'f': # noqa
                 self.accString = l
-            elif l == '%':
+            elif l == '%': # noqa
                 self.accString += '\n'
                 
-                self.accString = self.accString.replace("rows", table+"Controller.rows")
+                self.accString = self.accString.replace("rows", table+"Controller.rows")# noqa
 
                 self.outputString += self.accString
                 self.accString = ""
             else:
                 self.accString += l
             print("saveCharacterForloopheader called")
+
         def nothing(l):
             print("nothing(l) called ----------------->")
             pass
@@ -364,7 +361,7 @@ class TemplateParser:
         def convert(letter):
             if letter == " ":
                 return 'Space'
-            if letter == 'e' or letter == 'f' or letter == '<' or letter == '=' or letter == '%' or letter == '>' or letter == '':
+            if letter == 'e' or letter == 'f' or letter == '<' or letter == '=' or letter == '%' or letter == '>' or letter == '': # noqa
                 return letter
             return '*'
 
@@ -387,16 +384,14 @@ class TemplateParser:
 
                 state = stateTuple[0]
                 if not c:
-                    print ("End of file")
+                    print("End of file")
                     break
-                print ("Read a character:", c)
-
+                print("Read a character:", c)
 
         saveAccString("doesn't matter")
 
-        file_handle = open("template_output.py","w")
+        file_handle = open("template_output.py", "w")
         file_handle.write(self.outputString)
         file_handle.close()
 
-#        print("outputString == "+self.outputString)
 
