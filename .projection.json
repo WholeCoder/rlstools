@@ -1,0 +1,7 @@
+{
+   "sqlite_*.py":{
+      "type":"adapter",
+      "alternate":"database_{}_tests.py",
+      "doc/*.txt": {"type": "doc"}
+   }
+}

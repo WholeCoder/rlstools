@@ -2,12 +2,11 @@ import os
 import sys
 from sqlite_adapter import SqliteDatabaseAdapter
 
-#ctrl-a :  set-option repeat-time 0
 dAdapter = SqliteDatabaseAdapter.getInstance()
 
 shoulddowngrade = sys.argv[1] == "downgrade"
 if shoulddowngrade:
-    askUserIfTheyReallyWantToDowngrade = input("Are you sure you want to DELETE your ENTIRE DATABASE???   (y,n):  ")
+    askUserIfTheyReallyWantToDowngrade = input("Are you sure you want to DELETE your ENTIRE DATABASE???   (y,n):  ")# noqa
     if askUserIfTheyReallyWantToDowngrade.lower() != "y":
         sys.exit()
 
@@ -29,8 +28,7 @@ else:
 
 num_list.sort()
 for f in num_list:
-    file_handle = open(f+"_migration","r")
-    
+    file_handle = open(f+"_migration", "r")
     file_contents = file_handle.readlines()
     file_handle.close()
     i = 0
@@ -39,7 +37,7 @@ for f in num_list:
         if current_command == "add" and not shoulddowngrade:
             acting_on = file_contents[i].split(" ")[1]
             if acting_on == "table":
-                dAdapter.createNewRecord("db_versions",{"version":f})
+                dAdapter.createNewRecord("db_versions", {"version": f})
                 table = file_contents[i].split(" ")[2]
                 if dAdapter.doesTableExist(table):
                     pass
@@ -50,19 +48,19 @@ for f in num_list:
                 column = file_contents[i].split(" ")[3]
                 if dAdapter.doesTableExist(table):
                     if not dAdapter.doesColumnExist(table, column):
-                        dAdapter.addColumn(table,column)
+                        dAdapter.addColumn(table, column)
         elif current_command == "remove" and shoulddowngrade:
             acting_on = file_contents[i].split(" ")[1]
             if acting_on == "table":
-                dAdapter.deleteRowFromTable("db_versions","version",f)
+                dAdapter.deleteRowFromTable("db_versions", "version", f)
                 table = file_contents[i].split(" ")[2].strip()
                 if dAdapter.doesTableExist(table):
                     dAdapter.dropTable(table)
             elif acting_on == "column":
                 table = file_contents[i].split(" ")[2].strip()
                 column = file_contents[i].split(" ")[3].strip()
-                if dAdapter.doesTableExist(table) and dAdapter.doesColumnExist(table,column):
-                    dAdapter.deleteColumnFromTable(table,column)
+                if dAdapter.doesTableExist(table) and dAdapter.doesColumnExist(table, column):# noqa
+                    dAdapter.deleteColumnFromTable(table, column)
         else:
             pass
 
