@@ -6,15 +6,14 @@ import os
 class DatabaseAdapterTestCase(unittest.TestCase):
     def setUp(self):
         database_path = "my_test_database.db"
-        try:
+
+        if os.path.exists('my_test_database.db'):
+            print("removing my_test_database.db")
             os.remove(database_path)
-        except IOError as err:
-            print("This is normal.  We delete the database file if it exists but it doesn't exist according to this exception: I/O error: {0}".format(err))
+
         self.dAdapter = SqliteDatabaseAdapter.getTestInstance()
         if self.dAdapter.doesTableExist("db_versions"):
             self.dAdapter.dropTable("db_versions")
-
-        print("sqllitedatabaseadapter ->>>>>>>>>>>>>>>>>>"+str(SqliteDatabaseAdapter.getTestInstance()))# noqa
 
     def test_if_get_next_version_of_database(self):
         nn = self.dAdapter.getNextDatabaseVersionNumber()
