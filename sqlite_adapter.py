@@ -8,8 +8,6 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     @staticmethod
     def getInstance():
-        import os
-
         db_filename = "/home/rpierich/Desktop/rlstools/rubsapp/my_db.db"
         if SqliteDatabaseAdapter.__instance is None:
             SqliteDatabaseAdapter(db_filename)
@@ -43,7 +41,6 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             return False
 
     def getNextDatabaseVersionNumber(self):
- 
         if not self.doesTableExist("db_versions"):
             self.createTable("db_versions")
             self.addColumn("db_versions", "version")
@@ -81,7 +78,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
                 if columnInColumns.strip() != column.strip():
                     selectClause = selectClause + columnInColumns + ","
             selectClause = selectClause[:len(selectClause)-1]
-            selectStatement ="CREATE TABLE t1_backup AS SELECT "+selectClause+" FROM "+table
+            selectStatement = "CREATE TABLE t1_backup AS SELECT " + selectClause + " FROM "+table# noqa
             self.cur.execute(selectStatement)
             dropTableStatement = "drop table "+table
             self.cur.execute(dropTableStatement)
@@ -165,7 +162,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         valueString = valueString[:-1]
 
         finalString = "INSERT INTO " + table + "("+insertString+") VALUES (" + valueString + ")"# noqa
-        
+
         cur.execute(finalString)
         self.conn.commit()
         self.conn.close()
@@ -203,4 +200,3 @@ class CursorByName():
         row = self._cursor.__next__()
 
         return {description[0]: row[col] for col, description in enumerate(self._cursor.description) }# noqa
-
