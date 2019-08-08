@@ -8,8 +8,8 @@ class TemplateParser:
         self.outputString = ""
 
         controller_file_handle = open("./rubsapp/controllers/"+table+".py","r")
-        file_contents = controller_file_handle.readlines()
-        controller_file_handle.close()
+        with open("./rubsapp/controllers/"+table+".py", "r") as controller_file_handle:
+            file_contents = controller_file_handle.readlines()
 
         for line in file_contents:
             self.outputString += line
@@ -391,8 +391,7 @@ class TemplateParser:
 
         saveAccString("doesn't matter")
 
-        file_handle = open("template_output.py", "w")
-        file_handle.write(self.outputString)
-        file_handle.close()
+        with open("template_output.py", "w") as file_handle:
+            file_handle.write(self.outputString)
 
 
