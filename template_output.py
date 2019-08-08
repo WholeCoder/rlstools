@@ -2,15 +2,15 @@ import sys
 
 sys.path.append('../..')
 
-from rubsapp.models.City import City
+from rubsapp.models.City3 import City3
 
-class CityController:
+class City3Controller:
     @staticmethod
     def index():
         print("Running template_Output")
 
-        CityController.rows = City().findAll()
-        print("rows == "+str(CityController.rows))
+        City3Controller.rows = City3().findAll()
+        print("rows == "+str(City3Controller.rows))
 
     @staticmethod
     def post():
@@ -28,23 +28,23 @@ class CityController:
     def get():
         print('dummy test')
 
-CityController.index()
+City3Controller.index()
 currString = ''
 
 currString += ''
 currString += '<html>'
 currString += '	<head>'
-currString += '		<title>City List</title>'
+currString += '		<title>City3 List</title>'
 currString += '	</head>'
 currString += '	<body>'
 currString += '		<table>'
 currString += '			<tbody>'
-currString += '				<tr><th>zipcode</th><th>areacode</th>				</tr>'
-for row in CityController.rows: 
+currString += '				<tr><th>zipcode3</th><th>areacode3</th>				</tr>'
+for row in City3Controller.rows: 
    currString += '<tr><td>'
-   currString +=  str(row["zipcode"]) 
+   currString +=  str(row["zipcode3"]) 
    currString += '</td><td>'
-   currString +=  str(row["areacode"]) 
+   currString +=  str(row["areacode3"]) 
    currString += '</td></tr>'
 currString += '  '
 currString += '                        </tbody>'
