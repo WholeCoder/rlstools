@@ -1,0 +1,8 @@
+
+<html>
+	<head>
+		<title>City4 Form</title>
+	</head>
+	<body>
+		<table>
+			<tbody><form action="/City4" method="post"><tr><td>zipcode4</td><td><input type="text" name="zipcode4"/></td></tr><tr><td>areacode4</td><td><input type="text" name="areacode4"/></td></tr><tr><td colspan=2 ><button type="submit">Send your message</button></td></tr></form></tbody></table></body></html>

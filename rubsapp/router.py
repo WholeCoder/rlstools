@@ -19,3 +19,8 @@ router['City3'] = {}
 router['City3']['get_form'] = 'City3.get.pyht'
 
 router['City3']['index'] = 'City3.pyht'
+
+router['City4'] = {}
+router['City4']['get_form'] = 'City4.get.pyht'
+
+router['City4']['index'] = 'City4.pyht'

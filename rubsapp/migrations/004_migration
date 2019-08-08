@@ -1,0 +1,10 @@
+upgrade
+add table City4
+add column City4 zipcode4
+add column City4 areacode4
+
+
+downgrade
+remove column City4 zipcode4
+remove column City4 areacode4
+remove table City4
