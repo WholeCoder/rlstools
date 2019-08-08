@@ -29,20 +29,19 @@ if len(num_list) > 0:
         max = str(nn)
 next_available_database_version = max
 
-new_view = open(sys.argv[1]+"/"+next_available_database_version + "_migration", 'w')# noqa
-new_view.write("upgrade\n")
-new_view.write("add table "+sys.argv[2]+"\n")
+with open(sys.argv[1]+"/"+next_available_database_version + "_migration", 'w') as new_view: # noqa
+    new_view.write("upgrade\n")
+    new_view.write("add table "+sys.argv[2]+"\n")
 
-count = 3
-while count < len(sys.argv):
-    new_view.write("add column "+sys.argv[2]+" "+sys.argv[count].split(":")[0]+"\n")# noqa
-    count += 1
+    count = 3
+    while count < len(sys.argv):
+        new_view.write("add column "+sys.argv[2]+" "+sys.argv[count].split(":")[0]+"\n")# noqa
+        count += 1
 
-new_view.write("\n\ndowngrade\n")
-count = 3
-while count < len(sys.argv):
-    new_view.write("remove column "+sys.argv[2]+" "+sys.argv[count].split(":")[0]+"\n")# noqa
-    count += 1
+    new_view.write("\n\ndowngrade\n")
+    count = 3
+    while count < len(sys.argv):
+        new_view.write("remove column "+sys.argv[2]+" "+sys.argv[count].split(":")[0]+"\n")# noqa
+        count += 1
 
-new_view.write("remove table "+sys.argv[2]+"\n")
-new_view.close()
+    new_view.write("remove table "+sys.argv[2]+"\n")

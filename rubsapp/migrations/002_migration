@@ -1,0 +1,10 @@
+upgrade
+add table City2
+add column City2 zipcode2
+add column City2 areacode2
+
+
+downgrade
+remove column City2 zipcode2
+remove column City2 areacode2
+remove table City2
