@@ -14,7 +14,7 @@ class Template:
             parameter_list.append(sys.argv[count].split(":")[0])
             count += 1
         print("parameter_list == " + str(parameter_list))
-        file_handle = open(sys.argv[1]+"/"+sys.argv[2]+".pyht", 'w')
+
         headString = '''
 <html>
 	<head>
@@ -50,8 +50,8 @@ class Template:
 '''# noqa
 
         print(headString)# noqa
-        file_handle.write(headString)
-        file_handle.close()
+        with open(sys.argv[1]+"/"+sys.argv[2]+".pyht", 'w') as file_handle:
+            file_handle.write(headString)
 #########
 
     def generateFormTemplate(self):
@@ -62,7 +62,7 @@ class Template:
             parameter_list.append(sys.argv[count].split(":")[0])
             count += 1
         print("parameter_list == " + str(parameter_list))
-        file_handle = open(sys.argv[1]+"/"+sys.argv[2]+".get.pyht", 'w')
+
         headString = '''
 <html>
 	<head>
@@ -86,10 +86,9 @@ class Template:
         headString += "</form></tbody></table></body></html>"
 
         print(headString)
-        file_handle.write(headString)
-        file_handle.close()
+        with open(sys.argv[1]+"/"+sys.argv[2]+".get.pyht", 'w') as file_handle:
+            file_handle.write(headString)
 
 
 Template().generateTemplate()
 Template().generateFormTemplate()
-

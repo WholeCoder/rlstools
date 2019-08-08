@@ -1,5 +1,5 @@
 {
    "sqlite_*.py":{
-      "database_{}_tests.py":{"type":"adapter"}
+      "alternate":"database_{}_tests.py"
    }
 }

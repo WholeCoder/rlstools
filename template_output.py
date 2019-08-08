@@ -2,15 +2,15 @@ import sys
 
 sys.path.append('../..')
 
-from rubsapp.models.Person import Person
+from rubsapp.models.City import City
 
-class PersonController:
+class CityController:
     @staticmethod
     def index():
         print("Running template_Output")
 
-        PersonController.rows = Person().findAll()
-        print("rows == "+str(PersonController.rows))
+        CityController.rows = City().findAll()
+        print("rows == "+str(CityController.rows))
 
     @staticmethod
     def post():
@@ -28,23 +28,23 @@ class PersonController:
     def get():
         print('dummy test')
 
-PersonController.index()
+CityController.index()
 currString = ''
 
 currString += ''
 currString += '<html>'
 currString += '	<head>'
-currString += '		<title>Person List</title>'
+currString += '		<title>City List</title>'
 currString += '	</head>'
 currString += '	<body>'
 currString += '		<table>'
 currString += '			<tbody>'
-currString += '				<tr><th>first_name</th><th>last_name</th>				</tr>'
-for row in PersonController.rows: 
+currString += '				<tr><th>zipcode</th><th>areacode</th>				</tr>'
+for row in CityController.rows: 
    currString += '<tr><td>'
-   currString +=  str(row["first_name"]) 
+   currString +=  str(row["zipcode"]) 
    currString += '</td><td>'
-   currString +=  str(row["last_name"]) 
+   currString +=  str(row["areacode"]) 
    currString += '</td></tr>'
 currString += '  '
 currString += '                        </tbody>'
