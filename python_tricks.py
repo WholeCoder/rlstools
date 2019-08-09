@@ -1,5 +1,6 @@
 from string import Template
 import functools # used to add metadate to wrapped function # noqa
+import copy  # used for the deepcopy function to deep copy objects and collections # noqa
 dct1 = {"a": 1, "b": 2}
 dct2 = {"b": 3, "c": 4}
 
@@ -230,3 +231,42 @@ def testit(a, b, c):
 
 
 testit("a", "b", "z")
+
+original_list = [1, 2, 3]
+original_dict = {"a": 1, "b": 2}
+original_set = {"a", "b"}
+
+# use factory functions to clone existing collections
+#   this only creates shallow copies though -doesn't work for objects
+new_list = list(original_list)
+new_dict = dict(original_dict)
+new_set = set(original_set)
+
+xs = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+ys = list(xs)  # make a shallow copy
+
+print(xs)
+print(ys)
+
+xs.append(['new sublist'])
+print(xs)
+print(ys)
+
+xs[1][0] = 'X'  # both xs and ys are effected because of the shallow copying
+print(xs)
+print(ys)
+
+xs = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+zs = copy.deepcopy(xs)
+# both look identical but they are not.  They are deep copies of one another
+
+xs[1][0] = 'X'  # this won't affect the deep copy zs
+print(xs)
+print(zs)
+
+sc = copy.copy(xs) # perform a shallow copy - explicitly for communicating to user # noqa
+
+
+
+
+

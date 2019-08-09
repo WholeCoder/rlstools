@@ -18,4 +18,4 @@ class BaseRlsRecord:
 
     def findAll(self):
         rows = self.dAdapter.findAllRecords(self.get_type_name_of_subclass())
-        return rows 
+        return rows
