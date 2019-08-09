@@ -1,3 +1,4 @@
+import json
 from collections import namedtuple
 from string import Template
 import functools # used to add metadate to wrapped function # noqa
@@ -326,10 +327,35 @@ my_car = Car('red', 3812.4)
 print(my_car.color)
 print(my_car.mileage)
 
+# can access a named-tuple by index too
+print(my_car[0])
+
+# tuple unpacking works for functions with tuples
+print(*my_car)
 
 
+# you can exted named tuples like a normal class
+class MyCarWithMethods(Car):
+    def hexcolor(self):
+        if self.color == 'red':
+            return '#ff0000'
+        else:
+            return '#000000'
 
 
+c = MyCarWithMethods('red', 1234)
+print(c.hexcolor())
 
+# adding a field to a named tuble
+ElectricCar = namedtuple('ElectricCar', Car._fields + ('charge',))
 
+e = ElectricCar('red', 1234, 45.0)
+print(e)
 
+print(e._asdict())
+print(json.dumps(my_car._asdict()))
+
+print(my_car._replace(color='blue')) # lets us change some of the values in the named tuple # noqa
+
+new_car = Car._make(['red', 999])  # use _make to create a new named tuple
+print(new_car)
