@@ -218,4 +218,15 @@ my_car = Car('blue', 100)
 print(my_car)
 
 
+def deco(func):
+    def wrapper(*args):
+        print(args)
+    return wrapper
 
+
+@deco
+def testit(a, b, c):
+    pass
+
+
+testit("a", "b", "z")
