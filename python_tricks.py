@@ -1,3 +1,4 @@
+from collections import namedtuple
 from string import Template
 import functools # used to add metadate to wrapped function # noqa
 import copy  # used for the deepcopy function to deep copy objects and collections # noqa
@@ -102,7 +103,7 @@ print(sorted(range(-5, 6), key=lambda x: x * x))
 
 # lambdas are lexical closures
 def make_adder(n):
-    return lambda x: x + n # the lambda captures the n parameter's value
+    return lambda x: x + n  # the lambda captures the n parameter's value
 
 
 # possibly shouldn't use lambdas as they can make the code harder to read
@@ -204,6 +205,7 @@ print(a is b)  # true - they point to the same object
 c = list(a)
 print(a == c)  # true - they "look" the same
 print(a is c)  # false - they are not the sam objects
+
 
 # implement at least the __repr__ function because the interpreter will fall back on it for no __str__ method  # noqa
 class Car:
@@ -308,6 +310,26 @@ drect.topleft.x = 222
 print(drect)
 print(rect)
 print(srect)
+
+#  tuples are immutable
+Car = namedtuple('Car', 'color mileage')  # a named touple
+
+# or
+
+Car = namedtuple('Car', [
+    'color',
+    'mileage',
+])
+
+
+my_car = Car('red', 3812.4)
+print(my_car.color)
+print(my_car.mileage)
+
+
+
+
+
 
 
 
