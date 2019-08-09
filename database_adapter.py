@@ -1,26 +1,34 @@
-class DatabaseAdapter:
+from abc import ABCMeta, abstractmethod
+
+
+class DatabaseAdapter(metaclass=ABCMeta):
     def __init__(self):
         print("DatabaseAdapter - Initializing adapter")
 
+    @abstractmethod
     def doesColumnExist(self, table, column):
-        print("DatabaseAdapter - Seeing if column " + column + " exists on table " + table)# noqa
+        pass
 
+    @abstractmethod
     def deleteColumnFromTable(self, table, column):
-        print("DatabaseAdapter - Deleting column " + column + " from table "+table)# noqa
+        pass
 
+    @abstractmethod
     def doesTableExist(self, table):
-        print("DatabaseAdapter - Seeing if table " + table + " exists.")
+        pass
 
+    @abstractmethod
     def createTable(self, table):
-        print("DatabaseAdapter - Creating table "+table)
+        pass
 
+    @abstractmethod
     def addColumn(self, table, column):
-        print("DatabaseAdapter - Added column "+column+" to table " + table)
+        pass
 
+    @abstractmethod
     def removeTable(self, table):
-        print("DatabaseAdapter - Removing table " + table)
+        pass
 
+    @abstractmethod
     def dropTable(self, table):
-        print("DatabaseAdapter - Dropping table " + table)
-
-
+        pass
