@@ -1,0 +1,8 @@
+# create a new virtual environment - run inside of your python project
+python3 -m venv ./venv
+
+# this next line activates the new virtual environment
+source ./venv/bin/activate
+
+# deactivate your virtual environment with the next command
+deactivate

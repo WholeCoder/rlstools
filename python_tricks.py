@@ -1,3 +1,5 @@
+import datetime
+import pprint
 import heapq
 from collections import deque
 from collections import Counter
@@ -528,8 +530,131 @@ print(lst[1:3:1])  # upper bound is always excluded
 
 print(lst[::2])  # get every other value from list
 
-print(lst[::-1])  # get list in reverse order
+print(lst[::-1])  # get list in reverse order #  stick with liste.reverse() method  # noqa
+# or reversed
+
+del lst[:] # delete all  values in a list #  updates list and all its' references  # noqa
+
+lst.clear()  # also deletes all values ina list  # python 3
 
 
+lst = [1, 2, 3, 4, 5]
+lst[:] = [7, 8, 9]
+print(lst)
 
 
+class Repeater:
+    def __init__(self, value):
+        self.value = value
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        return self.value
+
+# this will loop forever and return 'HEllo'
+# repeater = Repeater('HEllo')
+# for item in repeater:
+#    print(item)
+
+
+my_list = [1, 2, 3]
+iterator = iter(my_list)
+
+next(iterator)
+next(iterator)
+next(iterator)
+
+#  next(iterator)  # raises a StopIteration exception
+
+# we can use generators to implement iterators easier
+
+
+def repeater(value):
+    while True:
+        yield value
+
+
+# Usage ofr a repeater
+# for x in repeater('Hi'):
+#    print(x)
+
+# Generator expressions
+iterator = ('Hello' for i in range(3))  # can't be reused
+for x in iterator:
+    print(x)
+
+iterator = ('Hello' for i in range(3))
+print(list(iterator))  # not a list comprehension!!!
+
+# this iterator yeilds the squares of the even numbers between 0 and 9 #  noqa
+even_squares = (x * x for x in range(10) if x % 2 == 0)
+
+for x in even_squares:
+    print(x)
+
+# implement an in-line iterator
+for x in ('Bom dia' for i in range(3)):
+    print(x)
+
+print(sum(x * 2 for x in range(10)))
+
+
+def integers():
+    for i in range(1, 9):
+        yield i
+
+
+def squared(seq):
+    for i in seq:
+        yield i * i
+
+
+iterator_chain = squared(integers())
+print(list(iterator_chain))
+
+
+def negated(seq):
+    for i in seq:
+        yield -i
+
+
+chain = negated(squared(integers()))
+
+print(list(chain))
+
+
+integers = range(8)
+squared = (i * i for i in integers)
+negated = (-i for i in squared)
+
+print(list(negated))
+
+
+# default values for dictionaries
+name_for_user = {
+        10: "Ruthy",
+        20: "Ruby",
+        30: "Lena",
+        }
+
+print(name_for_user.get(40, 'some default value'))
+
+
+mapping = {'a': 23, 'b': 42, 'c': 0xc0ffee}
+
+# use the json.dumps method to pretty print a dictionary
+#    - this technize only works for dict, list, tuple, str, int, float, bool, and None  # noqa
+#    - doesn't work for sets or all keyword
+print(json.dumps(mapping, indent=4, sort_keys=True))
+#   doesn't work with unicode
+
+# this next function works on any datatypes
+pprint.pprint(mapping)
+
+i# in a repl session use teh following to reduce the number of options  # noqa
+[_ for _ in dir(datetime) if 'date' in _.lower()]
+
+# to get more help in a repl on a method/function/etc use
+# help(datetime)
