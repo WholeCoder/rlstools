@@ -1,3 +1,4 @@
+import array
 from types import MappingProxyType
 from collections import ChainMap
 from collections import defaultdict
@@ -401,6 +402,33 @@ print(read_only['one'])
 
 writable['one'] = 99  # unwrapped dictionary is writable
 print(read_only['one'])
+
+arr = array.array('f', (1.0, 1.5, 2.0, 2.5))  # arrays hold values with the samedatatype and are more space efficient than lists  # noqa
+
+print(arr[1])
+print(arr)
+
+# arrays are mutable
+arr[1] = 23.0
+print(arr)
+
+# can't do this:  arrp1[ = 'hello' because arrays only hold all the same data type # noqa
+
+arr = 'abcd'
+print(arr[1])
+
+# can't update a string - they are immutable
+# arr[1] = 'e'
+# del arr[1] # can't do
+
+lst = list('abcd')  # strings can be unpacked to a list
+print(lst)
+
+
+
+
+
+
 
 
 
