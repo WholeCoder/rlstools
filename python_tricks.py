@@ -1,3 +1,6 @@
+import heapq
+from collections import deque
+from collections import Counter
 import array
 from types import MappingProxyType
 from collections import ChainMap
@@ -424,15 +427,108 @@ print(arr[1])
 lst = list('abcd')  # strings can be unpacked to a list
 print(lst)
 
+vowels = {'a', 'e', 'i', 'o', 'u'}  # a set
+squares = {x * x for x in range(10)}  # set comprehension
+
+#  to create an empty set you must use the set() construtor as {} makes an empty dictionary  # noqa
+print('e' in vowels)
+
+vowels.add('x')
+print(vowels)
+
+vwls = frozenset(vowels)  # this set cannot be modified
+#  vwls.add("p")  # can't do to frozen set (or delete)
+print(vwls)
+
+inventory = Counter() #  this set will keep track of our items and how many are in the set  # noqa
 
 
+loot = {'sword': 1, 'bread': 3}
+inventory.update(loot)
+print(inventory)
+
+more_loot = {'sword': 1, 'apple': 1}
+inventory.update(more_loot)
+print(inventory)
+
+# be careful with the multiset
+
+#  prints the num of unique items
+print(len(inventory))
+#  print sum of item counts (values
+print(sum(inventory.values()))
+
+# simple built-in stacks
+s = []
+s.append('Ruth')
+s.append('is')
+s.append('Married')
+
+print(s.pop())
+print(s.pop())
+print(s.pop())
+
+#  this is a stack
+s = deque()
+s.append('eat')
+s.append('sleep')
+s.append('code')
+
+print(s)
+
+print(s.pop())
+print(s.pop())
+print(s.pop())
 
 
+# don't use a list for an actual Queue - it is slow in python
+
+q = []
+
+# list based binary heap
+heapq.heappush(q, (2, 'code'))
+heapq.heappush(q, (1, 'eat'))
+heapq.heappush(q, (3, 'sleep'))
+
+while q:
+    next_item = heapq.heappop(q)
+    print(next_item)
 
 
+emails = {
+        'Bob': 'bob%example.com',
+        'Alice': 'alice@example.com',
+        }
 
+for name, email in emails.items():
+    print(f'{name} -> {email}')
+start = 0
+stop = 10
+step = 2
+for i in range(start, stop, step):
+    print(i)
 
+# general template for  alist comprehension
+# values = [expression for item in collection]
 
+even_squares = [x * x for x in range(10) if x % 2 == 0]
+
+print(even_squares)
+
+set_comprehension = {x * x for x in range(-9, 10)}
+print(set_comprehension)
+
+dictionary_comprehension = {x: x * x for x in range(5)}
+print(dictionary_comprehension)
+
+lst = [1, 2, 3, 4, 5]
+print(lst)
+
+print(lst[1:3:1])  # upper bound is always excluded
+
+print(lst[::2])  # get every other value from list
+
+print(lst[::-1])  # get list in reverse order
 
 
 
