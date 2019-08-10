@@ -1,3 +1,7 @@
+from types import MappingProxyType
+from collections import ChainMap
+from collections import defaultdict
+import collections
 import json
 from collections import namedtuple
 from string import Template
@@ -359,3 +363,49 @@ print(my_car._replace(color='blue')) # lets us change some of the values in the 
 
 new_car = Car._make(['red', 999])  # use _make to create a new named tuple
 print(new_car)
+
+diction = {x: x * x for x in range(6)}  # dictionary comprehension
+print(diction)
+
+# dictionaries must only have hashable keys like strings, numbers, or tuples that are hashable as keys  # noqa
+
+# collections.OrderedDict # remembers the insertion order of keys
+
+d = collections.OrderedDict(one=1, two=2, three=3)
+print(d)
+
+d['four'] = 4
+print(d)
+
+print(d.keys())
+
+# collections.defaultdict - return default values for missing keys
+dd = defaultdict(list)
+
+dd['dogs'].append('Rufus')
+dd['dogs'].append('kathrin')
+dd['dogs'].append('Mr Sniffles')
+
+print(dd['dogs'])
+
+# collections.ChainMap - search multiple dictionaries as a single mapping
+chain = ChainMap(dct1, dct2)
+print(chain)
+
+print(chain['b'])
+
+writable = {'one': 1, 'two': 2}
+read_only = MappingProxyType(writable)  # create a read only dictionary
+
+print(read_only['one'])
+
+writable['one'] = 99  # unwrapped dictionary is writable
+print(read_only['one'])
+
+
+
+
+
+
+
+
