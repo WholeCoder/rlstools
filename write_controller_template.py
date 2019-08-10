@@ -27,7 +27,7 @@ with open(sys.argv[1]+"/"+sys.argv[2]+".py", 'w') as new_controller:
 
     classHeader = "import sys\n\n"
     classHeader += "sys.path.append('../..')\n\n"
-    classHeader += "from rubsapp.models."+sys.argv[2]+" import "+sys.argv[2]+"\n\n" # noqa
+    classHeader += "from models."+sys.argv[2]+" import "+sys.argv[2]+"\n\n" # noqa
 
     classHeader += "class "+sys.argv[2] + "Controller:\n"
     new_controller.write(classHeader)

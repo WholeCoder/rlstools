@@ -8,7 +8,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     @staticmethod
     def getInstance():
-        db_filename = "/home/rpierich/Desktop/rlstools/rubsapp/my_db.db"
+        db_filename = "./my_db.db"
         if SqliteDatabaseAdapter.__instance is None:
             SqliteDatabaseAdapter(db_filename)
         return SqliteDatabaseAdapter.__instance
@@ -176,8 +176,9 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             colString += col+","
 
         colString = colString[:-1]
+        print("---------------------------------> table = " + table)
         selectStatement = "SELECT " + colString + " FROM "+table
-
+        print(" SQL STATEMENT = " +  selectStatement)
         curr = self.conn.cursor()
         curr.execute(selectStatement)
 

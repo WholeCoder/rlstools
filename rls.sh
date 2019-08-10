@@ -27,9 +27,9 @@ then
 fi
 
 if [ $1 = 'serve' ]; then
-	./server.py
+	server.py
 elif [ $1 = 'scaffold' ]; then
-	appDirectory="$2"
+	appDirectory="."
 	scaffoldName="$3"
 	shift
 	shift
@@ -46,26 +46,26 @@ elif [ $1 = 'scaffold' ]; then
 	create_directory "controllers"
 	cd controllers
 	wDirectory=$PWD
-	"../../write_controller_template.py" "$wDirectory" "$scaffoldName"
+	"write_controller_template.py" "$wDirectory" "$scaffoldName"
 	cat "$wDirectory/$scaffoldName.py"
 	cd ..
 	create_directory "models"
 	cd models
 	wDirectory=$PWD
-	"../../write_model_template.py" "$wDirectory" "$scaffoldName"
+	"write_model_template.py" "$wDirectory" "$scaffoldName"
 	#cat "$wDirectory/$scaffoldName.migration"
 	cd ..
 	create_directory "migrations"
 	cd migrations
 	wDirectory=$PWD
-	"../../generate_migration.py" "$wDirectory" "$scaffoldName" "$@"
+	"generate_migration.py" "$wDirectory" "$scaffoldName" "$@"
 	#new_version_for_next_migration=`python3 print_out_next_database_version_number.py`
 	#"../../migration_tool.py" "upgrade" "$wDirectory" "$scaffoldName" "$new_version_for_next_migration"
 	cd ..
 	create_directory "views"
 	cd views
 	wDirectory=$PWD
-	"../../master_template.py" "$wDirectory" "$scaffoldName" "$@"
+	"master_template.py" "$wDirectory" "$scaffoldName" "$@"
 
 	#append to the migration script
 	cd ../..

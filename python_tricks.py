@@ -74,7 +74,7 @@ def speak(text):
 print(speak('Hello, World'))
 
 
-# inner functions can capter lexical scope of their parent functions
+# inner functions can capture lexical scope of their parent functions
 def make_adder(n):
     def add(x):
         return x + n
@@ -356,7 +356,7 @@ class MyCarWithMethods(Car):
 c = MyCarWithMethods('red', 1234)
 print(c.hexcolor())
 
-# adding a field to a named tuble
+# adding a field to a named tuple
 ElectricCar = namedtuple('ElectricCar', Car._fields + ('charge',))
 
 e = ElectricCar('red', 1234, 45.0)
@@ -653,7 +653,7 @@ print(json.dumps(mapping, indent=4, sort_keys=True))
 # this next function works on any datatypes
 pprint.pprint(mapping)
 
-i# in a repl session use teh following to reduce the number of options  # noqa
+# in a repl session use teh following to reduce the number of options  # noqa
 [_ for _ in dir(datetime) if 'date' in _.lower()]
 
 # to get more help in a repl on a method/function/etc use

@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import os
 import sys
 from sqlite_adapter import SqliteDatabaseAdapter
@@ -12,7 +13,7 @@ if shoulddowngrade:
 
 next_available_database_version = dAdapter.getNextDatabaseVersionNumber()
 
-files = os.listdir(".")
+files = os.listdir("./migrations")
 num_list = []
 
 if not shoulddowngrade:
@@ -28,7 +29,7 @@ else:
 
 num_list.sort()
 for f in num_list:
-    with open(f+"_migration", "r") as file_handle:
+    with open(os.getcwd()+"/migrations/"+f+"_migration", "r") as file_handle:
         file_contents = file_handle.readlines()
     i = 0
     while i < len(file_contents):
