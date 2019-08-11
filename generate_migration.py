@@ -12,7 +12,7 @@ print("scaffold name = " + sys.argv[2])
 next_available_database_version = dAdapter.getNextDatabaseVersionNumber()
 
 num_list = []
-files = os.listdir(".")
+files = os.listdir(os.getcwd()+"/migrations")
 for f in files:
     part = f.split("_")[0]
     num_list.append(part)
@@ -29,7 +29,7 @@ if len(num_list) > 0:
         max = str(nn)
 next_available_database_version = max
 
-with open(sys.argv[1]+"/"+next_available_database_version + "_migration", 'w') as new_view: # noqa
+with open(os.getcwd()+"/migrations/"+next_available_database_version + "_migration", 'w') as new_view: # noqa
     new_view.write("upgrade\n")
     new_view.write("add table "+sys.argv[2]+"\n")
 

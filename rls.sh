@@ -56,12 +56,12 @@ elif [ $1 = 'scaffold' ]; then
 	#cat "$wDirectory/$scaffoldName.migration"
 	cd ..
 	create_directory "migrations"
-	cd migrations
+	#cd migrations
 	wDirectory=$PWD
 	"generate_migration.py" "$wDirectory" "$scaffoldName" "$@"
 	#new_version_for_next_migration=`python3 print_out_next_database_version_number.py`
 	#"../../migration_tool.py" "upgrade" "$wDirectory" "$scaffoldName" "$new_version_for_next_migration"
-	cd ..
+	#cd ..
 	create_directory "views"
 	cd views
 	wDirectory=$PWD
