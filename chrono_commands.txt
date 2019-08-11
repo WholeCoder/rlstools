@@ -1,0 +1,6 @@
+chrono start proj-name +tag
+chrono stop
+chrono projects
+chrono log
+chrono notes add "fixd some spellings"
+chrono notes show
