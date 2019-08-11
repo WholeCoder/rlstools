@@ -82,7 +82,7 @@ class Template:
             headString += "<td><input type=\"text\" name=\""+parameter_list[count]+"\"/></td>"# noqa
             headString += '</tr>'
             count += 1
-        headString += "<tr><td colspan=2 ><button type=\"submit\">Send your message</button></td></tr>"# noqa
+        headString += "<tr><td colspan=2 ><button type=\"submit\">Save</button></td></tr>"# noqa
         headString += "</form></tbody></table></body></html>"
 
         print(headString)
