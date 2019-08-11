@@ -10,7 +10,6 @@ class TemplateParser:
 
         self.outputString = ""
 
-        controller_file_handle = open(os.getcwd()+"/controllers/"+table+".py","r")
         with open(os.getcwd()+"/controllers/"+table+".py", "r") as controller_file_handle:
             file_contents = controller_file_handle.readlines()
 
