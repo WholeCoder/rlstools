@@ -1,0 +1,63 @@
+tmux new -s basic
+tmux new -s second_session
+
+tmux list-sessions        - lists all tmux sessions
+tmux ls                   - same as previous line
+
+tmux kill-session -t second_session
+
+prefix d                  - detach from a session
+
+
+tmux new -s windows -n shell   - make a new window called shell
+
+
+prefix ,        - rename current window
+prefix p or n   - move backwards or previous windows
+
+prefix 0	- go to window numbered 0 and so on
+prefix 1
+prefix ...
+
+prefix f       - find window by name
+bprefix w       - display a visual menu of our windows
+
+prefix &       - exit and close the current window
+
+prefix %       - split down vertically
+prefix "       - split horixontally
+
+prefix 0       - cycle through windows
+
+
+prefix +up down left or right            - cycle through created windows
+
+prefix :      enter command mode
+
+	new-window -n console      - enter a the command line to create a new window
+
+	new-winndow -n processes "top"	- create a new window and start top process
+
+
+
+
+
+
+
+kill -STOP pid
+kill -CONT pid         # restart the stopped press
+
+dd -if=/dev/zero of=new_file bs=1024 count=1        # copy zeroes to new_file
+
+sudo parted -l | less         # display partion table
+
+
+
+
+
+
+
+
+
+
+
