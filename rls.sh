@@ -18,11 +18,11 @@ if [ $# -lt 1 ]
 then
 	echo Not enough paramegers
 	echo Usage:
-	echo 	./rls.sh new new-app-name
+	echo 	rls.sh new new-app-name
 	echo		OR
-	echo	./rls.sh scaffold new-app-name/ EntityName attribute:datatype  attribute2:datatype
+	echo	rls.sh scaffold EntityName attribute:datatype  attribute2:datatype
 	echo          OR
-	echo	./rls.sh serve
+	echo	rls.sh serve
 	exit 2
 fi
 
@@ -30,8 +30,7 @@ if [ $1 = 'serve' ]; then
 	server.py
 elif [ $1 = 'scaffold' ]; then
 	appDirectory="."
-	scaffoldName="$3"
-	shift
+	scaffoldName="$2"
 	shift
 	shift
 	argsArray=("$@")
