@@ -24,6 +24,7 @@ class TemplateParser:
         def saveCharacter(l):
             print("saveCharacter called = saving " + l)
             if l == "\n": # noqa
+                self.accString = self.accString.replace("'","&apos;")
                 self.accString = "currString += '"+self.accString+"'\n"
                 self.outputString += self.accString
                 self.accString = ""
@@ -31,6 +32,7 @@ class TemplateParser:
                 self.accString += l
 
         def saveAccAndAppendController(l):
+            self.accString = self.accString.replace("'","&apos;")
             self.accString = "currString += "+self.accString+"\n"
             self.outputString += self.accString
             self.accString = ''
@@ -43,6 +45,7 @@ class TemplateParser:
             self.accString = ""
 
         def saveAccWithIndent(l):
+            self.accString = self.accString.replace("'","&apos;")
             self.outputString += "   currString += "+self.accString+"\n"
             self.accString = ""
 
@@ -53,7 +56,8 @@ class TemplateParser:
             self.accString += l + ">"
 
         def saveAccString(l):
-
+            self.accString = self.accString.replace("'","&apos;")
+ 
             self.outputString += "currString += '"+self.accString+"'\n"
             self.accString = ""
 
@@ -65,6 +69,7 @@ class TemplateParser:
                 
                 self.accString = self.accString.replace("rows", table+"Controller.rows")# noqa
 
+                self.accString = self.accString.replace("'","&apos;")
                 self.outputString += self.accString
                 self.accString = ""
             else:
