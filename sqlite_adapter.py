@@ -1,5 +1,6 @@
 import sqlite3
 from database_adapter import DatabaseAdapter
+import yaml
 
 
 class SqliteDatabaseAdapter(DatabaseAdapter):
@@ -8,7 +9,10 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     @staticmethod
     def getInstance():
-        db_filename = "./my_db.db"
+        with open('./config.yaml') as f:
+            # use safe_load instead load
+            dataMap = yaml.safe_load(f)
+        db_filename = dataMap['config']['database']
         if SqliteDatabaseAdapter.__instance is None:
             SqliteDatabaseAdapter(db_filename)
         return SqliteDatabaseAdapter.__instance
@@ -178,7 +182,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         colString = colString[:-1]
         print("---------------------------------> table = " + table)
         selectStatement = "SELECT " + colString + " FROM "+table
-        print(" SQL STATEMENT = " +  selectStatement)
+        print(" SQL STATEMENT = " + selectStatement)
         curr = self.conn.cursor()
         curr.execute(selectStatement)
 

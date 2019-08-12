@@ -75,8 +75,11 @@ elif [ $1 == 'new' ]; then
 		echo "Creating the app"
 		mkdir $2
 		cd $2
-		touch config.yml
-	else
+		touch config.yaml
+        echo "config:" >> config.yaml
+        echo "    database:  ./my_db.db" >> config.yaml
+        echo "    database_adapter:  sqlite" >> config.yaml
+    else
 		echo "App directory already exists"
 	fi
 fi
