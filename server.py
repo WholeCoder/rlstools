@@ -4,6 +4,7 @@ import importlib
 from template_parser import TemplateParser
 import cgi
 from sqlite_adapter import SqliteDatabaseAdapter
+from os import curdir, sep
 
 PORT_NUMBER = 8080
 
@@ -14,6 +15,24 @@ PORT_NUMBER = 8080
 class myHandler(BaseHTTPRequestHandler):
     # Handler for the GET requests
     def do_GET(self):
+        sendReply = False
+        if self.path.endswith(".js"):
+            mimetype = 'application/javascript'
+            sendReply = True
+        if self.path.endswith(".css"):
+            mimetype = 'text/css'
+            sendReply = True
+
+        if sendReply:
+            # Open the static file requested and send it
+            f = open(curdir + sep + self.path)
+            self.send_response(200)
+            self.send_header('Content-type', mimetype)
+            self.end_headers()
+            self.wfile.write(f.read())
+            f.close()
+            return
+
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.send_header('Cache-Control', 'no-cache')
