@@ -91,6 +91,12 @@ class Template:
         headString += '''
                         </tbody>
 		</table>
+
+<footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
 	</body>
 </html>
 '''# noqa
@@ -173,8 +179,9 @@ class Template:
             headString += '</tr>'
             count += 1
         headString += "<tr><td colspan=2 ><button type=\"submit\">Save</button></td></tr>"# noqa
-        headString += "</form></tbody></table></body></html>"
-
+        headString += "</form></tbody></table>"
+        headString += '''<footer class="container"><p class="float-right"><a href="#">Back to top</a></p><p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p></footer></body>'''  # noqa
+        headString += "</html>"
         print(headString)
         with open(sys.argv[1]+"/"+sys.argv[2]+".get.pyht", 'w') as file_handle:
             file_handle.write(headString)
