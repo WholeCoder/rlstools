@@ -26,6 +26,7 @@ new_controller = open(sys.argv[1]+"/"+sys.argv[2]+".py", 'w')
 with open(sys.argv[1]+"/"+sys.argv[2]+".py", 'w') as new_controller:
 
     classHeader = "import sys\n\n"
+    classHeader += "import html\n\n"
     classHeader += "sys.path.append('../..')\n\n"
     classHeader += "from models."+sys.argv[2]+" import "+sys.argv[2]+"\n\n" # noqa
 
@@ -64,4 +65,3 @@ with open(sys.argv[1]+"/"+sys.argv[2]+".py", 'w') as new_controller:
     defHeader += "    def get():\n"
     new_controller.write(defHeader)
     new_controller.write(passText)
-

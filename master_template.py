@@ -84,7 +84,7 @@ class Template:
         headString += '<tr>'
         count = 0
         while count < len(parameter_list):
-            headString += "<td><%= str(row[\""+parameter_list[count]+"\"]) %></td>"# noqa
+            headString += "<td><%= html.escape(str(row[\""+parameter_list[count]+"\"])) %></td>"# noqa
             count += 1
         headString += '</tr>'
         headString += "<% end-for %>"
