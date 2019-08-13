@@ -1,7 +1,8 @@
 import sqlite3
 from database_adapter import DatabaseAdapter
 import yaml
-
+from table_not_found_error import TableNotFoundError
+from sqlite3 import OperationalError
 
 class SqliteDatabaseAdapter(DatabaseAdapter):
 
@@ -184,8 +185,12 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         selectStatement = "SELECT " + colString + " FROM "+table
         print(" SQL STATEMENT = " + selectStatement)
         curr = self.conn.cursor()
-        curr.execute(selectStatement)
-
+        print('...............test')
+        try:
+            curr.execute(selectStatement)
+        except OperationalError as err:
+            raise TableNotFoundError("Table " + table + " not found! - Be sure to run migration_tool upgrade!!!")
+            #  raise err
         data = []
         for row in CursorByName(curr):
             data.append(row)
