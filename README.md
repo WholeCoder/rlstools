@@ -21,7 +21,7 @@ You will also need to install the yaml plugin:
 
 ```rls.sh new mynewwebapp  # create a new website```
 
-```cd mynewwebapp``` # change to you rnew website's direcotry then:
+```cd mynewwebapp``` # change to you new website's direcotry then:
 
 ```rls.sh scaffold City address:string city:string zip_code:string```
 
