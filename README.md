@@ -19,19 +19,19 @@ You will also need to install the yaml plugin:
 
 # How to use rls tools
 
-```rls.sh new mynewwebapp  # create a new website```
+**```rls.sh new mynewwebapp```**  # create a new website
 
-```cd mynewwebapp``` # change to you new website's direcotry then:
+**```cd mynewwebapp```** # change to you new website's direcotry then:
 
-```rls.sh scaffold City address:string city:string zip_code:string```
+**```rls.sh scaffold City address:string city:string zip_code:string```**
 
 then run the migration tool:
 
-```migration_tools upgrade```
+**```migration_tools upgrade```**
 
 then run serve so you can see your new website:
 
-```rls.sh serve```
+**```rls.sh serve```**
 
 your new website is at **http://localhost:8080/Office/get_form**
 
