@@ -1,14 +1,14 @@
 # rlstools
 
-In order to run these scripts you need to set the 
+In order to run these scripts you need to add these to your .bashrc file: 
 
-RLSPATH=rlstools direcotry
+export RLSPATH=rlstools direcotry
 and
 
-PATH=$RLSPATH:$PATH
+export PATH=$RLSPATH:$PATH
 and
 
-PYTHONPATH=rlstools directory
+export PYTHONPATH=rlstools directory
 
 You will also need to install the yaml plugin:
 
