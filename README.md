@@ -10,6 +10,6 @@ and
 
 PYTHONPATH=rlstools directory
 
-You will also nee dto install the yaml plugin:
+You will also need to install the yaml plugin:
 
 pip3 install pyyaml
