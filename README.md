@@ -27,7 +27,7 @@ You will also need to install the yaml plugin:
 
 then run the migration tool:
 
-**```migration_tools upgrade```**
+**```migration_tool upgrade```**
 
 then run serve so you can see your new website:
 
