@@ -4,6 +4,7 @@ import yaml
 from table_not_found_error import TableNotFoundError
 from sqlite3 import OperationalError
 
+
 class SqliteDatabaseAdapter(DatabaseAdapter):
 
     __instance = None
@@ -189,7 +190,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         try:
             curr.execute(selectStatement)
         except OperationalError as err:
-            raise TableNotFoundError("Table " + table + " not found! - Be sure to run migration_tool upgrade!!!")
+            raise TableNotFoundError("Table " + table + " not found! - Be sure to run migration_tool upgrade!!!")  # noqa
             #  raise err
         data = []
         for row in CursorByName(curr):

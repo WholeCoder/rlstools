@@ -9,7 +9,7 @@ class TemplateParser:
     def __init__(self, table, action):
 
         self.outputString = ""
-
+        self.forLoopIndent = 0
         with open(os.getcwd()+"/controllers/"+table+".py", "r") as controller_file_handle:
             file_contents = controller_file_handle.readlines()
 
@@ -20,12 +20,15 @@ class TemplateParser:
 
         self.outputString += "currString = ''\n\n"
         self.accString = ""
+        
+        def decrementForLoopIndent(l):
+            self.forLoopIndent -= 1
 
         def saveCharacter(l):
             print("saveCharacter called = saving " + l)
             if l == "\n": # noqa
                 self.accString = self.accString.replace("'","&apos;")
-                self.accString = "currString += '"+self.accString+"'\n"
+                self.accString = (self.forLoopIndent*"    ")+"currString += '"+self.accString+"'\n"
                 self.outputString += self.accString
                 self.accString = ""
             else:
@@ -33,7 +36,7 @@ class TemplateParser:
 
         def saveAccAndAppendController(l):
             self.accString = self.accString.replace("'","&apos;")
-            self.accString = "currString += "+self.accString+"\n"
+            self.accString = (self.forLoopIndent*"    ")+"currString += "+self.accString+"\n"
             self.outputString += self.accString
             self.accString = ''
 
@@ -41,12 +44,12 @@ class TemplateParser:
             self.accString += "<" + l
 
         def saveCharacterIndented(l):
-            self.outputString += "   currString += '"+self.accString+"'\n"
+            self.outputString += (self.forLoopIndent*"    ")+"currString += '"+self.accString+"'\n"
             self.accString = ""
 
         def saveAccWithIndent(l):
-            self.accString = self.accString.replace("'","&apos;")
-            self.outputString += "   currString += "+self.accString+"\n"
+            self.accString = (self.forLoopIndent)*"    "+self.accString.replace("'","&apos;")
+            self.outputString += (self.forLoopIndent*"    ")+"currString += "+self.accString+"\n"
             self.accString = ""
 
         def sendToGAndAddGreaterThanSign(l):
@@ -58,13 +61,15 @@ class TemplateParser:
         def saveAccString(l):
             self.accString = self.accString.replace("'","&apos;")
  
-            self.outputString += "currString += '"+self.accString+"'\n"
+            self.outputString +=(self.forLoopIndent*"    ")+ "currString += '"+self.accString+"'\n"
             self.accString = ""
 
         def saveCharacterForloopheader(l):
             if l == 'f': # noqa
                 self.accString = l
-            elif l == '%': # noqa
+            elif l == '%': # noqai
+                self.forLoopIndent += 1
+                self.accString = (self.forLoopIndent-1)*"    " + self.accString
                 self.accString += '\n'
                 
                 self.accString = self.accString.replace("rows", table+"Controller.rows")# noqa
@@ -141,8 +146,8 @@ class TemplateParser:
               nothing),
               'f':('E',
               saveCharacterForloopheader),
-              'e':('Error',
-              error)
+              'e':('L',
+              decrementForLoopIndent)
            },
            'C':{
               '':('C',
@@ -201,8 +206,8 @@ class TemplateParser:
               saveCharacter),
               'f':('E',
               saveCharacter),
-              'e':('F',
-              saveCharacter)
+              'e':('E',
+              saveCharacterForloopheader)
            },
            'F':{
               '':('F',
@@ -279,10 +284,10 @@ class TemplateParser:
               error),
               'Space':('I',
               saveCharacter),
-              'f':('Error',
-              error),
+              'f':('E',
+              saveCharacterForloopheader),
               'e':('L',
-              nothing)
+              decrementForLoopIndent)
            },
            'J':{
               '':('J',
