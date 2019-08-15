@@ -27,7 +27,7 @@ class TemplateParser:
         def saveCharacter(l):
             print("saveCharacter called = saving " + l)
             if l == "\n": # noqa
-                self.accString = self.accString.replace("'","&apos;")
+                self.accString = replaceWithQuotesIfNotForLoopHeader(self.accString)
                 self.accString = (self.forLoopIndent*"    ")+"currString += '"+self.accString+"'\n"
                 self.outputString += self.accString
                 self.accString = ""
@@ -35,7 +35,7 @@ class TemplateParser:
                 self.accString += l
 
         def saveAccAndAppendController(l):
-            self.accString = self.accString.replace("'","&apos;")
+            self.accString = replaceWithQuotesIfNotForLoopHeader(self.accString)
             self.accString = (self.forLoopIndent*"    ")+"currString += "+self.accString+"\n"
             self.outputString += self.accString
             self.accString = ''
@@ -48,7 +48,7 @@ class TemplateParser:
             self.accString = ""
 
         def saveAccWithIndent(l):
-            self.accString = (self.forLoopIndent)*"    "+self.accString.replace("'","&apos;")
+            self.accString = replaceWithQuotesIfNotForLoopHeader(self.accString)
             self.outputString += (self.forLoopIndent*"    ")+"currString += "+self.accString+"\n"
             self.accString = ""
 
@@ -58,8 +58,13 @@ class TemplateParser:
         def saveCharacterAToEnd(l):
             self.accString += l + ">"
 
+        def replaceWithQuotesIfNotForLoopHeader(accString):
+            if not "for" in accString:
+                return accString.replace("'","&apos;")
+            return accString
+
         def saveAccString(l):
-            self.accString = self.accString.replace("'","&apos;")
+            self.accString = replaceWithQuotesIfNotForLoopHeader(self.accString)
  
             self.outputString +=(self.forLoopIndent*"    ")+ "currString += '"+self.accString+"'\n"
             self.accString = ""
@@ -74,7 +79,7 @@ class TemplateParser:
                 
                 self.accString = self.accString.replace("rows", table+"Controller.rows")# noqa
 
-                self.accString = self.accString.replace("'","&apos;")
+                self.accString = replaceWithQuotesIfNotForLoopHeader(self.accString)
                 self.outputString += self.accString
                 self.accString = ""
             else:
