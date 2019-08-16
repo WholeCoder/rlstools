@@ -123,7 +123,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         
         if tpe.strip() == "string":
             add_type = "TEXT"
-        elif tpe.strip()== "integer":
+        elif tpe.strip() == "integer":
             add_type = "INTEGER"
 
         if self.doesColumnExist(table, column):
@@ -218,7 +218,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
         colString = colString[:-1]
         print("---------------------------------> table = " + table)
-        selectStatement = "SELECT " + colString + " FROM "+table + " WHERE " + key + " = '" + value + "'"  # noqa
+        selectStatement = "SELECT " + colString + " FROM "+table + " WHERE " + key + " = " + str(value) + ""  # noqa
         print(" SQL STATEMENT = " + selectStatement)
         curr = self.conn.cursor()
         print('...............test')

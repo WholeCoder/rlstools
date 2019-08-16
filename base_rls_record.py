@@ -2,18 +2,25 @@ from sqlite_adapter import SqliteDatabaseAdapter
 
 
 class BaseRlsRecord(dict):
-    one_to_many_dictionary = {}
 
     def __init__(self, d):
-        super(BaseRlsRecord, self).__init__(d) 
+        super(BaseRlsRecord, self).__init__(d)
         self.dAdapter = SqliteDatabaseAdapter.getInstance()
         print("getting instance in base rls record."+SqliteDatabaseAdapter.getInstance().db_filename)# noqa
 
+    def getOneToManyDictionary(self):
+        pass
+
     def __getattr__(self, attr):
-        tableName = attr.split("_")[3]
-        cls = eval(tableName)
-        rows = SqliteDatabaseAdapter.getInstance().findAllRecords(tableName)
-        rowWithWrapper = [cls(d) for d in rows]
+
+        print("tableName == "+str(attr.split("_")))
+        tableName = attr.split("_")[2]
+
+        one_to_many_dictionary = self.getOneToManyDictionary()
+
+        cls = one_to_many_dictionary[tableName][0]
+        rs = SqliteDatabaseAdapter.getInstance().findAllRecordsByKey(tableName.strip(),one_to_many_dictionary[tableName][1], self['primary_key'])  # noqa
+        rowWithWrapper = [cls(d) for d in rs]
         return rowWithWrapper
 
     def typename(self, x):

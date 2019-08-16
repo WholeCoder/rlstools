@@ -299,7 +299,7 @@ class TemplateParser:
               nothing),
               '*':('J',
               saveCharacter),
-              '<':('Error',
+              '<':('J',
               saveCharacter),
               '%':('K',
               nothing),
