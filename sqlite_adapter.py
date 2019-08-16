@@ -123,7 +123,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         
         if tpe.strip() == "string":
             add_type = "TEXT"
-        elif tpe == "integer":
+        elif tpe.strip()== "integer":
             add_type = "INTEGER"
 
         if self.doesColumnExist(table, column):
