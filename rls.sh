@@ -23,6 +23,8 @@ then
 	echo	rls.sh scaffold EntityName attribute:datatype  attribute2:datatype
 	echo          OR
 	echo	rls.sh serve
+    echo         OR
+    echo	rls.sh model Entityname attribut:datatype attribut2:datatype
 	exit 2
 fi
 
@@ -81,6 +83,20 @@ elif [ $1 == 'new' ]; then
     else
 		echo "App directory already exists"
 	fi
+elif [ $1 == 'model' ]; then
+	scaffoldName="$2"
+	shift
+	shift
+    create_directory "models"
+	cd models
+	wDirectory=$PWD
+	"write_model_template.py" "$wDirectory" "$scaffoldName"
+	#cat "$wDirectory/$scaffoldName.migration"
+	cd ..
+	create_directory "migrations"
+	#cd migrations
+	wDirectory=$PWD
+	"generate_migration.py" "$wDirectory" "$scaffoldName" "$@"
 fi
 
 
