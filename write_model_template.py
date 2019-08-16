@@ -11,5 +11,7 @@ classHeader += "from base_rls_record import BaseRlsRecord\n\n"
 classHeader += "class "+sys.argv[2]+"(BaseRlsRecord):\n"
 with open(sys.argv[1]+"/"+sys.argv[2]+".py", 'w') as new_model:
     new_model.write(classHeader)
-    new_model.write("   pass\n")
+    new_model.write("    def getOneToManyDictionary(self):\n")
+    new_model.write("       pass\n")
+    new_model.write("    pass\n")
     new_model.close()
