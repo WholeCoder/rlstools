@@ -1,8 +1,9 @@
 from sqlite_adapter import SqliteDatabaseAdapter
 
 
-class BaseRlsRecord:
-    def __init__(self):
+class BaseRlsRecord(dict):
+    def __init__(self, d):
+        super(BaseRlsRecord, self).__init__(d) 
         self.dAdapter = SqliteDatabaseAdapter.getInstance()
         print("getting instance in base rls record."+SqliteDatabaseAdapter.getInstance().db_filename)# noqa
 
@@ -16,6 +17,8 @@ class BaseRlsRecord:
         table = self.get_type_name_of_subclass()
         self.dAdapter.createNewRecord(table, insertDictionary)
 
-    def findAll(self):
-        rows = self.dAdapter.findAllRecords(self.get_type_name_of_subclass())
-        return rows
+    @classmethod
+    def findAll(cls):
+        rows = SqliteDatabaseAdapter.getInstance().findAllRecords(cls.__name__)
+        rowWithWrapper = [cls(d) for d in rows]
+        return rowWithWrapper

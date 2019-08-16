@@ -25,7 +25,7 @@ class RlsRecordTestCase(unittest.TestCase):
         insertDictionary = {"first_name": "Shannon", "last_name": "Underkoffler"}# noqa
         Person().create(insertDictionary)
 
-        rows = Person().findAll()
+        rows = Person.findAll()
 
         self.assertTrue(rows[0]['first_name'] == 'Ruben')
         self.assertTrue(rows[0]['last_name'] == 'Pierich')

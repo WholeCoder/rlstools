@@ -39,7 +39,7 @@ with open(sys.argv[1]+"/"+sys.argv[2]+".py", 'w') as new_controller:
     defHeader += "    def index():\n"
     defHeader += "        print(\"Running template_Output\")\n\n"
 
-    defHeader += "        "+sys.argv[2]+"Controller.rows = "+sys.argv[2]+"().findAll()\n"# noqa
+    defHeader += "        "+sys.argv[2]+"Controller.rows = "+sys.argv[2]+".findAll()\n"# noqa
     defHeader += "        print(\"rows == \"+str("+sys.argv[2]+"Controller.rows))\n\n"# noqa
 
     new_controller.write(defHeader)
