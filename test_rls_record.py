@@ -16,14 +16,14 @@ class RlsRecordTestCase(unittest.TestCase):
 
     def test_insert_data_into_rls_record_object(self):
         self.dAdapter.createTable("Person")
-        self.dAdapter.addColumn("Person", "first_name")
-        self.dAdapter.addColumn("Person", "last_name")
+        self.dAdapter.addColumn("Person", "first_name", "string")
+        self.dAdapter.addColumn("Person", "last_name", "string")
 
         insertDictionary = {"first_name": "Ruben", "last_name": "Pierich"}
-        Person().create(insertDictionary)
+        Person.create(insertDictionary)
 
         insertDictionary = {"first_name": "Shannon", "last_name": "Underkoffler"}# noqa
-        Person().create(insertDictionary)
+        Person.create(insertDictionary)
 
         rows = Person.findAll()
 

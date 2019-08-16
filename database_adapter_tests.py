@@ -24,7 +24,7 @@ class DatabaseAdapterTestCase(unittest.TestCase):
 
     def test_if_delete_column_brings_back_a_deleted_column(self):
         self.dAdapter.createTable("Person")
-        self.dAdapter.addColumn("Person", "zipcode")
+        self.dAdapter.addColumn("Person", "zipcode","string")
         self.assertTrue(self.dAdapter.doesTableExist("Person"))
         self.dAdapter.dropTable("Person")
         self.dAdapter.deleteColumnFromTable("Person", "zipcode")
@@ -42,12 +42,12 @@ class DatabaseAdapterTestCase(unittest.TestCase):
 
     def test_if_can_add_column_to_office_table(self):
         self.dAdapter.createTable("Office")
-        self.dAdapter.addColumn("Office", "zipcode")
+        self.dAdapter.addColumn("Office", "zipcode", "string")
         self.assertTrue(self.dAdapter.doesColumnExist("Office", "zipcode"))
     
     def test_if_can_drop_column(self):
         self.dAdapter.createTable("Office")
-        self.dAdapter.addColumn("Office", "zipcode")
+        self.dAdapter.addColumn("Office", "zipcode", "string")
         self.dAdapter.deleteColumnFromTable("Office", "zipcode")
         self.assertFalse(self.dAdapter.doesColumnExist("Office", "zipcode"))
 

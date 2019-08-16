@@ -22,7 +22,7 @@ class DatabaseAdapter(metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def addColumn(self, table, column):
+    def addColumn(self, table, column, tpe):
         pass
 
     @abstractmethod

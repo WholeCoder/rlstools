@@ -45,10 +45,11 @@ for f in num_list:
                     dAdapter.createTable(table)
             elif acting_on == "column":
                 table = file_contents[i].split(" ")[2]
-                column = file_contents[i].split(" ")[3]
+                column = file_contents[i].split(" ")[3].split(":")[0]
+                tpe = file_contents[i].split(" ")[3].split(":")[1]
                 if dAdapter.doesTableExist(table):
                     if not dAdapter.doesColumnExist(table, column):
-                        dAdapter.addColumn(table, column)
+                        dAdapter.addColumn(table, column, tpe)
         elif current_command == "remove" and shoulddowngrade:
             acting_on = file_contents[i].split(" ")[1]
             if acting_on == "table":

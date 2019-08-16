@@ -49,7 +49,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
     def getNextDatabaseVersionNumber(self):
         if not self.doesTableExist("db_versions"):
             self.createTable("db_versions")
-            self.addColumn("db_versions", "version")
+            self.addColumn("db_versions", "version", "string")
             return "000"
         elif len(self.findAllRecords("db_versions")) == 0:
             return "000"
@@ -117,13 +117,19 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.c.execute(createTableString)
         self.conn.commit()
 
-    def addColumn(self, table, column):
+    def addColumn(self, table, column, tpe):
         self.conn = sqlite3.connect(self.db_filename)
         self.c = self.conn.cursor()
+        
+        if tpe.strip() == "string":
+            add_type = "TEXT"
+        elif tpe == "integer":
+            add_type = "INTEGER"
 
         if self.doesColumnExist(table, column):
             return
-        dbQuery = 'ALTER TABLE '+table+' ADD COLUMN '+column.split(":")[0]+' TEXT' # noqa
+        print("add_type == " + add_type)
+        dbQuery = 'ALTER TABLE '+table+' ADD COLUMN '+column.split(":")[0]+' '+add_type # noqa
         self.c.execute(dbQuery)
 
         self.conn.commit()
@@ -163,6 +169,9 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             if col != "primary_key":
                 insertString += col+","
                 valueString += "'"+insertDictionary[col]+"',"
+            else:
+                insertString += col+","
+                valueString += insertDictionary[col]+","
 
         insertString = insertString[:-1]
         valueString = valueString[:-1]
@@ -198,6 +207,34 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.conn.commit()
         self.conn.close()
         return data
+
+    def findAllRecordsByKey(self, table, key, value):
+        self.conn = sqlite3.connect(self.db_filename)
+        cur = self.conn.cursor()
+        columns = [i[1] for i in cur.execute('PRAGMA table_info('+table+')')]
+        colString = ""
+        for col in columns:
+            colString += col+","
+
+        colString = colString[:-1]
+        print("---------------------------------> table = " + table)
+        selectStatement = "SELECT " + colString + " FROM "+table + " WHERE " + key + " = '" + value + "'"  # noqa
+        print(" SQL STATEMENT = " + selectStatement)
+        curr = self.conn.cursor()
+        print('...............test')
+        try:
+            curr.execute(selectStatement)
+        except OperationalError as err:
+            raise TableNotFoundError("Table " + table + " not found! - Be sure to run migration_tool upgrade!!!")  # noqa
+            #  raise err
+        data = []
+        for row in CursorByName(curr):
+            data.append(row)
+        self.conn.commit()
+        self.conn.close()
+        return data
+
+
 
 
 class CursorByName():

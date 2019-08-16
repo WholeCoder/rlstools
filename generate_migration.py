@@ -35,7 +35,7 @@ with open(os.getcwd()+"/migrations/"+next_available_database_version + "_migrati
 
     count = 3
     while count < len(sys.argv):
-        new_view.write("add column "+sys.argv[2]+" "+sys.argv[count].split(":")[0]+"\n")# noqa
+        new_view.write("add column "+sys.argv[2]+" "+sys.argv[count]+"\n")# noqa
         count += 1
 
     new_view.write("\n\ndowngrade\n")
