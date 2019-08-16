@@ -35,3 +35,10 @@ then run serve so you can see your new website:
 
 your new website is at **http://localhost:8080/Office/get_form**
 
+to delete you database and all data run **```migration_tool downgrade```**
+
+To run the unit tests run the following commands:
+
+**```python3 database_adapter_tests.py```**
+and
+**```python3 test_rls_record.py```**
