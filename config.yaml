@@ -1,0 +1,3 @@
+config:
+    database:  ./my_test_db.db
+    database_adapter:  sqlite

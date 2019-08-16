@@ -6,7 +6,7 @@ import os
 
 class RlsRecordTestCase(unittest.TestCase):
     def setUp(self):
-        database_path = "my_test_database.db"
+        database_path = "my_test_db.db"
         try:
             os.remove(database_path)
         except IOError as err:
