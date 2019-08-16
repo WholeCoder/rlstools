@@ -33,5 +33,5 @@ then run serve so you can see your new website:
 
 **```rls.sh serve```**
 
-your new website is at **http://localhost:8080/Office/get_form**
+your new website is at **http://localhost:8080/City/get_form**
 
