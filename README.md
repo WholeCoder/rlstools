@@ -23,7 +23,7 @@ You will also need to install the yaml plugin:
 
 **```cd mynewwebapp```** # change to you new website's direcotry then:
 
-**```rls.sh scaffold City address:string city:string zip_code:string```**
+**```rls.sh scaffold Office address:string city:string zip_code:string```**
 
 then run the migration tool:
 
@@ -33,5 +33,5 @@ then run serve so you can see your new website:
 
 **```rls.sh serve```**
 
-your new website is at **http://localhost:8080/City/get_form**
+your new website is at **http://localhost:8080/Office/get_form**
 
