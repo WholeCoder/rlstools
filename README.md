@@ -23,7 +23,7 @@ You will also need to install the yaml plugin:
 
 **```cd mynewwebapp```** # change to you new website's direcotry then:
 
-**```rls.sh scaffold Office address:string city:string zip_code:string```**
+**```rls.sh scaffold Office address:string city:string zip_code:integer```**
 
 then run the migration tool:
 
