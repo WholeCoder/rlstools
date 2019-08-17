@@ -383,20 +383,20 @@ class TemplateParser:
                 return letter
             return '*'
 
-        #testString = ""
+        testString = ""
 
         #print(convert(" "))
         state = 'StartState'
         with open(os.getcwd()+"/views/"+router[table][action]) as f:
             while True:
                 c = f.read(1)
-                #testString += c
-                #print("testString == "+testString)
+                testString += c
+                print("testString == "+testString)
                 #print("ch == "+convert(c) + "   ("+c+")")
                 #print("State == " + state)
                 stateTuple = stateDict[state][convert(c)]
 
-                #print("stateTuple == " + str(stateTuple))
+                print("stateTuple == " + str(stateTuple))
                 stateTuple[1](c)
                 #print("self.accString in main while== "+self.accString)
 
