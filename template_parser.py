@@ -25,7 +25,7 @@ class TemplateParser:
             self.forLoopIndent -= 1
 
         def saveCharacter(l):
-            print("saveCharacter called = saving " + l)
+            #print("saveCharacter called = saving " + l)
             if l == "\n": # noqa
                 self.accString = replaceWithQuotesIfNotForLoopHeader(self.accString)
                 self.accString = (self.forLoopIndent*"    ")+"currString += '"+self.accString+"'\n"
@@ -84,10 +84,10 @@ class TemplateParser:
                 self.accString = ""
             else:
                 self.accString += l
-            print("saveCharacterForloopheader called")
+            #print("saveCharacterForloopheader called")
 
         def nothing(l):
-            print("nothing(l) called ----------------->")
+            #print("nothing(l) called ----------------->")
             pass
 
         def error(l):
@@ -385,26 +385,26 @@ class TemplateParser:
 
         #testString = ""
 
-        print(convert(" "))
+        #print(convert(" "))
         state = 'StartState'
         with open(os.getcwd()+"/views/"+router[table][action]) as f:
             while True:
                 c = f.read(1)
                 #testString += c
                 #print("testString == "+testString)
-                print("ch == "+convert(c) + "   ("+c+")")
-                print("State == " + state)
+                #print("ch == "+convert(c) + "   ("+c+")")
+                #print("State == " + state)
                 stateTuple = stateDict[state][convert(c)]
 
-                print("stateTuple == " + str(stateTuple))
+                #print("stateTuple == " + str(stateTuple))
                 stateTuple[1](c)
-                print("self.accString in main while== "+self.accString)
+                #print("self.accString in main while== "+self.accString)
 
                 state = stateTuple[0]
                 if not c:
-                    print("End of file")
+                    #print("End of file")
                     break
-                print("Read a character:", c)
+                #print("Read a character:", c)
 
         saveAccString("doesn't matter")
 
