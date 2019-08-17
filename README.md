@@ -4,7 +4,7 @@ Rlstools are a set of python scripts that are intended to mimic the way Ruby on 
 
 In order to run these scripts you need to add these to your .bashrc file: 
 
-**export RLSPATH=rlstools direcotry**
+**export RLSPATH=rlstools directory**
 and
 
 **export PATH=$RLSPATH:$PATH**
