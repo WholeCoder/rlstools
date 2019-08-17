@@ -25,7 +25,7 @@ and
 
 **```rls.sh new mynewwebapp```**  # create a new website
 
-**```cd mynewwebapp```** # change to you new website's directory then:
+**```cd mynewwebapp```** # change to your new website's directory then:
 
 **```rls.sh scaffold Office address:string city:string zip_code:integer```**
 
@@ -39,7 +39,7 @@ then run serve so you can see your new website:
 
 your new website is at **http://localhost:8080/Office/get_form**
 
-to delete you database and all data run **```migration_tool downgrade```**
+to delete your database and all data run **```migration_tool downgrade```**
 
 To run the unit tests run the following commands:
 
