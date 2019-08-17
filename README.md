@@ -16,6 +16,10 @@ You will also need to install the yaml plugin:
 
 **pip3 install pyyaml**
 
+and 
+
+**sqlite**
+
 
 # How to use rls tools
 
