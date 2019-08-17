@@ -11,17 +11,32 @@ class BaseRlsRecord(dict):
     def getOneToManyDictionary(self):
         pass
 
+    def getOneToOneDictionary(self):
+        pass
+
     def __getattr__(self, attr):
 
         print("tableName == "+str(attr.split("_")))
         tableName = attr.split("_")[2]
+        
+        if attr.split("_")[1] == "all":
+            one_to_many_dictionary = self.getOneToManyDictionary()
 
-        one_to_many_dictionary = self.getOneToManyDictionary()
+            cls = one_to_many_dictionary[tableName][0]
+            rs = SqliteDatabaseAdapter.getInstance().findAllRecordsByKey(tableName.strip(),one_to_many_dictionary[tableName][1], self['primary_key'])  # noqa
+            rowWithWrapper = [cls(d) for d in rs]
+            return rowWithWrapper
+        elif attr.split("_")[1] == "one":
+            one_to_one_dictionary = self.getOneToOneDictionary()
 
-        cls = one_to_many_dictionary[tableName][0]
-        rs = SqliteDatabaseAdapter.getInstance().findAllRecordsByKey(tableName.strip(),one_to_many_dictionary[tableName][1], self['primary_key'])  # noqa
-        rowWithWrapper = [cls(d) for d in rs]
-        return rowWithWrapper
+            cls = one_to_one_dictionary[tableName][0]
+            rs = SqliteDatabaseAdapter.getInstance().findAllRecordsByKey(tableName.strip(),one_to_one_dictionary[tableName][1], self[one_to_one_dictionary[tableName][1]]) # noqa
+            if len(rs) == 1:
+                return cls(rs[0])
+            elif len(rs) == 0:
+                return cls({})
+            else:
+                raise Exception("Duplicates in one to many - " + tableName + "[ " + one_to_many_dictionary[tableName][1]+" ]")  # noqa
 
     def typename(self, x):
         return type(x).__name__

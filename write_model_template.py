@@ -16,6 +16,10 @@ with open(sys.argv[1]+"/"+sys.argv[2]+".py", 'w') as new_model:
     new_model.write("    def getOneToManyDictionary(self):\n")
     new_model.write("        #  example\n")
     new_model.write("        #  return {\"Comment\": (Comment.Comment, \"post_primary_key\")}\n")  # noqa
+    new_model.write("        pass\n\n")
+    new_model.write("    def getOneToOneDictionary(self):\n")
+    new_model.write("        #  example\n")
+    new_model.write("        #  return {\"Post\": (Post.Post, \"post_primary_key\")}\n")  # noqa
     new_model.write("        pass\n")
     new_model.write("    pass\n")
     new_model.close()
