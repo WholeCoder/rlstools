@@ -16,7 +16,7 @@ with open("../router.py", "a+") as router_file:
     print("--------writing router.py")
     router_file.write("\nrouter['"+sys.argv[2]+"'] = {}")
     router_file.write("\nrouter['"+sys.argv[2]+"']['get_form'] = '"+sys.argv[2]+".get.pyht'\n")# noqa
-    router_file.write("\nrouter['"+sys.argv[2]+"']['index'] = '"+sys.argv[2]+".pyht'\n")# noqa
+    router_file.write("router['"+sys.argv[2]+"']['index'] = '"+sys.argv[2]+".pyht'\n")# noqa
 
 print("Inside of write__controller_template.py. directory == "+sys.argv[0])
 print("app direcotry name = " + sys.argv[1])
