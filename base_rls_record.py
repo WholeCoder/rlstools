@@ -18,13 +18,14 @@ class BaseRlsRecord(dict):
 
         print("tableName == "+str(attr.split("_")))
         tableName = attr.split("_")[2].strip()
-        
+
         if attr.split("_")[1] == "all":
             one_to_many_dictionary = self.getOneToManyDictionary()
 
             cls = one_to_many_dictionary[tableName][0]
             rs = SqliteDatabaseAdapter.getInstance().findAllRecordsByKey(tableName.strip(),one_to_many_dictionary[tableName][1], self['primary_key'])  # noqa
             rowWithWrapper = [cls(d) for d in rs]
+
             def wrapper():
                 return rowWithWrapper
             return wrapper
