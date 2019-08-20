@@ -128,7 +128,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
     def addColumn(self, table, column, tpe):
         self.conn = sqlite3.connect(self.db_filename)
         self.c = self.conn.cursor()
-        
+
         if tpe.strip() == "string":
             add_type = "TEXT"
         elif tpe.strip() == "integer":
@@ -172,7 +172,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         cur = self.conn.cursor()
 
         typeDictionary = self.getColumnTypeDictionary(table)
-        
+
         self.conn = sqlite3.connect(self.db_filename)
         cur = self.conn.cursor()
 
@@ -251,8 +251,6 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.conn.commit()
         self.conn.close()
         return data
-
-
 
 
 class CursorByName():

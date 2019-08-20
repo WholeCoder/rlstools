@@ -6,6 +6,10 @@ class DatabaseAdapter(metaclass=ABCMeta):
         print("DatabaseAdapter - Initializing adapter")
 
     @abstractmethod
+    def getColumnTypeDictionary(self, table):
+        pass
+
+    @abstractmethod
     def doesColumnExist(self, table, column):
         pass
 
