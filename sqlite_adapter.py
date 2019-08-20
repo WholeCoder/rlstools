@@ -34,6 +34,14 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.conn = sqlite3.connect(db_filename)
         self.db_filename = db_filename
 
+    def getColumnTypeDictionary(self, table):
+        self.conn = sqlite3.connect(self.db_filename)
+        cur = self.conn.cursor()
+        columnDictionary = {i[1].strip(): i[2].strip() for i in cur.execute('PRAGMA table_info('+table+')')}  # noqa
+        self.conn.commit()
+        self.conn.close()
+        return columnDictionary
+
     def doesColumnExist(self, table, column):
         self.conn = sqlite3.connect(self.db_filename)
         cur = self.conn.cursor()
@@ -163,12 +171,21 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         self.conn = sqlite3.connect(self.db_filename)
         cur = self.conn.cursor()
 
+        typeDictionary = self.getColumnTypeDictionary(table)
+        
+        self.conn = sqlite3.connect(self.db_filename)
+        cur = self.conn.cursor()
+
         insertString = ""
         valueString = ""
         for col in insertDictionary.keys():
-            if col != "primary_key":
-                insertString += col+","
-                valueString += "'"+insertDictionary[col]+"',"
+            if col.strip() != "primary_key":
+                if typeDictionary[col].strip() == 'TEXT':
+                    insertString += col+","
+                    valueString += "'"+insertDictionary[col]+"',"
+                elif typeDictionary[col].strip() == 'INTEGER':
+                    insertString += col+","
+                    valueString += insertDictionary[col]+","
             else:
                 insertString += col+","
                 valueString += insertDictionary[col]+","
@@ -178,6 +195,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
         finalString = "INSERT INTO " + table + "("+insertString+") VALUES (" + valueString + ")"# noqa
 
+        print("insert string == " + finalString)
         cur.execute(finalString)
         self.conn.commit()
         self.conn.close()
