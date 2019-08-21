@@ -170,6 +170,8 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         cur.close()
 
     def createNewRecord(self, table, insertDictionary):
+        if len(insertDictionary.keys()) == 0:
+            return
         self.conn = sqlite3.connect(self.db_filename)
         cur = self.conn.cursor()
 
