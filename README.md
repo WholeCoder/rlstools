@@ -27,7 +27,7 @@ and
 
 **```cd mynewwebapp```** # change to your new website's directory then:
 
-**```rls.sh scaffold Office address:string city:string zip_code:integer```**
+**```rls.sh scaffold Office address:string city:string zip_code:integer lattitude:float longitude:float```**
 
 then run the migration tool:
 
