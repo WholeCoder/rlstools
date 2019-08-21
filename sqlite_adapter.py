@@ -133,6 +133,8 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             add_type = "TEXT"
         elif tpe.strip() == "integer":
             add_type = "INTEGER"
+        elif tpe.strip() == "float":
+            add_type = "REAL"
 
         if self.doesColumnExist(table, column):
             return
@@ -179,16 +181,12 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         insertString = ""
         valueString = ""
         for col in insertDictionary.keys():
-            if col.strip() != "primary_key":
-                if typeDictionary[col].strip() == 'TEXT':
-                    insertString += col+","
-                    valueString += "'"+insertDictionary[col]+"',"
-                elif typeDictionary[col].strip() == 'INTEGER':
-                    insertString += col+","
-                    valueString += insertDictionary[col]+","
-            else:
+            if typeDictionary[col].strip() == 'TEXT':
                 insertString += col+","
-                valueString += insertDictionary[col]+","
+                valueString += "'"+insertDictionary[col]+"',"
+            elif typeDictionary[col].strip() == 'INTEGER' or typeDictionary[col].strip() == 'REAL':
+                insertString += col+","
+                valueString += insertDictionary[col].strip()+","
 
         insertString = insertString[:-1]
         valueString = valueString[:-1]
