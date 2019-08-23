@@ -1,4 +1,10 @@
 from sqlite_adapter import SqliteDatabaseAdapter
+import logging
+
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s -- %(message)s')
+
+# refer to server.py to disable/enable logging.
+# logging.disable(logging.DEBUG)
 
 
 class BaseRlsRecord(dict):
@@ -6,7 +12,7 @@ class BaseRlsRecord(dict):
     def __init__(self, d):
         super(BaseRlsRecord, self).__init__(d)
         self.dAdapter = SqliteDatabaseAdapter.getInstance()
-        print("getting instance in base rls record."+SqliteDatabaseAdapter.getInstance().db_filename)# noqa
+        logging.info("getting instance in base rls record."+SqliteDatabaseAdapter.getInstance().db_filename)# noqa
 
     def getOneToManyDictionary(self):
         pass
@@ -16,7 +22,7 @@ class BaseRlsRecord(dict):
 
     def __getattr__(self, attr):
 
-        print("tableName == "+str(attr.split("_")))
+        logging.info("tableName == "+str(attr.split("_")))
         tableName = attr.split("_")[2].strip()
 
         if attr.split("_")[1] == "all":
