@@ -6,7 +6,9 @@ from router import router
 import logging
 
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s -- %(message)s')
-logging.disable(logging.DEBUG)
+
+# refer to server.py to disable/enable logging.
+#logging.disable(logging.DEBUG)
 
 logging.debug('Start of program')
 

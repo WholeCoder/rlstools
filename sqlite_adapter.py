@@ -4,6 +4,10 @@ import yaml
 from table_not_found_error import TableNotFoundError
 from sqlite3 import OperationalError
 import os
+import logging
+
+# refer to server.py to disable/enable logging.
+#  logging.disable(logging.DEBUG)
 
 
 class SqliteDatabaseAdapter(DatabaseAdapter):
@@ -139,7 +143,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
         if self.doesColumnExist(table, column):
             return
-        print("add_type == " + add_type)
+        logging.info("add_type == " + add_type)
         dbQuery = 'ALTER TABLE '+table+' ADD COLUMN '+column.split(":")[0]+' '+add_type # noqa
         self.c.execute(dbQuery)
 
@@ -196,7 +200,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
         finalString = "INSERT INTO " + table + "("+insertString+") VALUES (" + valueString + ")"# noqa
 
-        print("insert string == " + finalString)
+        logging.info("insert string == " + finalString)
         cur.execute(finalString)
         self.conn.commit()
         self.conn.close()
@@ -210,11 +214,11 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             colString += col+","
 
         colString = colString[:-1]
-        print("---------------------------------> table = " + table)
+        logging.info("---------------------------------> table = " + table)
         selectStatement = "SELECT " + colString + " FROM "+table
-        print(" SQL STATEMENT = " + selectStatement)
+        logging.info(" SQL STATEMENT = " + selectStatement)
         curr = self.conn.cursor()
-        print('...............test')
+        logging.info('...............test')
         try:
             curr.execute(selectStatement)
         except OperationalError as err:
@@ -236,11 +240,11 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             colString += col+","
 
         colString = colString[:-1]
-        print("---------------------------------> table = " + table)
+        logging.info("---------------------------------> table = " + table)
         selectStatement = "SELECT " + colString + " FROM "+table + " WHERE " + key + " = " + str(value) + ""  # noqa
-        print(" SQL STATEMENT = " + selectStatement)
+        logging.info(" SQL STATEMENT = " + selectStatement)
         curr = self.conn.cursor()
-        print('...............test')
+        logging.info('...............test')
         try:
             curr.execute(selectStatement)
         except OperationalError as err:

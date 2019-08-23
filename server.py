@@ -4,8 +4,16 @@ import importlib
 from template_parser import TemplateParser
 import cgi
 from sqlite_adapter import SqliteDatabaseAdapter
-from os import curdir, sep
+from os import curdir
 import os
+import logging
+
+logging.basicConfig(level=logging.INFO, format=' %(asctime)s -- %(message)s')
+
+#  This will disable debug logging in every file.
+logging.disable(logging.DEBUG)
+
+logging.debug('Start of program')
 
 PORT_NUMBER = 8080
 
@@ -44,9 +52,9 @@ class myHandler(BaseHTTPRequestHandler):
 
         # Send the html message
         # self.wfile.write("test".encode())
-        print(self.path.split("/"))
+        logging.debug(self.path.split("/"))
         entity = self.path.split("/")[1]
-        print("entity 2 == "+entity)
+        logging.debug("entity 2 == "+entity)
         if len(self.path.split("/")) == 3:
             action = self.path.split("/")[2]
         else:
@@ -59,13 +67,13 @@ class myHandler(BaseHTTPRequestHandler):
 
 #            outputString += "rows = "+entity+"().findAll()\n"
 #            outputString += "print(\"rows == \"+str(rows))\n\n"
-        print("entity == "+entity)
-        print("action == "+action)
+        logging.debug("entity == "+entity)
+        logging.debug("action == "+action)
 
         TemplateParser(entity, action)
         mdle = importlib.import_module('template_output')
         mdle = importlib.reload(mdle)
-        print("mdle == "+mdle.currString)
+        logging.debug("mdle == "+mdle.currString)
         self.wfile.write(mdle.currString.encode())
         return
 
@@ -76,9 +84,9 @@ class myHandler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         entity = self.path[:]
-        print("entity == "+entity)
+        logging.debug("entity == "+entity)
         self.send_headers(302, 'Location', 'http://localhost:8080'+entity)
-        print("incomming http: ", self.path)
+        logging.debug("incomming http: ", self.path)
 
         form = cgi.FieldStorage(
             fp=self.rfile,
@@ -97,11 +105,11 @@ try:
     # Create a web server and define the handler to manage the
     # incoming request
     server = HTTPServer(('', PORT_NUMBER), myHandler)
-    print('Started httpserver on port ', PORT_NUMBER)
+    logging.debug('Started httpserver on port %s', PORT_NUMBER)
 
     # Wait forever for incoming htto requests
     server.serve_forever()
 
 except KeyboardInterrupt:
-    print('^C received, shutting down the web server')
+    logging.debug('^C received, shutting down the web server')
     server.socket.close()
