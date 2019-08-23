@@ -5,13 +5,14 @@ from table_not_found_error import TableNotFoundError
 from sqlite3 import OperationalError
 import os
 
+
 class SqliteDatabaseAdapter(DatabaseAdapter):
 
     __instance = None
 
     @staticmethod
     def getInstance():
-        with open(os.path.join('.','config.yaml')) as f:
+        with open(os.path.join('.', 'config.yaml')) as f:
             # use safe_load instead load
             dataMap = yaml.safe_load(f)
         db_filename = dataMap['config']['database']
@@ -186,7 +187,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             if typeDictionary[col].strip() == 'TEXT':
                 insertString += col+","
                 valueString += "'"+insertDictionary[col]+"',"
-            elif typeDictionary[col].strip() == 'INTEGER' or typeDictionary[col].strip() == 'REAL':
+            elif typeDictionary[col].strip() == 'INTEGER' or typeDictionary[col].strip() == 'REAL':  # noqa
                 insertString += col+","
                 valueString += insertDictionary[col].strip()+","
 

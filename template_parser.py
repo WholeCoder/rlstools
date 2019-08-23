@@ -3,7 +3,12 @@ import os
 import sys
 sys.path.append('.')
 from router import router
+import logging
 
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s -- %(message)s')
+logging.disable(logging.DEBUG)
+
+logging.debug('Start of program')
 
 class TemplateParser:
     def __init__(self, table, action):
@@ -391,12 +396,12 @@ class TemplateParser:
             while True:
                 c = f.read(1)
                 testString += c
-                print("testString == "+testString)
+                logging.debug("testString == "+testString)
                 #print("ch == "+convert(c) + "   ("+c+")")
                 #print("State == " + state)
                 stateTuple = stateDict[state][convert(c)]
 
-                print("stateTuple == " + str(stateTuple))
+                logging.debug("stateTuple == " + str(stateTuple))
                 stateTuple[1](c)
                 #print("self.accString in main while== "+self.accString)
 

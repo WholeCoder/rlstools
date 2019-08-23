@@ -16,6 +16,9 @@ PORT_NUMBER = 8080
 class myHandler(BaseHTTPRequestHandler):
     # Handler for the GET requests
     def do_GET(self):
+        if self.path.endswith(".ico"):
+            return
+
         sendReply = False
         if self.path.endswith(".js"):
             mimetype = 'application/javascript'
