@@ -3,7 +3,7 @@ from database_adapter import DatabaseAdapter
 import yaml
 from table_not_found_error import TableNotFoundError
 from sqlite3 import OperationalError
-
+import os
 
 class SqliteDatabaseAdapter(DatabaseAdapter):
 
@@ -11,7 +11,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
 
     @staticmethod
     def getInstance():
-        with open('./config.yaml') as f:
+        with open(os.path.join('.','config.yaml')) as f:
             # use safe_load instead load
             dataMap = yaml.safe_load(f)
         db_filename = dataMap['config']['database']

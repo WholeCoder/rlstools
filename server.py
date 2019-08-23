@@ -5,6 +5,7 @@ from template_parser import TemplateParser
 import cgi
 from sqlite_adapter import SqliteDatabaseAdapter
 from os import curdir, sep
+import os
 
 PORT_NUMBER = 8080
 
@@ -25,7 +26,7 @@ class myHandler(BaseHTTPRequestHandler):
 
         if sendReply:
             # Open the static file requested and send it
-            f = open(curdir + sep + self.path)
+            f = open(os.path.join(curdir, self.path))
             self.send_response(200)
             self.send_header('Content-type', mimetype)
             self.end_headers()

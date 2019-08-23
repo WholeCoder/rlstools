@@ -7,12 +7,12 @@ print("-----------------------------working---------------")
 
 if not exists:
     print("------------exists")
-    with open("../router.py", "w") as router_file:
+    with open(os.path.join("..", "router.py"), "w") as router_file:
         router_file.write("router = {}\n")
 
 print("-----------doesn't eist")
-router_file = open("../router.py", "a+")
-with open("../router.py", "a+") as router_file:
+router_file = open(os.path.join("..", "router.py"), "a+")
+with open(os.path.join("..", "router.py"), "a+") as router_file:
     print("--------writing router.py")
     router_file.write("\nrouter['"+sys.argv[2]+"'] = {}")
     router_file.write("\nrouter['"+sys.argv[2]+"']['get_form'] = '"+sys.argv[2]+".get.pyht'\n")# noqa
@@ -22,8 +22,7 @@ print("Inside of write__controller_template.py. directory == "+sys.argv[0])
 print("app direcotry name = " + sys.argv[1])
 print("scaffold name = " + sys.argv[2])
 
-new_controller = open(sys.argv[1]+"/"+sys.argv[2]+".py", 'w')
-with open(sys.argv[1]+"/"+sys.argv[2]+".py", 'w') as new_controller:
+with open(os.path.join(sys.argv[1], sys.argv[2]+".py"), 'w') as new_controller:
 
     classHeader = "import sys\n\n"
     classHeader += "import html\n\n"

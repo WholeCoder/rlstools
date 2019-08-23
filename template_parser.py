@@ -10,7 +10,7 @@ class TemplateParser:
 
         self.outputString = ""
         self.forLoopIndent = 0
-        with open(os.getcwd()+"/controllers/"+table+".py", "r") as controller_file_handle:
+        with open(os.path.join(os.getcwd(),"controllers",table+".py"), "r") as controller_file_handle:
             file_contents = controller_file_handle.readlines()
 
         for line in file_contents:
@@ -387,7 +387,7 @@ class TemplateParser:
 
         #print(convert(" "))
         state = 'StartState'
-        with open(os.getcwd()+"/views/"+router[table][action]) as f:
+        with open(os.path.join(os.getcwd(),"views",router[table][action])) as f:
             while True:
                 c = f.read(1)
                 testString += c

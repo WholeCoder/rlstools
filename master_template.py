@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import sys
-
+import os
 
 class Template:
     def __init__(self):
@@ -102,7 +102,7 @@ class Template:
 '''# noqa
 
         print(headString)# noqa
-        with open(sys.argv[1]+"/"+sys.argv[2]+".pyht", 'w') as file_handle:
+        with open(os.path.join(sys.argv[1], sys.argv[2]+".pyht"), 'w') as file_handle:
             file_handle.write(headString)
 #########
 
@@ -183,7 +183,7 @@ class Template:
         headString += '''<footer class="container"><p class="float-right"><a href="#">Back to top</a></p><p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p></footer></body>'''  # noqa
         headString += "</html>"
         print(headString)
-        with open(sys.argv[1]+"/"+sys.argv[2]+".get.pyht", 'w') as file_handle:
+        with open(os.path.join(sys.argv[1], sys.argv[2]+".get.pyht"), 'w') as file_handle:  # noqa
             file_handle.write(headString)
 
 

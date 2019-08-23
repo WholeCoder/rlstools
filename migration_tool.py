@@ -29,7 +29,7 @@ else:
 
 num_list.sort()
 for f in num_list:
-    with open(os.getcwd()+"/migrations/"+f+"_migration", "r") as file_handle:
+    with open(os.path.join(os.getcwd(), "migrations/"+f+"_migration"), "r") as file_handle:
         file_contents = file_handle.readlines()
     i = 0
     while i < len(file_contents):
