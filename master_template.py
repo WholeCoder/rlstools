@@ -2,6 +2,7 @@
 import sys
 import os
 
+
 class Template:
     def __init__(self):
         pass
@@ -102,7 +103,7 @@ class Template:
 '''# noqa
 
         print(headString)# noqa
-        with open(os.path.join(sys.argv[1], sys.argv[2]+".pyht"), 'w') as file_handle:
+        with open(os.path.join(sys.argv[1], sys.argv[2]+".pyht"), 'w') as file_handle:# noqa
             file_handle.write(headString)
 #########
 

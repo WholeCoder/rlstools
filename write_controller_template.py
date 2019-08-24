@@ -25,7 +25,8 @@ print("scaffold name = " + sys.argv[2])
 with open(os.path.join(sys.argv[1], sys.argv[2]+".py"), 'w') as new_controller:
 
     classHeader = "import sys\n\n"
-    classHeader += "import html\n\n"
+    classHeader += "#  leave thi sin!  it is used in the template file!\n"
+    classHeader += "import html  # noqa\n\n"
     classHeader += "from models."+sys.argv[2]+" import "+sys.argv[2]+"\n\n" # noqa
     classHeader += "sys.path.append('../..')\n\n\n"
 
@@ -63,4 +64,4 @@ with open(os.path.join(sys.argv[1], sys.argv[2]+".py"), 'w') as new_controller:
     defHeader = "    @staticmethod\n"
     defHeader += "    def get():\n"
     new_controller.write(defHeader)
-    new_controller.write(passText)
+    new_controller.write(passText[:-1])
