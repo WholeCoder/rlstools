@@ -5,6 +5,7 @@ from table_not_found_error import TableNotFoundError
 from sqlite3 import OperationalError
 import os
 import logging
+from collections import namedtuple
 
 # refer to server.py to disable/enable logging.
 #  logging.disable(logging.DEBUG)
@@ -186,20 +187,23 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
         insertString = ""
         valueString = ""
         for col in insertDictionary.keys():
-            if typeDictionary[col].strip() == 'TEXT':
-                insertString += col+","
-                valueString += "'"+insertDictionary[col]+"',"
-            elif typeDictionary[col].strip() == 'INTEGER' or typeDictionary[col].strip() == 'REAL':  # noqa
-                insertString += col+","
-                valueString += insertDictionary[col].strip()+","
+            if typeDictionary[col].strip() == 'REAL':
+                insertDictionary[col] = float(insertDictionary[col])
+            elif typeDictionary[col].strip() == 'INTEGER':
+                insertDictionary[col] = int(insertDictionary[col])
 
+            insertString += col+","
+            valueString += "? ,"
+        print("insertDictionary.keys():  " + str(insertDictionary.keys()))
+        print("insertDictionary.values():  " + str(insertDictionary.values()))
+        
         insertString = insertString[:-1]
         valueString = valueString[:-1]
 
         finalString = "INSERT INTO " + table + "("+insertString+") VALUES (" + valueString + ")"# noqa
 
         logging.info("insert string == " + finalString)
-        cur.execute(finalString)
+        cur.execute(finalString, tuple(insertDictionary.values()))
         self.conn.commit()
         self.conn.close()
 

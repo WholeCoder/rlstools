@@ -7,6 +7,7 @@ from sqlite_adapter import SqliteDatabaseAdapter
 from os import curdir
 import os
 import logging
+from collections import OrderedDict
 
 logging.basicConfig(level=logging.INFO, format=' %(asctime)s -- %(message)s')
 
@@ -92,7 +93,7 @@ class myHandler(BaseHTTPRequestHandler):
             fp=self.rfile,
             headers=self.headers,
             environ={'REQUEST_METHOD': 'POST'})
-        dct = {}
+        dct = OrderedDict()
         for i in form.keys():
             dct[i] = form[i].value
             if "'" in dct[i]:
