@@ -96,8 +96,6 @@ class myHandler(BaseHTTPRequestHandler):
         dct = OrderedDict()
         for i in form.keys():
             dct[i] = form[i].value
-            if "'" in dct[i]:
-                dct[i] = dct[i].replace("'", "''")
 
         SqliteDatabaseAdapter.getInstance().createNewRecord(entity[1:], dct)
 
