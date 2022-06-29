@@ -31,7 +31,7 @@ and
 
 then run the migration tool:
 
-**```migration_tool upgrade```**
+**```migration_tool.py upgrade```**
 
 then run serve so you can see your new website:
 
