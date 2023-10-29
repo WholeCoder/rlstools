@@ -78,7 +78,7 @@ class SqliteDatabaseAdapter(DatabaseAdapter):
             if new_max < 10:
                 nn = "00" + str(new_max)
             elif new_max < 100:
-                nn = "00" + str(new_max)
+                nn = "0" + str(new_max)
             return nn
 
     def deleteColumnFromTable(self, table, column):
