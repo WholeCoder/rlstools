@@ -1,0 +1,15 @@
+	empty char	*	<	%	=	>	Space	f	e
+StartState	StartState,saveCharacter	StartState,saveCharacter	A, nothing	StartState, saveCharacter	StartState,saveCharacter	StartState,saveCharacter	StartState,saveCharacter	StartState,saveCharacter	StartState, saveCharacter
+A	A,nothing	StartState,saveCharacterAToStartState	StartState,saveCharacterAToStartState	B,saveAccString	Error,error	StartState,saveCharacterAToEnd	StartState,saveCharacterAToStartState	StartState,saveCharacterAToStartState	StartState,saveCharacterAToStartState
+B	B,nothing	Error,error	Error,error	Error,error	C,nothing	Error,error	B,nothing	E,saveCharacterForloopheader	L,decrementForLoopIndent
+C	C,nothing	C,saveCharacter	C,saveCharacter	D,saveAccAndAppendController	C,nothing	C,nothing	C,saveCharacter	C,saveCharacter	C,saveCharacter
+D	D,error	Error,error	Error,error	Error,error	Error,error	StartState,nothing	Error,error	Error,error	Error,error
+E	E,nothing	E,saveCharacterForloopheader	Error,error	F,saveCharacterForloopheader	F,saveCharacter	E,saveCharacter	E,saveCharacter	E,saveCharacter	E,saveCharacterForloopheader
+F	F,nothing	Error,error	Error,error	Error,error	Error,error	G,nothing	Error,error	Error,error	Error,error
+G	G,nothing	G,saveCharacter	H,nothing	G,saveCharacter	G,saveCharacter	G,saveCharacter	G,saveCharacter	G,saveCharacter	G,saveCharacter
+H	H,nothing	G,saveCharacterAToStartState	Error,error	I,saveCharacterIndented	Error,error	G,sendToGAndAddGreaterThanSign	Error,error	Error,error	Error,error
+I	I,nothing	Error,error	Error,error	Error, error	J,nothing	Error,error	I,saveCharacter	E,saveCharacterForloopheader	L,decrementForLoopIndent
+J	J,nothing	J,saveCharacter	J,saveCharacter	K,nothing	Error,error	J,saveCharacter	J,saveCharacter	J,saveCharacter	J,saveCharacter
+K	K,nothing	Error,error	Error,error	Error,error	Error,error	G,saveAccWithIndent	Error,error	Error,error	Error,error
+L	L,nothing	L,nothing	L,saveCharacter	M,nothing	L,saveCharacter	L,saveCharacter	L,saveCharacter	L,nothing	L,saveCharacter
+M	M,nothing	Error,error	Error,error	Error,error	Error,error	StartState,nothing	Error,error	Error,error	Error,error
